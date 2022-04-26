@@ -152,4 +152,5 @@ $(window).load(function(){
     }); 
   });
 });
+addEventListener
 })(jQuery);
