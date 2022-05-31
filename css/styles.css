@@ -534,6 +534,7 @@ p {
   position: relative;
   z-index: 88;
 }
+
 @media (min-width:992px) {
   .timeline-wrap {
     top: -44px;
@@ -1127,6 +1128,13 @@ li {
   .switch-lang{
     display:none;
   }
+  
+}
+@media (max-width:400px){
+  .timeline-wrap{
+    background:white;
+  }
+  
 }
 .intro-title1{
   font-size:35px;
@@ -1137,3 +1145,4 @@ li {
 .workplaces a{
   color:#3b658a!important;
 }
+
