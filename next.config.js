@@ -4,11 +4,11 @@ const nextConfig = {
   distDir: 'build',       
   reactStrictMode: true,
   images: {
-    unoptimized: true,    // statik export için gerekli
+    unoptimized: true,
   },
-  basePath: '/',       // repo adı
-  assetPrefix: '//',   // CSS ve JS için prefix
-  trailingSlash: true,           // /index.html ile export
+  basePath: '',        // boş string, root repo için
+  assetPrefix: '',     // boş string, root repo için
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
