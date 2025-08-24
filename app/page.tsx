@@ -466,19 +466,19 @@ const translations: Record<Language, Translation> = {
       {
         title: "Filmler",
         description:
-          "Là con của một người cha yêu điện ảnh, tôi đã bị mê hoặc bởi điện ảnh từ khi còn nhỏ. Bạn có thể xem những bộ phim tôi đã xem từ liên kết bên dưới.",
+          "Sinema sever bir babanın oğlu olarak erken yaşta sinemanın büyüsüne kapıldım, izlediğim filmleri aşağıdaki bağlantıdan görebilirsiniz.",
         link: "https://trakt.tv/users/kaancalkan/history",
       },
       {
         title: "Ağırlık Kaldırma",
         description:
-          "Sau 24 năm không hoạt động, tôi đã đến phòng gym và bắt đầu cử tạ. Và tôi đã biến nó thành một lối sống. Bạn có thể xem thống kê cử tạ của tôi từ liên kết bên dưới.",
+          "Hareketsiz geçirdiğim 24 yılın ardından spor salonuna gidip ağırlık kaldırmaya başladım. Ve bunu bir yaşam tarzı haline getirdim. Ağırlık kaldırma istatistiklerimi aşağıdaki linkten görebilirsiniz.",
         link: "https://kaancancalkan.github.io/My-Weights/",
       },
       {
         title: "Kitaplar",
         description:
-          "Đọc sách đã trở thành một phần của cuộc sống tôi, đặc biệt là sau khi tôi bắt đầu học Trường Trung học Khoa học Xã hội. Tôi thích đọc sách về xã hội học, triết học và lịch sử. Thể loại yêu thích của tôi là dystopia. Nếu bạn muốn xem những cuốn sách tôi đã đọc, bạn có thể kiểm tra liên kết bên dưới.",
+          "Okumak, özellikle Sosyal Bilimler Lisesine başladıktan sonra hayatımın bir parçası haline geldi.Sosyoloji, felsefe ve tarih kitaplarını okumayı çok seviyorum, En sevdiğim tür distopya. Okuduğum kitapları görmek isterseniz aşağıdaki bağlantıya göz atabilirsiniz.",
         link: "https://1000kitap.com/Never119",
       },
       {
@@ -561,7 +561,7 @@ const translations: Record<Language, Translation> = {
         position: "Thực tập sinh (Tháng 2 - Tháng 4 2020)",
         period: "Tháng 2 2020 - Tháng 4 2020",
         description:
-          "Tôi đã làm việc về dịch thuật trang web và tối ưu hóa giao diện di động trên WordPress. Tôi cũng đã thực hiện một số nghiên cứu thời gian bên trong nhà máy. Thực tập của tôi đã kết thúc vì Covid-19",
+          "Tôi đã làm việc về dịch thuật trang web và tối ưu hóa giao diện di động trên WordPress. Tôi cũng đã thực hiện một số nghiên cứu thời gian bên trong nhà máy. Kỳ thực tập của tôi đã kết thúc sau khi Covid-19 xảy ra.",
       },
       {
         company: "Nhà phát triển Web & Wordpress Tự do",
@@ -599,7 +599,7 @@ const translations: Record<Language, Translation> = {
         company: "Kahve Dünyası",
         position: "Chuyên viên tư vấn Kỹ thuật Oracle",
         description:
-          "Với tư cách là người chịu trách nhiệm kỹ thuật cho Dự án Kahve Dünyası, tôi đã tham gia các cuộc họp trực tuyến và địa phương. Tôi đã giải quyết các vé hỗ trợ từ khách hàng.",
+          "Với tư cách là người chịu trách nhiệm kỹ thuật cho Dự án Kahve Dünyası, tôi đã tham gia các cuộc họp trực tuyến và địa phương. Tôi đã giải quyết các vấn đề về vé và hỗ trợ khách hàng.",
       },
       {
         company: "Enerya",
@@ -677,7 +677,7 @@ const translations: Record<Language, Translation> = {
       {
         title: "Cử tạ",
         description:
-          "Sau 24 năm không hoạt động, tôi đã đến phòng gym và bắt đầu cử tạ. Và tôi đã biến nó thành một lối sống. Bạn có thể xem thống kê cử tạ của tôi từ liên kết bên dưới.",
+          "Sau 24 năm sống khép mình, tôi đã đến phòng gym và bắt đầu tập thể hình. Tôi đã biến nó thành lối sống lành mạnh của mình. Bạn có thể xem các số liệu thống kê cử tạ của tôi từ liên kết bên dưới.",
         link: "https://kaancancalkan.github.io/My-Weights/",
       },
       {
@@ -689,7 +689,7 @@ const translations: Record<Language, Translation> = {
       {
         title: "Thiết bị công nghệ",
         description:
-          "Tôi đã có sự quan tâm lớn đến phần mềm và phần cứng của các thiết bị công nghệ kể từ khi tôi lần đầu tiên gặp máy tính.",
+          "Tôi đã có sự quan tâm lớn đến phần mềm và phần cứng của các thiết bị công nghệ kể từ lần đầu tiên tôi được tiếp xúc với máy tính.",
       },
     ],
     title: "Kaan Can Calkan",
