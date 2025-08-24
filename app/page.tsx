@@ -643,7 +643,7 @@ const translations: Record<Language, Translation> = {
       { name: "Python cho Khoa học Dữ liệu", percentage: 40 },
     ],
    languagesList: [
-  { name: "Tiếng Thổ Nhĩ Kỳ bản ngữ", level: "Bản ngữ", percentage: 100 },
+  { name: "Tiếng Thổ Nhĩ Kỳ ", level: "Bản ngữ", percentage: 100 },
   { name: "Tiếng Anh", level: "Thành thạo", percentage: 85 },
   { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 }
 ]
