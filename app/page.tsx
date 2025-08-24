@@ -85,209 +85,190 @@ interface Translation {
 }
 
 const translations: Record<Language, Translation> = {
-  en: {
-    heroTitle: "Hi, I'm Kaan Can Calkan",
-    heroSubtitle: "SAP HR & ABAP & Fiori Consultant",
-    heroDescription:
-      "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in Information systems and contribute to innovative projects.",
-    downloadResume: "Download my resume",
-    sendEmail: "Send me a mail",
-    findMeOn: "Find Me On",
-    education: "Education",
-    workExperience: "Work Experience",
-    projectExperience: "Project Experience",
-    skills: "Skills",
-    languages: "Languages",
-    interests: "Interests",
-    softwareSkills: "Software Skills",
-    codeSkills: "Code Skills",
-    educationEntries: [
-      {
-        title: "Management Information Systems",
-        institution: "Sakarya University (2017-2020) Graduated",
-        period: "2017-2020",
-        description: "My Gpa is 3.18/4.",
-      },
-      {
-        title: "Management Information Systems",
-        institution: "Istanbul Medipol University (2016-2017)",
-        period: "2016-2017",
-        description: "I made a undergraduate transfer to Sakarya University.",
-      },
-      {
-        title: "Social Sciences High School",
-        institution: "Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016",
-        period: "2011-2016",
-        description: "I received compulsory English preparatory training for 1 year.",
-      },
-    ],
-    workEntries: [
-      {
-        company: "Smod Business Solutions",
-        position: "SAP Abap Fiori Consultant (Feb 2024 - July 2024)",
-        period: "Feb 2024 - July 2024",
-        description:
-          "I have worked as a Sap Abap and Fiori Consultant in SMOD Busıness Solutions ( Sap HR Service Provider ).",
-      },
-      {
-        company: "Athena Information Services",
-        position: "Oracle HR Cloud Technical Consultant (Nov 2023- June 2024)",
-        period: "Nov 2023 - June 2024",
-        description:
-          "I have worked as a Oracle HR Cloud Technical Consultant at Athena Information Services. I Wrote SQL queries and used BI Tools.",
-      },
-      {
-        company: "Mbis Consulting",
-        position: "Sap HCM Consultant (Jan 2021- July 2023)",
-        period: "Jan 2021 - July 2023",
-        description: "I have worked on Sap HCM module in Mbis Consultancy Services.",
-      },
-      {
-        company: "Ömer Hazıroglu",
-        position: "Sap Fiori Consultant (January 2023- July 2023)",
-        period: "Jan 2023 - July 2023",
-        description:
-          "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I executed the designs of screens in the Enerya project. At the same time, I observed the process of writing Abap services",
-      },
-      {
-        company: "Seyit Usta Trailer",
-        position: "Intern (February-April 2020)",
-        period: "Feb 2020 - Apr 2020",
-        description:
-          "I worked on website translations and mobile interface optimizations on WordPress. I also did some time studies inside the factory.My internship ended because of Covid-19",
-      },
-      {
-        company: "Freelance Web & Wordpress Developer",
-        position: "(April 2019 - January 2021)",
-        period: "Apr 2019 - Jan 2021",
-        description:
-          "I started my web career with Wix and continued on wordpress, which I learned in my internship. I also designed static web pages with HTML CSS and JS.",
-      },
-    ],
-    projectEntries: [
-      {
-        company: "Support Tickets",
-        position: "Sap HCM Abap & Fiori Consultant",
-        description:
-          "I made Front end and Backend developments in Istac, Sedef Ship, THY. I solved support requests from customers.",
-      },
-      {
-        company: "Lesaffre",
-        position: "Sap HCM Abap & Fiori Consultant",
-        description:
-          "I solved back-end and front-end bugs, made some improvements in Front-end and Back-end. I organized local and virtual meetings with customers to analyze their processes and business needs and provided SAP HR training to them.",
-      },
-      {
-        company: "Taha LC Waikiki",
-        position: "Sap HCM Fiori Consultant",
-        description:
-          "I implemented Annual Leave Plan Application's Front End Side. Fixed Some Backend Bugs. Added Approver Page and Done Sap Fiori Development Config.",
-      },
-      {
-        company: "Air Ties",
-        position: "Oracle Technical Consultant",
-        description: "I worked on vacation queries in the ir Ties project.",
-      },
-      {
-        company: "Kahve Dünyası",
-        position: "Oracle Technical Consultant",
-        description:
-          "As a technical responsible for Kahve Dünyası Project, I participated in online and local meetings. I resolved support tickets from customers.",
-      },
-      {
-        company: "Enerya",
-        position: "Junior Sap Fiori Consultant",
-        description: "I coded Website Panel . I Designed Fiori Screens. I binded oData to tables with filterbar.",
-      },
-      {
-        company: "TOGG Turkish national car",
-        position: "Junior Sap HCM Consultant",
-        description:
-          "I tested the fiori screens of the travel management system in the project. I solved the bugs I found with Abap and Fiori Developers.",
-      },
-      {
-        company: "Zen Diamond",
-        position: "Junior Sap HCM Consultant",
-        description:
-          "I prepared LSMW templates for customers to use. Provided post-live system migration support to customers . I writed Specs for additional developments. Tested the Abap improvements and fixed the bugs together with the technical advisor.",
-      },
-      {
-        company: "Ozler Plastic",
-        position: "Junior Sap HCM Consultant",
-        description:
-          "I did the payroll tests. I made the adaptation of the carsaf icmal. I served customers on master data transfer. I tested Abap Programs and fixed bugs with Abap Developers. I gave Sap HCM traning to customers with local meetings. I made customizations on Sap HCM",
-      },
-      {
-        company: "ALY Food",
-        position: "Junior Sap HCM Consultant",
-        description:
-          "I did the payroll tests. I made an adaptation of the payroll envelope. I worked on the salary adaptations. I supported the customer in the master data transfer.",
-      },
-      {
-        company: "Camsan Entegre",
-        position: "Sap HCM Consultant",
-        description:
-          "I did the payroll tests. . I gave Sap HCM traning to customers with local meetings. I made customizations.",
-      },
-      {
-        company: "Istanbul Finance Center",
-        position: "Sap HCM Consultant",
-        description: "I made customizations on Travel Management Module. I tested Fiori Screens",
-      },
-    ],
-    skillsList: [
-      { name: "SAP HCM", percentage: 75 },
-      { name: "WordPress", percentage: 75 },
-      { name: "Microsoft Office", percentage: 70 },
-      { name: "Server Configurations", percentage: 60 },
-      { name: "Adobe Products", percentage: 50 },
-      { name: "Microsoft Sql Server", percentage: 50 },
-      { name: "Git Bash and GUI", percentage: 50 },
-      { name: "Jira", percentage: 50 },
-    ],
-    codeSkillsList: [
-      { name: "Html / XML", percentage: 75 },
-      { name: "CSS", percentage: 75 },
-      { name: "JavaScript", percentage: 65 },
-      { name: "Fiori UI5", percentage: 60 },
-      { name: "ABAP", percentage: 55 },
-      { name: "Python For Data Science", percentage: 40 },
-    ],
-    languagesList: [
-      { name: "Native Turkish", level:"Native" , percentage: 100 },
-      { name: "English", level:"Fluent" , percentage: 85 },
-      { name: "Vietnamese", level:"Starter" , percentage: 10 },
-    ],
-    interestsList: [
-      {
-        title: "Movies",
-        description:
-          "As a child of a cinema lover father, I was captivated by the cinema at an early age. You can see the movies I have watched from the link below.",
-        link: "https://trakt.tv/users/kaancalkan/history",
-      },
-      {
-        title: "Weight Lifting",
-        description:
-          "After 24 years of inactivity, I went to the gym and started lifting weights. And I made it a lifestyle. You can see my weight lifting stats from the link below.",
-        link: "https://kaancancalkan.github.io/My-Weights/",
-      },
-      {
-        title: "Books",
-        description:
-          "Reading has become a part of my life, especially after I started Social Sciences High School. I love reading books of sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, you can check the link below.",
-        link: "https://1000kitap.com/Never119",
-      },
-      {
-        title: "Technological Devices",
-        description:
-          "I had a great interest in the software and hardware of technological devices since when I first met the computer.",
-      },
-    ],
-    title: "Kaan Can Calkan",
-    subtitle: "SAP HR & ABAP & Fiori Consultant",
-    // downloadResume: "Download my resume",
-    // sendEmail: "Send me a mail",
-  },
+ "en": {
+  "heroTitle": "Hi, I'm Kaan Can Calkan",
+  "heroSubtitle": "SAP HR & ABAP & Fiori Consultant",
+  "heroDescription":
+    "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in information systems and contribute to innovative projects.",
+  "downloadResume": "Download my resume",
+  "sendEmail": "Send me a mail",
+  "findMeOn": "Find Me On",
+  "education": "Education",
+  "workExperience": "Work Experience",
+  "projectExperience": "Project Experience",
+  "skills": "Skills",
+  "languages": "Languages",
+  "interests": "Interests",
+  "softwareSkills": "Software Skills",
+  "codeSkills": "Code Skills",
+  "educationEntries": [
+    {
+      "title": "Management Information Systems",
+      "institution": "Sakarya University (2017-2020) Graduated",
+      "period": "2017-2020",
+      "description": "My GPA is 3.18/4."
+    },
+    {
+      "title": "Management Information Systems",
+      "institution": "Istanbul Medipol University (2016-2017)",
+      "period": "2016-2017",
+      "description": "I made an undergraduate transfer to Sakarya University."
+    },
+    {
+      "title": "Social Sciences High School",
+      "institution": "Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016",
+      "period": "2011-2016",
+      "description": "I completed one year of compulsory English preparatory training."
+    }
+  ],
+  "workEntries": [
+    {
+      "company": "Smod Business Solutions",
+      "position": "SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)",
+      "period": "Feb 2024 - July 2024",
+      "description": "I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider)."
+    },
+    {
+      "company": "Athena Information Services",
+      "position": "Oracle HR Cloud Technical Consultant (Nov 2023 - June 2024)",
+      "period": "Nov 2023 - June 2024",
+      "description": "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools."
+    },
+    {
+      "company": "Mbis Consulting",
+      "position": "SAP HCM Consultant (Jan 2021 - July 2023)",
+      "period": "Jan 2021 - July 2023",
+      "description": "I worked on the SAP HCM module at MBIS Consultancy Services."
+    },
+    {
+      "company": "Ömer Hazıroglu",
+      "position": "SAP Fiori Consultant (Jan 2023 - July 2023)",
+      "period": "Jan 2023 - July 2023",
+      "description": "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services."
+    },
+    {
+      "company": "Seyit Usta Trailer",
+      "position": "Intern (Feb 2020 - Apr 2020)",
+      "period": "Feb 2020 - Apr 2020",
+      "description": "I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19."
+    },
+    {
+      "company": "Freelance Web & Wordpress Developer",
+      "position": "(Apr 2019 - Jan 2021)",
+      "period": "Apr 2019 - Jan 2021",
+      "description": "I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS."
+    }
+  ],
+  "projectEntries": [
+    {
+      "company": "Support Tickets",
+      "position": "SAP HCM ABAP & Fiori Consultant",
+      "description": "I made front-end and back-end developments in Istac, Sedef Ship, and THY. I resolved support requests from customers."
+    },
+    {
+      "company": "Lesaffre",
+      "position": "SAP HCM ABAP & Fiori Consultant",
+      "description": "I solved back-end and front-end bugs, made improvements, and organized local and virtual meetings with customers to analyze their processes and business needs. I also provided SAP HR training."
+    },
+    {
+      "company": "Taha LC Waikiki",
+      "position": "SAP HCM Fiori Consultant",
+      "description": "I implemented the front-end side of the Annual Leave Plan Application, fixed some back-end bugs, added an approver page, and completed SAP Fiori development configuration."
+    },
+    {
+      "company": "Air Ties",
+      "position": "Oracle Technical Consultant",
+      "description": "I worked on vacation queries in the Air Ties project."
+    },
+    {
+      "company": "Kahve Dünyası",
+      "position": "Oracle Technical Consultant",
+      "description": "As the technical responsible for the Kahve Dünyası Project, I participated in online and local meetings and resolved customer support tickets."
+    },
+    {
+      "company": "Enerya",
+      "position": "Junior SAP Fiori Consultant",
+      "description": "I coded the website panel, designed Fiori screens, and bound oData to tables with a filter bar."
+    },
+    {
+      "company": "TOGG Turkish national car",
+      "position": "Junior SAP HCM Consultant",
+      "description": "I tested the Fiori screens of the travel management system and resolved bugs together with ABAP and Fiori developers."
+    },
+    {
+      "company": "Zen Diamond",
+      "position": "Junior SAP HCM Consultant",
+      "description": "I prepared LSMW templates for customers, provided post-go-live migration support, wrote specifications for additional developments, and tested ABAP improvements with the technical advisor."
+    },
+    {
+      "company": "Ozler Plastic",
+      "position": "Junior SAP HCM Consultant",
+      "description": "I performed payroll tests, adapted the 'Çarşaf İcmal' payroll summary, assisted customers with master data transfer, tested ABAP programs, and provided SAP HCM training."
+    },
+    {
+      "company": "ALY Food",
+      "position": "Junior SAP HCM Consultant",
+      "description": "I performed payroll tests, adapted the payroll envelope, worked on salary adaptations, and supported customers with master data transfer."
+    },
+    {
+      "company": "Camsan Entegre",
+      "position": "SAP HCM Consultant",
+      "description": "I conducted payroll tests, provided SAP HCM training in local meetings, and implemented customizations."
+    },
+    {
+      "company": "Istanbul Finance Center",
+      "position": "SAP HCM Consultant",
+      "description": "I made customizations on the Travel Management Module and tested Fiori screens."
+    }
+  ],
+  "skillsList": [
+    { "name": "SAP HCM", "percentage": 75 },
+    { "name": "WordPress", "percentage": 75 },
+    { "name": "Microsoft Office", "percentage": 70 },
+    { "name": "Server Configurations", "percentage": 60 },
+    { "name": "Adobe Products", "percentage": 50 },
+    { "name": "Microsoft SQL Server", "percentage": 50 },
+    { "name": "Git Bash and GUI", "percentage": 50 },
+    { "name": "Jira", "percentage": 50 }
+  ],
+  "codeSkillsList": [
+    { "name": "HTML / XML", "percentage": 75 },
+    { "name": "CSS", "percentage": 75 },
+    { "name": "JavaScript", "percentage": 65 },
+    { "name": "Fiori UI5", "percentage": 60 },
+    { "name": "ABAP", "percentage": 55 },
+    { "name": "Python for Data Science", "percentage": 40 }
+  ],
+  "languagesList": [
+    { "name": "Native Turkish", "level": "Native", "percentage": 100 },
+    { "name": "English", "level": "Fluent", "percentage": 85 },
+    { "name": "Vietnamese", "level": "Starter", "percentage": 10 }
+  ],
+  "interestsList": [
+    {
+      "title": "Movies",
+      "description": "As the child of a cinema-loving father, I was captivated by cinema at an early age. You can see the movies I have watched from the link below.",
+      "link": "https://trakt.tv/users/kaancalkan/history"
+    },
+    {
+      "title": "Weight Lifting",
+      "description": "After 24 years of inactivity, I started going to the gym and lifting weights. It has now become a lifestyle for me. You can see my weightlifting stats from the link below.",
+      "link": "https://kaancancalkan.github.io/My-Weights/"
+    },
+    {
+      "title": "Books",
+      "description": "Reading has become an important part of my life, especially since Social Sciences High School. I enjoy books on sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, check the link below.",
+      "link": "https://1000kitap.com/Never119"
+    },
+    {
+      "title": "Technological Devices",
+      "description": "I have had a great interest in the software and hardware of technological devices ever since I first started using computers."
+    }
+  ],
+  "title": "Kaan Can Calkan",
+  "subtitle": "SAP HR & ABAP & Fiori Consultant"
+},
+
   tr: {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
     heroSubtitle: "SAP HR & Abap & Fiori Danışmanıyım",
