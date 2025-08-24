@@ -130,7 +130,7 @@ const translations: Record<Language, Translation> = {
     },
     {
       "company": "Athena Information Services",
-      "position": "Oracle HR Cloud Technical Consultant (Nov 2023 - June 2024)",
+      "position": "Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)",
       "period": "Nov 2023 - June 2024",
       "description": "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools."
     },
@@ -315,8 +315,8 @@ const translations: Record<Language, Translation> = {
       },
       {
         company: "Athena Information Services",
-        position: "Oracle HR Cloud Teknik Danışmanı (Kasım 2023 - Ocak 2023)",
-        period: "Kasım 2023 - Ocak 2023",
+        position: "Oracle HR Cloud Teknik Danışmanı (Kasım 2023 - Ocak 2024)",
+        period: "Kasım 2023 - Ocak 2024",
         description:
           "Athena Bilişim Çözümlerinde Oracle HR Cloud Teknik Danışmanı olarak çalıştım. SQL sorguları ve iş zekası araçları ile raporlar hazırladım.",
       },
@@ -434,7 +434,7 @@ const translations: Record<Language, Translation> = {
       { name: "Html / XML", percentage: 75 },
       { name: "CSS", percentage: 75 },
       { name: "JavaScript", percentage: 65 },
-      { name: "ABAP", percentage: 60 },
+      { name: "ABAP", percentage: 55 },
       { name: "Fiori UI5", percentage: 55 },
       { name: "Veri Bilimi İçin Python", percentage: 40 },
     ],
@@ -519,8 +519,8 @@ const translations: Record<Language, Translation> = {
       },
       {
         company: "Athena Information Services",
-        position: "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 6 2024)",
-        period: "Tháng 11 2023 - Tháng 6 2024",
+        position: "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)",
+        period: "Tháng 11 2023 - Tháng 1 2024",
         description:
           "Tôi đã làm việc với tư cách là Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Services. Tôi đã viết các truy vấn SQL và sử dụng các công cụ BI.",
       },
