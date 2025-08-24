@@ -974,8 +974,9 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
             {t.languagesList.map((lang, index) => (
               <Card key={index}>
                 <CardContent className="p-6">
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold mb-2">{lang.name}</h3>
+                  <div className="flex justify-between items-center mb-2">
+                    <h3 className="text-lg font-semibold">{lang.name}</h3>
+                    <Badge>{lang.level}</Badge>
                   </div>
                   <SkillBar name="" percentage={lang.percentage} />
                 </CardContent>
