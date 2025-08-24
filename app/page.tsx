@@ -941,7 +941,7 @@ export default function Portfolio() {
                     size="sm"
                     className="gap-2 bg-black hover:bg-gray-800 text-white border-black dark:bg-blue-600 dark:hover:bg-blue-700 dark:border-blue-600"
                   >
-                    <i className="fab fa-medium h-4 w-4"></i>
+                    <FontAwesomeIcon icon={faMedium} className="h-4 w-4" />
                     Medium
                   </Button>
                 </a>
@@ -956,10 +956,11 @@ export default function Portfolio() {
                     size="sm"
                     className="gap-2 bg-black hover:bg-gray-800 text-white border-black dark:bg-blue-600 dark:hover:bg-blue-700 dark:border-blue-600"
                   >
-                    <i className="fab fa-wordpress h-4 w-4"></i>
+                    <FontAwesomeIcon icon={faWordpress} className="h-4 w-4" />
                     WordPress
                   </Button>
                 </a>
+
                 <a href="mailto:cancalkaniletisim@gmail.com">
                   <Button
                     variant="outline"
