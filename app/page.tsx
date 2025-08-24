@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Globe, Download, Mail, Sun, Moon, Github, Linkedin, ExternalLink, PenTool, FileText } from "lucide-react"
+import { Globe, Download, Mail, Sun, Moon, Github, Linkedin, ExternalLink, Pencil, PenTool, FileText } from "lucide-react"
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
 import { useTheme } from "@/components/theme-provider"
 import Image from "next/image"
@@ -847,7 +847,7 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     size="sm"
                     className="gap-2 bg-black hover:bg-gray-800 text-white border-black dark:bg-blue-600 dark:hover:bg-blue-700 dark:border-blue-600"
                   >
-                    <PenTool className="h-4 w-4" />
+                    <Pencil className="h-4 w-4" />
                     Medium
                   </Button>
                 </a>
@@ -857,7 +857,7 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     size="sm"
                     className="gap-2 bg-black hover:bg-gray-800 text-white border-black dark:bg-blue-600 dark:hover:bg-blue-700 dark:border-blue-600"
                   >
-                    <FileText className="h-4 w-4" />
+                    <Globe className="h-4 w-4" />
                     WordPress
                   </Button>
                 </a>
