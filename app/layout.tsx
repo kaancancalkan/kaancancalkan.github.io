@@ -6,10 +6,30 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 export const metadata: Metadata = {
-  title: "Kaan Can Calkan - Portfolio",
-  description: "SAP HR & ABAP & Fiori Consultant Portfolio",
+  title: "Kaan Can Calkan | ERP Consultant",
+  description:
+    "Kaan Can Calkan, experienced ERP Consultant with expertise in SAP ABAP, Fiori, and enterprise solutions.",
+  keywords: [
+    "Kaan Can Calkan",
+    "ERP Consultant",
+    "SAP ABAP",
+    "SAP Fiori",
+    "Enterprise Solutions",
+    "ERP Development"
+  ],
+  authors: [{ name: "Kaan Can Calkan" }],
+  openGraph: {
+    title: "Kaan Can Calkan - ERP Consultant",
+    description:
+      "Discover the professional background of Kaan Can Calkan, ERP Consultant specialized in SAP ABAP, Fiori, and enterprise solutions.",
+    url: "https://kaancancalkan.github.io",
+    siteName: "Kaan Can Calkan",
+    locale: "en_US",
+    type: "website",
+  },
   generator: "v0.app",
 }
+
 
 export default function RootLayout({
   children,
