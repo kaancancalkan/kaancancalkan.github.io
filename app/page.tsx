@@ -87,7 +87,7 @@ interface Translation {
 const translations: Record<Language, Translation> = {
  "en": {
   "heroTitle": "Hi, I'm Kaan Can Calkan",
-  "heroSubtitle": "SAP HR & ABAP & Fiori Consultant",
+  "heroSubtitle": "ERP Consultant And Business Analyst - SAP HR & Abap & Fiori",
   "heroDescription":
     "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in information systems and contribute to innovative projects.",
   "downloadResume": "Download my resume",
@@ -131,7 +131,7 @@ const translations: Record<Language, Translation> = {
     {
       "company": "Athena Information Services",
       "position": "Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)",
-      "period": "Nov 2023 - June 2024",
+      "period": "Nov 2023 - Jan 2024",
       "description": "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools."
     },
     {
@@ -271,7 +271,7 @@ const translations: Record<Language, Translation> = {
 
   tr: {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
-    heroSubtitle: "SAP HR & Abap & Fiori Danışmanıyım",
+    heroSubtitle: "ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım",
     heroDescription:
       "Sakarya Üniversitesi'nden Yönetim Bilişim Sistemleri lisans diplomasına sahibim; bilgi teknolojisi, iş analizi ve proje yönetimi temellerini burada öğrendim. Athena Bilişim Çözümleri'nde Oracle HR Cloud Teknik Danışmanı olarak çalıştım ve şu anda SAP ABAP ve Fiori Danışmanı olarak görev yaptım. Aktif olarak kariyer fırsatlarını değerlendiriyor ve bilişim sistemlerindeki teknik uzmanlığımı yenilikçi projelerde kullanmayı hedefliyorum.",
     downloadResume: "Özgeçmişimi İndirin",
@@ -475,7 +475,7 @@ const translations: Record<Language, Translation> = {
   },
   vi: {
     heroTitle: "Xin chào, tôi là Kaan Can Calkan",
-    heroSubtitle: "Chuyên viên tư vấn SAP HR & ABAP & Fiori",
+    heroSubtitle: "Chuyên gia tư vấn ERP và Chuyên viên phân tích nghiệp vụ - SAP HR & Abap & Fiori",
     heroDescription:
       "Tôi có bằng Cử nhân Hệ thống Thông tin Quản lý từ Đại học Sakarya và có kinh nghiệm làm Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Solutions, cũng như Chuyên viên tư vấn SAP ABAP & Fiori. Tôi đang tích cực tìm kiếm cơ hội mới tại các nước châu Á, nơi tôi có thể áp dụng chuyên môn kỹ thuật trong Hệ thống thông tin và đóng góp vào các dự án sáng tạo.",
     downloadResume: "Tải CV của tôi",
