@@ -28,7 +28,6 @@ interface Translation {
   education: string
   workExperience: string
   projectExperience: string
-  portfolio: string
   skills: string
   languages: string
   interests: string
@@ -54,15 +53,6 @@ interface Translation {
     company: string
     position: string
     description: string
-  }[]
-
-  // Portfolio entries
-  portfolioEntries: {
-    title: string
-    description: string
-    image: string
-    link?: string
-    technologies: string[]
   }[]
 
   // Skills
@@ -106,7 +96,6 @@ const translations: Record<Language, Translation> = {
   "education": "Education",
   "workExperience": "Work Experience",
   "projectExperience": "Project Experience",
-  "portfolio": "Portfolio",
   "skills": "Skills",
   "languages": "Languages",
   "interests": "Interests",
