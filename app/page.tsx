@@ -799,16 +799,15 @@ const portfolioGallery = [
   },
   {
     title: {
-      en: "Hadess",
-      tr: "Hadess",
-      vi: "Hadess",
+      en: "hades",
+      tr: "hades",
+      vi: "hades",
     },
     category: "website",
-    image: "/gallery/hadess.png",
-    description: {
-      en: "Landing page for Hadess, a creative project.",
-      tr: "Hadess için yaratıcı bir açılış sayfası.",
-      vi: "Trang giới thiệu cho dự án sáng tạo Hadess.",
+image: "/hades-heroai.jpg",    description: {
+      en: "Landing page for our lovely Hades, .",
+      tr: "Sevgili Hades için modern bir açılış sayfası.",
+      vi: "Trang giới thiệu cho dự án sáng tạo hades.",
     },
     link: "https://hadess.netlify.app/",
   },
