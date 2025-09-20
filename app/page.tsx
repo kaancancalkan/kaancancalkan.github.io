@@ -789,7 +789,7 @@ const portfolioGallery = [
       vi: "Bagci Perde",
     },
     category: "website",
-    image: "/gallery/bagciperde.png",
+    image: "/bagciperde.jpg",
     description: {
       en: "Modern curtain shop website for Bagcı Perde.",
       tr: "Bagcı Perde için modern perde mağazası web sitesi.",
@@ -819,7 +819,7 @@ const portfolioGallery = [
       vi: "FitTrack",
     },
     category: "webapp",
-    image: "/gallery/fittrack.png",
+    image: "/fittrack.jpg",
     description: {
       en: "Fitness tracking web app for daily workouts.",
       tr: "Günlük antrenmanlar için fitness takip uygulaması.",
@@ -864,7 +864,7 @@ const portfolioGallery = [
       vi: "VietTeach",
     },
     category: "education",
-    image: "/gallery/vietteach.png",
+    image: "/vietteach.jpg",
     description: {
       en: "Vietnamese language learning platform.",
       tr: "Vietnamca öğrenme platformu.",
@@ -947,6 +947,7 @@ function PortfolioGallery({ lang }: { lang: Language }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-4 py-2 rounded-full bg-white text-primary font-semibold text-sm shadow hover:bg-primary hover:text-white transition"
+                    style={{ color: "#222" }}
                   >
                     <ExternalLink className="h-4 w-4 mr-1" />
                     {labels.view}
