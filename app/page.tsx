@@ -1,277 +1,325 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { Globe, Download, Mail, Sun, Moon, Github, Linkedin, ExternalLink, Pencil, PenTool, FileText } from "lucide-react"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from "@/components/ui/dropdown-menu"
-import { useTheme } from "@/components/theme-provider"
-import Image from "next/image"
+import { useState, useEffect } from "react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  Globe,
+  Download,
+  Mail,
+  Sun,
+  Moon,
+  Github,
+  Linkedin,
+  ExternalLink,
+  Pencil,
+  PenTool,
+  FileText,
+} from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
+import { useTheme } from "@/components/theme-provider";
+import Image from "next/image";
 
-type Language = "en" | "tr" | "vi"
+type Language = "en" | "tr" | "vi";
 
 interface Translation {
   // Header
-  title: string
-  subtitle: string
-  downloadResume: string
-  sendEmail: string
+  title: string;
+  subtitle: string;
+  downloadResume: string;
+  sendEmail: string;
 
   // Hero
-  heroTitle: string
-  heroSubtitle: string
-  heroDescription: string
-  findMeOn: string
+  heroTitle: string;
+  heroSubtitle: string;
+  heroDescription: string;
+  findMeOn: string;
 
   // Sections
-  education: string
-  workExperience: string
-  projectExperience: string
-  skills: string
-  languages: string
-  interests: string
+  education: string;
+  workExperience: string;
+  projectExperience: string;
+  skills: string;
+  languages: string;
+  interests: string;
 
   // Education entries
   educationEntries: {
-    title: string
-    institution: string
-    period: string
-    description: string
-  }[]
+    title: string;
+    institution: string;
+    period: string;
+    description: string;
+  }[];
 
   // Work experience entries
   workEntries: {
-    company: string
-    position: string
-    period: string
-    description: string
-  }[]
+    company: string;
+    position: string;
+    period: string;
+    description: string;
+  }[];
 
   // Project entries
   projectEntries: {
-    company: string
-    position: string
-    description: string
-  }[]
+    company: string;
+    position: string;
+    description: string;
+  }[];
 
   // Skills
-  softwareSkills: string
-  codeSkills: string
+  softwareSkills: string;
+  codeSkills: string;
 
   skillsList: {
-    name: string
-    percentage: number
-  }[]
+    name: string;
+    percentage: number;
+  }[];
 
   codeSkillsList: {
-    name: string
-    percentage: number
-  }[]
+    name: string;
+    percentage: number;
+  }[];
 
   // Languages
   languagesList: {
-    name: string
-    level: string
-    percentage: number
-  }[]
+    name: string;
+    level: string;
+    percentage: number;
+  }[];
 
   // Interests
   interestsList: {
-    title: string
-    description: string
-    link?: string
-  }[]
+    title: string;
+    description: string;
+    link?: string;
+  }[];
 }
 
 const translations: Record<Language, Translation> = {
- "en": {
-  "heroTitle": "Hi, I'm Kaan Can Calkan",
-  "heroSubtitle": "ERP Consultant And Business Analyst - SAP HR & Abap & Fiori",
-  "heroDescription":
-    "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in information systems and contribute to innovative projects.",
-  "downloadResume": "Download my resume",
-  "sendEmail": "Send me a mail",
-  "findMeOn": "Find Me On",
-  "education": "Education",
-  "workExperience": "Work Experience",
-  "projectExperience": "Project Experience",
-  "skills": "Skills",
-  "languages": "Languages",
-  "interests": "Interests",
-  "softwareSkills": "Software Skills",
-  "codeSkills": "Code Skills",
-  "educationEntries": [
-    {
-      "title": "Management Information Systems",
-      "institution": "Sakarya University (2017-2020) Graduated",
-      "period": "2017-2020",
-      "description": "My GPA is 3.18/4."
-    },
-    {
-      "title": "Management Information Systems",
-      "institution": "Istanbul Medipol University (2016-2017)",
-      "period": "2016-2017",
-      "description": "I made an undergraduate transfer to Sakarya University."
-    },
-    {
-      "title": "Social Sciences High School",
-      "institution": "Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016",
-      "period": "2011-2016",
-      "description": "I completed one year of compulsory English preparatory training."
-    }
-  ],
-  "workEntries": [
-    {
-      "company": "Smod Business Solutions",
-      "position": "SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)",
-      "period": "Feb 2024 - July 2024",
-      "description": "I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider)."
-    },
-    {
-      "company": "Athena Information Services",
-      "position": "Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)",
-      "period": "Nov 2023 - Jan 2024",
-      "description": "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools."
-    },
-    {
-      "company": "Mbis Consulting",
-      "position": "SAP HCM Consultant (Jan 2021 - July 2023)",
-      "period": "Jan 2021 - July 2023",
-      "description": "I worked on the SAP HCM module at MBIS Consultancy Services."
-    },
-    {
-      "company": "Ömer Hazıroglu",
-      "position": "SAP Fiori Consultant (Jan 2023 - July 2023)",
-      "period": "Jan 2023 - July 2023",
-      "description": "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services."
-    },
-    {
-      "company": "Seyit Usta Trailer",
-      "position": "Intern (Feb 2020 - Apr 2020)",
-      "period": "Feb 2020 - Apr 2020",
-      "description": "I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19."
-    },
-    {
-      "company": "Freelance Web & Wordpress Developer",
-      "position": "(Apr 2019 - Jan 2021)",
-      "period": "Apr 2019 - Jan 2021",
-      "description": "I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS."
-    }
-  ],
-  "projectEntries": [
-    {
-      "company": "Support Tickets",
-      "position": "SAP HCM ABAP & Fiori Consultant",
-      "description": "I made front-end and back-end developments in Istac, Sedef Ship, and THY. I resolved support requests from customers."
-    },
-    {
-      "company": "Lesaffre",
-      "position": "SAP HCM ABAP & Fiori Consultant",
-      "description": "I solved back-end and front-end bugs, made improvements, and organized local and virtual meetings with customers to analyze their processes and business needs. I also provided SAP HR training."
-    },
-    {
-      "company": "Taha LC Waikiki",
-      "position": "SAP HCM Fiori Consultant",
-      "description": "I implemented the front-end side of the Annual Leave Plan Application, fixed some back-end bugs, added an approver page, and completed SAP Fiori development configuration."
-    },
-    {
-      "company": "Air Ties",
-      "position": "Oracle Technical Consultant",
-      "description": "I worked on vacation queries in the Air Ties project."
-    },
-    {
-      "company": "Kahve Dünyası",
-      "position": "Oracle Technical Consultant",
-      "description": "As the technical responsible for the Kahve Dünyası Project, I participated in online and local meetings and resolved customer support tickets."
-    },
-    {
-      "company": "Enerya",
-      "position": "Junior SAP Fiori Consultant",
-      "description": "I coded the website panel, designed Fiori screens, and bound oData to tables with a filter bar."
-    },
-    {
-      "company": "TOGG Turkish national car",
-      "position": "Junior SAP HCM Consultant",
-      "description": "I tested the Fiori screens of the travel management system and resolved bugs together with ABAP and Fiori developers."
-    },
-    {
-      "company": "Zen Diamond",
-      "position": "Junior SAP HCM Consultant",
-      "description": "I prepared LSMW templates for customers, provided post-go-live migration support, wrote specifications for additional developments, and tested ABAP improvements with the technical advisor."
-    },
-    {
-      "company": "Ozler Plastic",
-      "position": "Junior SAP HCM Consultant",
-      "description": "I performed payroll tests, adapted the 'Çarşaf İcmal' payroll summary, assisted customers with master data transfer, tested ABAP programs, and provided SAP HCM training."
-    },
-    {
-      "company": "ALY Food",
-      "position": "Junior SAP HCM Consultant",
-      "description": "I performed payroll tests, adapted the payroll envelope, worked on salary adaptations, and supported customers with master data transfer."
-    },
-    {
-      "company": "Camsan Entegre",
-      "position": "SAP HCM Consultant",
-      "description": "I conducted payroll tests, provided SAP HCM training in local meetings, and implemented customizations."
-    },
-    {
-      "company": "Istanbul Finance Center",
-      "position": "SAP HCM Consultant",
-      "description": "I made customizations on the Travel Management Module and tested Fiori screens."
-    }
-  ],
-  "skillsList": [
-    { "name": "SAP HCM", "percentage": 75 },
-    { "name": "WordPress", "percentage": 75 },
-    { "name": "Microsoft Office", "percentage": 70 },
-    { "name": "Server Configurations", "percentage": 60 },
-    { "name": "Adobe Products", "percentage": 50 },
-    { "name": "Microsoft SQL Server", "percentage": 50 },
-    { "name": "Git Bash and GUI", "percentage": 50 },
-    { "name": "Jira", "percentage": 50 }
-  ],
-  "codeSkillsList": [
-    { "name": "HTML / XML", "percentage": 75 },
-    { "name": "CSS", "percentage": 75 },
-    { "name": "JavaScript", "percentage": 65 },
-    { "name": "Fiori UI5", "percentage": 60 },
-    { "name": "ABAP", "percentage": 55 },
-    { "name": "Python for Data Science", "percentage": 40 }
-  ],
-  "languagesList": [
-    { "name": "Native Turkish", "level": "Native", "percentage": 100 },
-    { "name": "English", "level": "Fluent", "percentage": 85 },
-    { "name": "Vietnamese", "level": "Starter", "percentage": 10 }
-  ],
-  "interestsList": [
-    {
-      "title": "Movies",
-      "description": "As the child of a cinema-loving father, I was captivated by cinema at an early age. You can see the movies I have watched from the link below.",
-      "link": "https://trakt.tv/users/kaancalkan/history"
-    },
-    {
-      "title": "Weight Lifting",
-      "description": "After 24 years of inactivity, I started going to the gym and lifting weights. It has now become a lifestyle for me. You can see my weightlifting stats from the link below.",
-      "link": "https://kaancancalkan.github.io/My-Weights/"
-    },
-    {
-      "title": "Books",
-      "description": "Reading has become an important part of my life, especially since Social Sciences High School. I enjoy books on sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, check the link below.",
-      "link": "https://1000kitap.com/Never119"
-    },
-    {
-      "title": "Technological Devices",
-      "description": "I have had a great interest in the software and hardware of technological devices ever since I first started using computers."
-    }
-  ],
-  "title": "Kaan Can Calkan",
-  "subtitle": "SAP HR & ABAP & Fiori Consultant"
-},
+  en: {
+    heroTitle: "Hi, I'm Kaan Can Calkan",
+    heroSubtitle: "ERP Consultant And Business Analyst - SAP HR & Abap & Fiori",
+    heroDescription:
+      "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in information systems and contribute to innovative projects.",
+    downloadResume: "Download my resume",
+    sendEmail: "Send me a mail",
+    findMeOn: "Find Me On",
+    education: "Education",
+    workExperience: "Work Experience",
+    projectExperience: "Project Experience",
+    skills: "Skills",
+    languages: "Languages",
+    interests: "Interests",
+    softwareSkills: "Software Skills",
+    codeSkills: "Code Skills",
+    educationEntries: [
+      {
+        title: "Management Information Systems",
+        institution: "Sakarya University (2017-2020) Graduated",
+        period: "2017-2020",
+        description: "My GPA is 3.18/4.",
+      },
+      {
+        title: "Management Information Systems",
+        institution: "Istanbul Medipol University (2016-2017)",
+        period: "2016-2017",
+        description: "I made an undergraduate transfer to Sakarya University.",
+      },
+      {
+        title: "Social Sciences High School",
+        institution:
+          "Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016",
+        period: "2011-2016",
+        description:
+          "I completed one year of compulsory English preparatory training.",
+      },
+    ],
+    workEntries: [
+      {
+        company: "Bulutfon Telecommunications",
+        position: "Customer Relationship Specialist",
+        period: "Sep 2025 - Present",
+        description:
+          "I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand.",
+      },
+      {
+        company: "Smod Business Solutions",
+        position: "SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)",
+        period: "Feb 2024 - July 2024",
+        description:
+          "I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider).",
+      },
+      {
+        company: "Athena Information Services",
+        position: "Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)",
+        period: "Nov 2023 - Jan 2024",
+        description:
+          "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools.",
+      },
+      {
+        company: "Mbis Consulting",
+        position: "SAP HCM Consultant (Jan 2021 - July 2023)",
+        period: "Jan 2021 - July 2023",
+        description:
+          "I worked on the SAP HCM module at MBIS Consultancy Services.",
+      },
+      {
+        company: "Ömer Hazıroglu",
+        position: "SAP Fiori Consultant (Jan 2023 - July 2023)",
+        period: "Jan 2023 - July 2023",
+        description:
+          "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services.",
+      },
+      {
+        company: "Seyit Usta Trailer",
+        position: "Intern (Feb 2020 - Apr 2020)",
+        period: "Feb 2020 - Apr 2020",
+        description:
+          "I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19.",
+      },
+      {
+        company: "Freelance Web & Wordpress Developer",
+        position: "(Apr 2019 - Jan 2021)",
+        period: "Apr 2019 - Jan 2021",
+        description:
+          "I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS.",
+      },
+    ],
+    projectEntries: [
+      {
+        company: "Support Tickets",
+        position: "SAP HCM ABAP & Fiori Consultant",
+        description:
+          "I made front-end and back-end developments in Istac, Sedef Ship, and THY. I resolved support requests from customers.",
+      },
+      {
+        company: "Lesaffre",
+        position: "SAP HCM ABAP & Fiori Consultant",
+        description:
+          "I solved back-end and front-end bugs, made improvements, and organized local and virtual meetings with customers to analyze their processes and business needs. I also provided SAP HR training.",
+      },
+      {
+        company: "Taha LC Waikiki",
+        position: "SAP HCM Fiori Consultant",
+        description:
+          "I implemented the front-end side of the Annual Leave Plan Application, fixed some back-end bugs, added an approver page, and completed SAP Fiori development configuration.",
+      },
+      {
+        company: "Air Ties",
+        position: "Oracle Technical Consultant",
+        description: "I worked on vacation queries in the Air Ties project.",
+      },
+      {
+        company: "Kahve Dünyası",
+        position: "Oracle Technical Consultant",
+        description:
+          "As the technical responsible for the Kahve Dünyası Project, I participated in online and local meetings and resolved customer support tickets.",
+      },
+      {
+        company: "Enerya",
+        position: "Junior SAP Fiori Consultant",
+        description:
+          "I coded the website panel, designed Fiori screens, and bound oData to tables with a filter bar.",
+      },
+      {
+        company: "TOGG Turkish national car",
+        position: "Junior SAP HCM Consultant",
+        description:
+          "I tested the Fiori screens of the travel management system and resolved bugs together with ABAP and Fiori developers.",
+      },
+      {
+        company: "Zen Diamond",
+        position: "Junior SAP HCM Consultant",
+        description:
+          "I prepared LSMW templates for customers, provided post-go-live migration support, wrote specifications for additional developments, and tested ABAP improvements with the technical advisor.",
+      },
+      {
+        company: "Ozler Plastic",
+        position: "Junior SAP HCM Consultant",
+        description:
+          "I performed payroll tests, adapted the 'Çarşaf İcmal' payroll summary, assisted customers with master data transfer, tested ABAP programs, and provided SAP HCM training.",
+      },
+      {
+        company: "ALY Food",
+        position: "Junior SAP HCM Consultant",
+        description:
+          "I performed payroll tests, adapted the payroll envelope, worked on salary adaptations, and supported customers with master data transfer.",
+      },
+      {
+        company: "Camsan Entegre",
+        position: "SAP HCM Consultant",
+        description:
+          "I conducted payroll tests, provided SAP HCM training in local meetings, and implemented customizations.",
+      },
+      {
+        company: "Istanbul Finance Center",
+        position: "SAP HCM Consultant",
+        description:
+          "I made customizations on the Travel Management Module and tested Fiori screens.",
+      },
+    ],
+    skillsList: [
+      { name: "SAP HCM", percentage: 75 },
+      { name: "WordPress", percentage: 75 },
+      { name: "Microsoft Office", percentage: 70 },
+      { name: "Server Configurations", percentage: 60 },
+      { name: "Adobe Products", percentage: 50 },
+      { name: "Microsoft SQL Server", percentage: 50 },
+      { name: "Git Bash and GUI", percentage: 50 },
+      { name: "Jira", percentage: 50 },
+    ],
+    codeSkillsList: [
+      { name: "HTML / XML", percentage: 75 },
+      { name: "CSS", percentage: 75 },
+      { name: "JavaScript", percentage: 65 },
+      { name: "Fiori UI5", percentage: 60 },
+      { name: "ABAP", percentage: 55 },
+      { name: "Python for Data Science", percentage: 40 },
+    ],
+    languagesList: [
+      { name: "Native Turkish", level: "Native", percentage: 100 },
+      { name: "English", level: "Fluent", percentage: 85 },
+      { name: "Vietnamese", level: "Starter", percentage: 10 },
+    ],
+    interestsList: [
+      {
+        title: "Movies",
+        description:
+          "As the child of a cinema-loving father, I was captivated by cinema at an early age. You can see the movies I have watched from the link below.",
+        link: "https://trakt.tv/users/kaancalkan/history",
+      },
+      {
+        title: "Weight Lifting",
+        description:
+          "After 24 years of inactivity, I started going to the gym and lifting weights. It has now become a lifestyle for me. You can see my weightlifting stats from the link below.",
+        link: "https://kaancancalkan.github.io/My-Weights/",
+      },
+      {
+        title: "Books",
+        description:
+          "Reading has become an important part of my life, especially since Social Sciences High School. I enjoy books on sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, check the link below.",
+        link: "https://1000kitap.com/Never119",
+      },
+      {
+        title: "Technological Devices",
+        description:
+          "I have had a great interest in the software and hardware of technological devices ever since I first started using computers.",
+      },
+    ],
+    title: "Kaan Can Calkan",
+    subtitle: "SAP HR & ABAP & Fiori Consultant",
+  },
 
   tr: {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
-    heroSubtitle: "ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım",
+    heroSubtitle:
+      "ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım",
     heroDescription:
       "Sakarya Üniversitesi'nden Yönetim Bilişim Sistemleri lisans diplomasına sahibim; bilgi teknolojisi, iş analizi ve proje yönetimi temellerini burada öğrendim. Athena Bilişim Çözümleri'nde Oracle HR Cloud Teknik Danışmanı olarak çalıştım ve şu anda SAP ABAP ve Fiori Danışmanı olarak görev yaptım. Aktif olarak kariyer fırsatlarını değerlendiriyor ve bilişim sistemlerindeki teknik uzmanlığımı yenilikçi projelerde kullanmayı hedefliyorum.",
     downloadResume: "Özgeçmişimi İndirin",
@@ -300,12 +348,20 @@ const translations: Record<Language, Translation> = {
       },
       {
         title: "Sosyal Bilimler Lisesi",
-        institution: "Denizli İbrahim Cinkaya Sosyal Bilimler Lisesi(2011-2016) Temmuz 2016 Mezuniyet",
+        institution:
+          "Denizli İbrahim Cinkaya Sosyal Bilimler Lisesi(2011-2016) Temmuz 2016 Mezuniyet",
         period: "2011-2016",
         description: "1 sene zorunlu İngilizce Hazırlık eğitimi aldım",
       },
     ],
     workEntries: [
+      {
+        company: "Bulutfon Telekomünikasyon",
+        position: "Müşteri İlişkileri Uzmanı",
+        period: "Eylül 2025 - Günümüz",
+        description:
+          "Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım.",
+      },
       {
         company: "Smod İş Çözümleri",
         position: "SAP Abap Fiori Danışmanı (Şubat 2024 - Temmuz 2024)",
@@ -417,7 +473,8 @@ const translations: Record<Language, Translation> = {
       {
         company: "İstanbul Finans Merkezi",
         position: "Sap HCM Danışmanı",
-        description: "Seyahat Masraf Modülü uyarlamalarını gerçekleştirdim. .Fiori testlerini gerçekleştirdim.",
+        description:
+          "Seyahat Masraf Modülü uyarlamalarını gerçekleştirdim. .Fiori testlerini gerçekleştirdim.",
       },
     ],
     skillsList: [
@@ -440,7 +497,7 @@ const translations: Record<Language, Translation> = {
     ],
     languagesList: [
       { name: "Ana Dil Türkçe", level: "Ana Dil", percentage: 100 },
-      { name: "İngilizce", level:"Akıcı", percentage: 85 },
+      { name: "İngilizce", level: "Akıcı", percentage: 85 },
       { name: "Vietnamca", level: "Başlangıç", percentage: 10 },
     ],
     interestsList: [
@@ -475,7 +532,8 @@ const translations: Record<Language, Translation> = {
   },
   vi: {
     heroTitle: "Xin chào, tôi là Kaan Can Calkan",
-    heroSubtitle: "Chuyên gia tư vấn ERP và Chuyên viên phân tích nghiệp vụ - SAP HR & Abap & Fiori",
+    heroSubtitle:
+      "Chuyên gia tư vấn ERP và Chuyên viên phân tích nghiệp vụ - SAP HR & Abap & Fiori",
     heroDescription:
       "Tôi có bằng Cử nhân Hệ thống Thông tin Quản lý từ Đại học Sakarya và có kinh nghiệm làm Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Solutions, cũng như Chuyên viên tư vấn SAP ABAP & Fiori. Tôi đang tích cực tìm kiếm cơ hội mới tại các nước châu Á, nơi tôi có thể áp dụng chuyên môn kỹ thuật trong Hệ thống thông tin và đóng góp vào các dự án sáng tạo.",
     downloadResume: "Tải CV của tôi",
@@ -504,22 +562,33 @@ const translations: Record<Language, Translation> = {
       },
       {
         title: "Trường Trung học Khoa học Xã hội",
-        institution: "Trường Trung học Khoa học Xã hội Denizli Ibrahim Cinkaya (2011-2016) Tốt nghiệp tháng 6 năm 2016",
+        institution:
+          "Trường Trung học Khoa học Xã hội Denizli Ibrahim Cinkaya (2011-2016) Tốt nghiệp tháng 6 năm 2016",
         period: "2011-2016",
-        description: "Tôi đã nhận được khóa đào tạo tiếng Anh bắt buộc trong 1 năm.",
+        description:
+          "Tôi đã nhận được khóa đào tạo tiếng Anh bắt buộc trong 1 năm.",
       },
     ],
     workEntries: [
       {
+        company: "Bulutfon Telecommunications",
+        position: "Chuyên viên Quan hệ Khách hàng",
+        period: "Tháng 9 năm 2025 – Hiện tại",
+        description:
+          "Tôi đã hỗ trợ khách hàng thông qua hệ thống xử lý yêu cầu và các cuộc gọi, giải quyết vấn đề một cách hiệu quả và chuyên nghiệp. Tôi cũng đã đóng góp vào việc xây dựng và duy trì cơ sở kiến thức cùng trang Câu hỏi thường gặp (FAQ), giúp khách hàng tự phục vụ tốt hơn và giảm tải cho bộ phận hỗ trợ.",
+      },
+      {
         company: "Smod Business Solutions",
-        position: "Chuyên viên tư vấn SAP Abap Fiori (Tháng 2 2024 - Tháng 7 2024)",
+        position:
+          "Chuyên viên tư vấn SAP Abap Fiori (Tháng 2 2024 - Tháng 7 2024)",
         period: "Tháng 2 2024 - Tháng 7 2024",
         description:
           "Tôi đã làm việc với tư cách là Chuyên viên tư vấn Sap Abap và Fiori tại SMOD Business Solutions (Nhà cung cấp dịch vụ Sap HR).",
       },
       {
         company: "Athena Information Services",
-        position: "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)",
+        position:
+          "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)",
         period: "Tháng 11 2023 - Tháng 1 2024",
         description:
           "Tôi đã làm việc với tư cách là Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Services. Tôi đã viết các truy vấn SQL và sử dụng các công cụ BI.",
@@ -528,7 +597,8 @@ const translations: Record<Language, Translation> = {
         company: "Mbis Consulting",
         position: "Chuyên viên tư vấn Sap HCM (Tháng 1 2021 - Tháng 7 2023)",
         period: "Tháng 1 2021 - Tháng 7 2023",
-        description: "Tôi đã làm việc trên mô-đun Sap HCM tại Dịch vụ Tư vấn Mbis.",
+        description:
+          "Tôi đã làm việc trên mô-đun Sap HCM tại Dịch vụ Tư vấn Mbis.",
       },
       {
         company: "Ömer Hazıroglu",
@@ -574,7 +644,8 @@ const translations: Record<Language, Translation> = {
       {
         company: "Air Ties",
         position: "Chuyên viên tư vấn Kỹ thuật Oracle",
-        description: "Tôi đã làm việc về các truy vấn kỳ nghỉ trong dự án Air Ties.",
+        description:
+          "Tôi đã làm việc về các truy vấn kỳ nghỉ trong dự án Air Ties.",
       },
       {
         company: "Kahve Dünyası",
@@ -621,7 +692,8 @@ const translations: Record<Language, Translation> = {
       {
         company: "Trung tâm Tài chính Istanbul",
         position: "Chuyên viên tư vấn Sap HCM",
-        description: "Tôi đã thực hiện tùy chỉnh trên Mô-đun Quản lý Du lịch. Tôi đã kiểm tra Màn hình Fiori",
+        description:
+          "Tôi đã thực hiện tùy chỉnh trên Mô-đun Quản lý Du lịch. Tôi đã kiểm tra Màn hình Fiori",
       },
     ],
     skillsList: [
@@ -642,12 +714,11 @@ const translations: Record<Language, Translation> = {
       { name: "ABAP", percentage: 55 },
       { name: "Python cho Khoa học Dữ liệu", percentage: 40 },
     ],
-   languagesList: [
-  { name: "Tiếng Thổ Nhĩ Kỳ ", level: "Bản ngữ", percentage: 100 },
-  { name: "Tiếng Anh", level: "Thành thạo", percentage: 85 },
-  { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 }
-]
-,
+    languagesList: [
+      { name: "Tiếng Thổ Nhĩ Kỳ ", level: "Bản ngữ", percentage: 100 },
+      { name: "Tiếng Anh", level: "Thành thạo", percentage: 85 },
+      { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 },
+    ],
     interestsList: [
       {
         title: "Phim ảnh",
@@ -678,21 +749,27 @@ const translations: Record<Language, Translation> = {
     // downloadResume: "Tải CV của tôi",
     // sendEmail: "Gửi email cho tôi",
   },
-}
+};
 
 const languageNames: Record<Language, string> = {
   en: "English",
   tr: "Türkçe",
   vi: "Tiếng Việt",
-}
+};
 
 const languageFlags: Record<Language, string> = {
   en: "./flags/us.png",
   tr: "./flags/tr.png",
   vi: "./flags/vn.png",
-}
+};
 
-const SkillBar = ({ name, percentage }: { name: string; percentage: number }) => (
+const SkillBar = ({
+  name,
+  percentage,
+}: {
+  name: string;
+  percentage: number;
+}) => (
   <div className="mb-4">
     <div className="flex justify-between mb-1">
       <span className="text-sm font-medium text-foreground">{name}</span>
@@ -705,35 +782,34 @@ const SkillBar = ({ name, percentage }: { name: string; percentage: number }) =>
       />
     </div>
   </div>
-)
+);
 
 export default function Portfolio() {
-  const [currentLang, setCurrentLang] = useState<Language>("en")
-  const [mounted, setMounted] = useState(false)
-  const { theme, setTheme } = useTheme()
-  const t = translations[currentLang]
+  const [currentLang, setCurrentLang] = useState<Language>("en");
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const t = translations[currentLang];
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   const handleSendEmail = () => {
-    window.location.href = "mailto:cancalkaniletisim@gmail.com"
-  }
+    window.location.href = "mailto:cancalkaniletisim@gmail.com";
+  };
 
-const handleDownloadResume = () => {
-  // Choose file based on currentLang
-  const file =
-    currentLang === "tr"
-      ? "./Kaan-Can-Calkan-CV-BA-TR.pdf"
-      : "./Kaan-Can-Calkan-CV-BA-EN.pdf";
-  const link = document.createElement("a");
-  link.href = file; // public klasöründeki dosya
-link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document.body.appendChild(link); // bazı tarayıcılarda gerekli
-  link.click();
-  document.body.removeChild(link);
-};
-
+  const handleDownloadResume = () => {
+    // Choose file based on currentLang
+    const file =
+      currentLang === "tr"
+        ? "./Kaan-Can-Calkan-CV-BA-TR.pdf"
+        : "./Kaan-Can-Calkan-CV-BA-EN.pdf";
+    const link = document.createElement("a");
+    link.href = file; // public klasöründeki dosya
+    link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document.body.appendChild(link); // bazı tarayıcılarda gerekli
+    link.click();
+    document.body.removeChild(link);
+  };
 
   return (
     <div className="min-h-screen bg-background">
@@ -753,14 +829,22 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                 onClick={() => setTheme(theme === "light" ? "dark" : "light")}
                 className="bg-transparent"
               >
-                {theme === "light" ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
+                {theme === "light" ? (
+                  <Moon className="h-4 w-4" />
+                ) : (
+                  <Sun className="h-4 w-4" />
+                )}
                 <span className="sr-only">Toggle theme</span>
               </Button>
 
               {/* Language Switcher */}
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
-                  <Button variant="outline" size="sm" className="gap-2 bg-transparent">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="gap-2 bg-transparent"
+                  >
                     <Globe className="h-4 w-4" />
                     <Image
                       src={languageFlags[currentLang] || "/placeholder.svg"}
@@ -801,18 +885,37 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
         <div className="container mx-auto max-w-4xl text-center">
           <div className="mb-8">
             <div className="w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden border-4 border-primary/20">
-              <img src="./kaan-profile-photo.jpeg" alt="Kaan Can Calkan" className="w-full h-full object-cover" />
+              <img
+                src="./kaan-profile-photo.jpeg"
+                alt="Kaan Can Calkan"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-4">{t.heroTitle}</h1>
-            <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">{t.heroSubtitle}</h2>
-            <p className="text-lg leading-relaxed mb-8 max-w-3xl mx-auto">{t.heroDescription}</p>
+            <h1 className="text-4xl md:text-6xl font-bold mb-4">
+              {t.heroTitle}
+            </h1>
+            <h2 className="text-xl md:text-2xl text-muted-foreground mb-6">
+              {t.heroSubtitle}
+            </h2>
+            <p className="text-lg leading-relaxed mb-8 max-w-3xl mx-auto">
+              {t.heroDescription}
+            </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-              <Button size="lg" className="gap-2" onClick={handleDownloadResume}>
+              <Button
+                size="lg"
+                className="gap-2"
+                onClick={handleDownloadResume}
+              >
                 <Download className="h-4 w-4" />
                 {t.downloadResume}
               </Button>
-              <Button variant="outline" size="lg" className="gap-2 bg-transparent" onClick={handleSendEmail}>
+              <Button
+                variant="outline"
+                size="lg"
+                className="gap-2 bg-transparent"
+                onClick={handleSendEmail}
+              >
                 <Mail className="h-4 w-4" />
                 {t.sendEmail}
               </Button>
@@ -821,7 +924,11 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
             <div className="mb-8">
               <h3 className="text-lg font-semibold mb-4">{t.findMeOn}</h3>
               <div className="flex justify-center gap-4 flex-wrap">
-                <a href="https://www.linkedin.com/in/kaancancalkan/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://www.linkedin.com/in/kaancancalkan/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="outline"
                     size="sm"
@@ -831,7 +938,11 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     LinkedIn
                   </Button>
                 </a>
-                <a href="https://github.com/kaancancalkan" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://github.com/kaancancalkan"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="outline"
                     size="sm"
@@ -841,7 +952,11 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     GitHub
                   </Button>
                 </a>
-                <a href="https://kaancancalkan.medium.com/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://kaancancalkan.medium.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="outline"
                     size="sm"
@@ -851,7 +966,11 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     Medium
                   </Button>
                 </a>
-                <a href="https://kaancancalkan.dev/" target="_blank" rel="noopener noreferrer">
+                <a
+                  href="https://kaancancalkan.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Button
                     variant="outline"
                     size="sm"
@@ -889,7 +1008,9 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
                     <h3 className="text-xl font-semibold">{edu.title}</h3>
                     <Badge variant="secondary">{edu.period}</Badge>
                   </div>
-                  <p className="text-muted-foreground mb-2">{edu.institution}</p>
+                  <p className="text-muted-foreground mb-2">
+                    {edu.institution}
+                  </p>
                   <p className="text-sm">{edu.description}</p>
                 </CardContent>
               </Card>
@@ -901,7 +1022,9 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
       {/* Work Experience Section */}
       <section className="py-16 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">{t.workExperience}</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            {t.workExperience}
+          </h2>
           <div className="space-y-6">
             {t.workEntries.map((work, index) => (
               <Card key={index}>
@@ -924,12 +1047,16 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
       {/* Project Experience Section */}
       <section className="py-16 px-4 bg-muted/30">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-3xl font-bold mb-8 text-center">{t.projectExperience}</h2>
+          <h2 className="text-3xl font-bold mb-8 text-center">
+            {t.projectExperience}
+          </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {t.projectEntries.map((project, index) => (
               <Card key={index}>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">{project.company}</h3>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {project.company}
+                  </h3>
                   <Badge variant="secondary" className="mb-3">
                     {project.position}
                   </Badge>
@@ -948,9 +1075,15 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
           <div className="grid md:grid-cols-2 gap-8">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-6">{t.softwareSkills}</h3>
+                <h3 className="text-xl font-semibold mb-6">
+                  {t.softwareSkills}
+                </h3>
                 {t.skillsList.map((skill, index) => (
-                  <SkillBar key={index} name={skill.name} percentage={skill.percentage} />
+                  <SkillBar
+                    key={index}
+                    name={skill.name}
+                    percentage={skill.percentage}
+                  />
                 ))}
               </CardContent>
             </Card>
@@ -958,7 +1091,11 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
               <CardContent className="p-6">
                 <h3 className="text-xl font-semibold mb-6">{t.codeSkills}</h3>
                 {t.codeSkillsList.map((skill, index) => (
-                  <SkillBar key={index} name={skill.name} percentage={skill.percentage} />
+                  <SkillBar
+                    key={index}
+                    name={skill.name}
+                    percentage={skill.percentage}
+                  />
                 ))}
               </CardContent>
             </Card>
@@ -988,57 +1125,57 @@ link.download = file.split("/").pop() || "resume.pdf"; // fallback ile  document
 
       {/* Interests Section */}
       <section className="py-16 px-4">
-  <div className="container mx-auto max-w-4xl">
-    <h2 className="text-3xl font-bold mb-8 text-center">{t.interests}</h2>
-    <div className="grid md:grid-cols-2 gap-6">
-      {t.interestsList.map((interest, index) => (
-        <Card key={index}>
-          <CardContent className="p-6">
-            <h3 className="text-lg font-semibold mb-3">{interest.title}</h3>
-            <p className="text-sm text-muted-foreground mb-4">{interest.description}</p>
-            {interest.link && (
-              <a
-                href={interest.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
-              >
-                <Button
-                  variant="default"
-                  size="sm"
-                  className="gap-2"
-                >
-                  <ExternalLink className="h-4 w-4" />
-                  {currentLang === "en" && "View More"}
-                  {currentLang === "tr" && "Daha Fazla"}
-                  {currentLang === "vi" && "Xem thêm"}
-                </Button>
-              </a>
-            )}
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  </div>
-</section>
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-3xl font-bold mb-8 text-center">{t.interests}</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {t.interestsList.map((interest, index) => (
+              <Card key={index}>
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-semibold mb-3">
+                    {interest.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-4">
+                    {interest.description}
+                  </p>
+                  {interest.link && (
+                    <a
+                      href={interest.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ textDecoration: "none" }}
+                    >
+                      <Button variant="default" size="sm" className="gap-2">
+                        <ExternalLink className="h-4 w-4" />
+                        {currentLang === "en" && "View More"}
+                        {currentLang === "tr" && "Daha Fazla"}
+                        {currentLang === "vi" && "Xem thêm"}
+                      </Button>
+                    </a>
+                  )}
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* Footer */}
       <footer id="footer" className="py-8 border-t bg-background">
-  <div className="container mx-auto px-4 text-center">
-    <p className="text-muted-foreground">
-      © {new Date().getFullYear()}{" "}
-      <a
-        href="https://kaancancalkan.github.io/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:underline font-medium"
-      >
-        Kaan Can Calkan.
-      </a>{" "}
-      All Rights Reserved.
-    </p>
-  </div>
-</footer>
+        <div className="container mx-auto px-4 text-center">
+          <p className="text-muted-foreground">
+            © {new Date().getFullYear()}{" "}
+            <a
+              href="https://kaancancalkan.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:underline font-medium"
+            >
+              Kaan Can Calkan.
+            </a>{" "}
+            All Rights Reserved.
+          </p>
+        </div>
+      </footer>
     </div>
-  )
+  );
 }
