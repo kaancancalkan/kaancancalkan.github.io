@@ -900,11 +900,11 @@ function PortfolioGallery({ lang }: { lang: Language }) {
           {lang === "tr" && "Projelerim"}
           {lang === "vi" && "Dự án của tôi"}
         </h2>
-        <p className="text-center mb-8 text-muted-foreground">
+        {/* <p className="text-center mb-8 text-muted-foreground">
           {lang === "en" && "Some of my recent works"}
           {lang === "tr" && "Son çalışmalarım"}
           {lang === "vi" && "Một số dự án gần đây"}
-        </p>
+        </p> */}
         <div className="flex justify-center gap-2 mb-8 flex-wrap">
           {(["all", "webapp", "website", "education"] as const).map((cat) => (
             <button
