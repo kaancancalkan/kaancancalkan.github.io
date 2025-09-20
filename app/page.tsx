@@ -793,7 +793,7 @@ const portfolioGallery = [
     description: {
       en: "Modern curtain shop website for Bagcı Perde.",
       tr: "Bagcı Perde için modern perde mağazası web sitesi.",
-      vi: "Website cửa hàng rèm cửa hiện đại cho Bagcı Perde.",
+      vi: "Website cửa hàng rèm hiện đại cho Bagcı Perde.",
     },
     link: "https://bagciperde.netlify.app/",
   },
@@ -804,10 +804,11 @@ const portfolioGallery = [
       vi: "Hades",
     },
     category: "website",
-image: "/hades-heroai.jpg",    description: {
-      en: "Landing page for our lovely Hades, .",
-      tr: "Sevgili Hades için modern bir açılış sayfası.",
-      vi: "Trang giới thiệu cho dự án sáng tạo hades.",
+    image: "/hades-heroai.jpg",
+    description: {
+      en: "Landing page for the Hades creative project.",
+      tr: "Hades yaratıcı projesi için açılış sayfası.",
+      vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
     },
     link: "https://hadess.netlify.app/",
   },
@@ -817,45 +818,44 @@ image: "/hades-heroai.jpg",    description: {
       tr: "FitTrack",
       vi: "FitTrack",
     },
-    category: "webapp", // <-- changed from "quiz" to "webapp"
+    category: "webapp",
     image: "/gallery/fittrack.png",
     description: {
       en: "Fitness tracking web app for daily workouts.",
       tr: "Günlük antrenmanlar için fitness takip uygulaması.",
-      vi: "Ứng dụng web theo dõi tập luyện thể dục.",
+      vi: "Ứng dụng web theo dõi tập luyện thể dục hằng ngày.",
     },
     link: "https://fittrackkaancancalkan.netlify.app/",
   },
-  // {
-  //   title: {
-  //     en: "Child Development Website",
-  //     tr: "Çocuk Gelişim Sitesi",
-  //     vi: "Trang web Phát triển Trẻ em",
-  //   },
-  //   category: "education",
-  //   image: "/gallery/childdev.png",
-  //   description: {
-  //     en: "Educational resource for child development topics.",
-  //     tr: "Çocuk gelişimi konularında eğitim kaynağı.",
-  //     vi: "Tài nguyên giáo dục về phát triển trẻ em.",
-  //   },
-  //   link: "https://cocuk-gelisim-sitesi.lovable.app/",
-  // },
+  {
+    title: {
+      en: "Vietnam SAP Consulting",
+      tr: "Vietnam SAP Danışmanlığı",
+      vi: "Tư vấn SAP tại Việt Nam",
+    },
+    category: "website",
+    image: "/vietnamsap.jpg",
+    description: {
+      en: "Personal website created during my SAP consulting job search in Vietnam.",
+      tr: "Vietnam’daki SAP danışmanlığı iş arama sürecimde oluşturduğum kişisel web sitesi.",
+      vi: "Trang web cá nhân được tạo trong quá trình tìm việc tư vấn SAP tại Việt Nam.",
+    },
+    link: "https://kaancancalkanvietnam.netlify.app/",
+  },
   {
     title: {
       en: "VietCulture Quiz",
       tr: "VietCulture Quiz",
       vi: "VietCulture Quiz",
     },
-    category: "webapp", // <-- changed from "quiz" to "webapp"
-    image: "/gallery/vietculturequiz.png",
+    category: "webapp",
+    image: "/vietquiz.jpg",
     description: {
       en: "Quiz app about Vietnamese culture.",
       tr: "Vietnam kültürü hakkında quiz uygulaması.",
       vi: "Ứng dụng quiz về văn hóa Việt Nam.",
     },
     link: "https://vietculturequizkaancancalkan.netlify.app/",
-    github: "https://github.com/kaancancalkan/vietculturequiz",
   },
   {
     title: {
@@ -873,6 +873,8 @@ image: "/hades-heroai.jpg",    description: {
     link: "https://vietteachkaancancalkan.netlify.app/",
   },
 ];
+
+
 
 // Filter translations
 const filterLabels = {
