@@ -952,7 +952,7 @@ function PortfolioGallery({ lang }: { lang: Language }) {
                     <ExternalLink className="h-4 w-4 mr-1" />
                     {labels.view}
                   </a>
-                  {proj.github && (
+                  {/* {proj.github && (
                     <a
                       href={proj.github}
                       target="_blank"
@@ -962,7 +962,7 @@ function PortfolioGallery({ lang }: { lang: Language }) {
                       <Github className="h-4 w-4 mr-1" />
                       {labels.github}
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
             </div>
