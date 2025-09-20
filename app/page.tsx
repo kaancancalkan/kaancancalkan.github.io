@@ -526,9 +526,7 @@ const translations: Record<Language, Translation> = {
       },
     ],
     title: "Kaan Can Calkan",
-    subtitle: "SAP HR Teknik Danışmanı",
-    // downloadResume: "Özgeçmişimi İndirin",
-    // sendEmail: "Bana e posta atın",
+    subtitle: "SAP HR & ABAP & Fiori Consultant",
   },
   vi: {
     heroTitle: "Xin chào, tôi là Kaan Can Calkan",
@@ -746,8 +744,6 @@ const translations: Record<Language, Translation> = {
     ],
     title: "Kaan Can Calkan",
     subtitle: "Chuyên viên tư vấn SAP HR & ABAP & Fiori",
-    // downloadResume: "Tải CV của tôi",
-    // sendEmail: "Gửi email cho tôi",
   },
 };
 
@@ -793,7 +789,7 @@ const portfolioGallery = [
       vi: "Bagci Perde",
     },
     category: "website",
-    image: "/gallery/bagciperde.png", // Replace with your screenshot
+    image: "/gallery/bagciperde.png",
     description: {
       en: "Modern curtain shop website for Bagcı Perde.",
       tr: "Bagcı Perde için modern perde mağazası web sitesi.",
@@ -822,7 +818,7 @@ const portfolioGallery = [
       tr: "FitTrack",
       vi: "FitTrack",
     },
-    category: "website",
+    category: "webapp", // <-- changed from "quiz" to "webapp"
     image: "/gallery/fittrack.png",
     description: {
       en: "Fitness tracking web app for daily workouts.",
@@ -852,7 +848,7 @@ const portfolioGallery = [
       tr: "VietCulture Quiz",
       vi: "VietCulture Quiz",
     },
-    category: "quiz",
+    category: "webapp", // <-- changed from "quiz" to "webapp"
     image: "/gallery/vietculturequiz.png",
     description: {
       en: "Quiz app about Vietnamese culture.",
@@ -881,14 +877,14 @@ const portfolioGallery = [
 
 // Filter translations
 const filterLabels = {
-  en: { all: "All", quiz: "Quiz Apps", website: "Websites", education: "Education", view: "View", github: "GitHub" },
-  tr: { all: "Tümü", quiz: "Quiz Uygulamaları", website: "Web Siteleri", education: "Eğitim", view: "Görüntüle", github: "GitHub" },
-  vi: { all: "Tất cả", quiz: "Ứng dụng Quiz", website: "Website", education: "Giáo dục", view: "Xem", github: "GitHub" },
+  en: { all: "All", webapp: "Web Apps", website: "Websites", education: "Education", view: "View", github: "GitHub" },
+  tr: { all: "Tümü", webapp: "Web Uygulamaları", website: "Web Siteleri", education: "Eğitim", view: "Görüntüle", github: "GitHub" },
+  vi: { all: "Tất cả", webapp: "Ứng dụng Web", website: "Website", education: "Giáo dục", view: "Xem", github: "GitHub" },
 };
 
-// Portfolio Gallery Component
+// PortfolioGallery component içinde:
 function PortfolioGallery({ lang }: { lang: Language }) {
-  const [filter, setFilter] = useState<"all" | "quiz" | "website" | "education">("all");
+  const [filter, setFilter] = useState<"all" | "webapp" | "website" | "education">("all");
   const labels = filterLabels[lang];
 
   const filtered = filter === "all"
@@ -903,13 +899,13 @@ function PortfolioGallery({ lang }: { lang: Language }) {
           {lang === "tr" && "Projelerim"}
           {lang === "vi" && "Dự án của tôi"}
         </h2>
-        {/* <p className="text-center mb-8 text-muted-foreground">
+        <p className="text-center mb-8 text-muted-foreground">
           {lang === "en" && "Some of my recent works"}
           {lang === "tr" && "Son çalışmalarım"}
           {lang === "vi" && "Một số dự án gần đây"}
-        </p> */}
+        </p>
         <div className="flex justify-center gap-2 mb-8 flex-wrap">
-          {(["all", "quiz", "website", "education"] as const).map((cat) => (
+          {(["all", "webapp", "website", "education"] as const).map((cat) => (
             <button
               key={cat}
               className={`px-4 py-2 rounded-full border text-sm font-medium transition
