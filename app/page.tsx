@@ -710,8 +710,8 @@ const translations: Record<Language, Translation> = {
       { name: "Html / XML", percentage: 75 },
       { name: "CSS", percentage: 75 },
       { name: "JavaScript", percentage: 65 },
-      { name: "Fiori UI5", percentage: 60 },
       { name: "ABAP", percentage: 55 },
+      { name: "Fiori UI5", percentage: 55 },
       { name: "Python cho Khoa học Dữ liệu", percentage: 40 },
     ],
     languagesList: [
@@ -729,7 +729,7 @@ const translations: Record<Language, Translation> = {
       {
         title: "Cử tạ",
         description:
-          "Sau 24 năm sống khép mình, tôi đã đến phòng gym và bắt đầu tập thể hình. Tôi đã biến nó thành lối sống lành mạnh của mình. Bạn có thể xem các số liệu thống kê cử tạ của tôi từ liên kết bên dưới.",
+          "Sau 24 năm sống khép mình, tôi đã đến phòng gym và bắt đầu tập thể hình. Tôi đã biến nó thành lối sống lành mạnh của mình. Bạn có thể xem các số liệu thống kê cử tạ của tôi từ liên kết bên dưới.",
         link: "https://kaancancalkan.github.io/My-Weights/",
       },
       {
@@ -783,6 +783,197 @@ const SkillBar = ({
     </div>
   </div>
 );
+
+// Portfolio Gallery Data (multi-language)
+const portfolioGallery = [
+  {
+    title: {
+      en: "Bagci Perde",
+      tr: "Bagcı Perde",
+      vi: "Bagci Perde",
+    },
+    category: "website",
+    image: "/gallery/bagciperde.png", // Replace with your screenshot
+    description: {
+      en: "Modern curtain shop website for Bagcı Perde.",
+      tr: "Bagcı Perde için modern perde mağazası web sitesi.",
+      vi: "Website cửa hàng rèm cửa hiện đại cho Bagcı Perde.",
+    },
+    link: "https://bagciperde.netlify.app/",
+  },
+  {
+    title: {
+      en: "Hadess",
+      tr: "Hadess",
+      vi: "Hadess",
+    },
+    category: "website",
+    image: "/gallery/hadess.png",
+    description: {
+      en: "Landing page for Hadess, a creative project.",
+      tr: "Hadess için yaratıcı bir açılış sayfası.",
+      vi: "Trang giới thiệu cho dự án sáng tạo Hadess.",
+    },
+    link: "https://hadess.netlify.app/",
+  },
+  {
+    title: {
+      en: "FitTrack",
+      tr: "FitTrack",
+      vi: "FitTrack",
+    },
+    category: "website",
+    image: "/gallery/fittrack.png",
+    description: {
+      en: "Fitness tracking web app for daily workouts.",
+      tr: "Günlük antrenmanlar için fitness takip uygulaması.",
+      vi: "Ứng dụng web theo dõi tập luyện thể dục.",
+    },
+    link: "https://fittrackkaancancalkan.netlify.app/",
+  },
+  // {
+  //   title: {
+  //     en: "Child Development Website",
+  //     tr: "Çocuk Gelişim Sitesi",
+  //     vi: "Trang web Phát triển Trẻ em",
+  //   },
+  //   category: "education",
+  //   image: "/gallery/childdev.png",
+  //   description: {
+  //     en: "Educational resource for child development topics.",
+  //     tr: "Çocuk gelişimi konularında eğitim kaynağı.",
+  //     vi: "Tài nguyên giáo dục về phát triển trẻ em.",
+  //   },
+  //   link: "https://cocuk-gelisim-sitesi.lovable.app/",
+  // },
+  {
+    title: {
+      en: "VietCulture Quiz",
+      tr: "VietCulture Quiz",
+      vi: "VietCulture Quiz",
+    },
+    category: "quiz",
+    image: "/gallery/vietculturequiz.png",
+    description: {
+      en: "Quiz app about Vietnamese culture.",
+      tr: "Vietnam kültürü hakkında quiz uygulaması.",
+      vi: "Ứng dụng quiz về văn hóa Việt Nam.",
+    },
+    link: "https://vietculturequizkaancancalkan.netlify.app/",
+    github: "https://github.com/kaancancalkan/vietculturequiz",
+  },
+  {
+    title: {
+      en: "VietTeach",
+      tr: "VietTeach",
+      vi: "VietTeach",
+    },
+    category: "education",
+    image: "/gallery/vietteach.png",
+    description: {
+      en: "Vietnamese language learning platform.",
+      tr: "Vietnamca öğrenme platformu.",
+      vi: "Nền tảng học tiếng Việt.",
+    },
+    link: "https://vietteachkaancancalkan.netlify.app/",
+  },
+];
+
+// Filter translations
+const filterLabels = {
+  en: { all: "All", quiz: "Quiz Apps", website: "Websites", education: "Education", view: "View", github: "GitHub" },
+  tr: { all: "Tümü", quiz: "Quiz Uygulamaları", website: "Web Siteleri", education: "Eğitim", view: "Görüntüle", github: "GitHub" },
+  vi: { all: "Tất cả", quiz: "Ứng dụng Quiz", website: "Website", education: "Giáo dục", view: "Xem", github: "GitHub" },
+};
+
+// Portfolio Gallery Component
+function PortfolioGallery({ lang }: { lang: Language }) {
+  const [filter, setFilter] = useState<"all" | "quiz" | "website" | "education">("all");
+  const labels = filterLabels[lang];
+
+  const filtered = filter === "all"
+    ? portfolioGallery
+    : portfolioGallery.filter((p) => p.category === filter);
+
+  return (
+    <section className="py-16 px-4 bg-muted/10">
+      <div className="container mx-auto max-w-5xl">
+        <h2 className="text-3xl font-bold mb-2 text-center">
+          {lang === "en" && "My Projects"}
+          {lang === "tr" && "Projelerim"}
+          {lang === "vi" && "Dự án của tôi"}
+        </h2>
+        {/* <p className="text-center mb-8 text-muted-foreground">
+          {lang === "en" && "Some of my recent works"}
+          {lang === "tr" && "Son çalışmalarım"}
+          {lang === "vi" && "Một số dự án gần đây"}
+        </p> */}
+        <div className="flex justify-center gap-2 mb-8 flex-wrap">
+          {(["all", "quiz", "website", "education"] as const).map((cat) => (
+            <button
+              key={cat}
+              className={`px-4 py-2 rounded-full border text-sm font-medium transition
+                ${
+                  filter === cat
+                    ? "bg-neutral-900 text-white border-primary"
+                    : "bg-background border-muted text-foreground hover:bg-muted"
+                }
+                ${filter === cat ? "shadow" : ""}
+              `}
+              onClick={() => setFilter(cat)}
+              type="button"
+            >
+              {labels[cat]}
+            </button>
+          ))}
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {filtered.map((proj, idx) => (
+            <div
+              key={idx}
+              className="relative group rounded-xl overflow-hidden shadow-lg bg-background transition-transform"
+              tabIndex={0}
+            >
+              <div className="aspect-[4/2.5] overflow-hidden">
+                <img
+                  src={proj.image}
+                  alt={proj.title[lang]}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+              </div>
+              <div className="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 px-4 text-center">
+                <h3 className="text-lg font-semibold text-white mb-2">{proj.title[lang]}</h3>
+                <p className="text-white text-sm mb-4">{proj.description[lang]}</p>
+                <div className="flex gap-2 justify-center">
+                  <a
+                    href={proj.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-4 py-2 rounded-full bg-white text-primary font-semibold text-sm shadow hover:bg-primary hover:text-white transition"
+                  >
+                    <ExternalLink className="h-4 w-4 mr-1" />
+                    {labels.view}
+                  </a>
+                  {proj.github && (
+                    <a
+                      href={proj.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center px-4 py-2 rounded-full bg-white text-primary font-semibold text-sm shadow hover:bg-primary hover:text-white transition"
+                    >
+                      <Github className="h-4 w-4 mr-1" />
+                      {labels.github}
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
 
 export default function Portfolio() {
   const [currentLang, setCurrentLang] = useState<Language>("en");
@@ -1067,6 +1258,9 @@ export default function Portfolio() {
           </div>
         </div>
       </section>
+
+      {/* Portfolio Gallery Section */}
+      <PortfolioGallery lang={currentLang} />
 
       {/* Skills Section */}
       <section className="py-16 px-4">
