@@ -799,9 +799,9 @@ const portfolioGallery = [
   },
   {
     title: {
-      en: "hades",
-      tr: "hades",
-      vi: "hades",
+      en: "Hades",
+      tr: "Hades",
+      vi: "Hades",
     },
     category: "website",
 image: "/hades-heroai.jpg",    description: {
@@ -936,7 +936,7 @@ function PortfolioGallery({ lang }: { lang: Language }) {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
-              <div className="absolute inset-0 bg-primary/90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 px-4 text-center">
+              <div className="absolute inset-0 bg-black/90 flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 group-focus:opacity-100 transition-opacity duration-300 px-4 text-center">
                 <h3 className="text-lg font-semibold text-white mb-2">{proj.title[lang]}</h3>
                 <p className="text-white text-sm mb-4">{proj.description[lang]}</p>
                 <div className="flex gap-2 justify-center">
