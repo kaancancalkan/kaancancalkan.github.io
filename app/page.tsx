@@ -864,13 +864,28 @@ const portfolioGallery = [
       vi: "VietTeach",
     },
     category: "education",
-    image: "/vietteach.jpg",
+    image: "/canhoctiengviet.png",
     description: {
-      en: "Vietnamese language learning platform.",
-      tr: "Vietnamca öğrenme platformu.",
-      vi: "Nền tảng học tiếng Việt.",
+      en: "Vietnamese word  learning platform based on flashcards. and my own Vietnamese learning journey.",
+      tr: "Kendi Vietnamca öğrenme yolculuğuma ve flashcard tabanlı Vietnamca kelime öğrenme platformu.",
+      vi: "Nền tảng học từ tiếng Việt dựa trên thẻ flash và hành trình học tiếng Việt của riêng tôi.",
     },
-    link: "https://vietteachkaancancalkan.netlify.app/",
+    link: "https://kaancancalkanhoctiengviet.netlify.app/",
+  },
+    {
+    title: {
+      en: "CodeGrowBloom",
+      tr: "CodeGrowBloom",
+      vi: "CodeGrowBloom",
+    },
+    category: "education",
+    image: "/seedgame.png",
+    description: {
+      en: "Vietnamese language and coding learning platform by letting users plant virtual seeds that grow as they complete lessons and exercises.",
+      tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
+      vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
+    },
+    link: "https://kaancancalkancodegrowbloom.netlify.app/",
   },
 ];
 
