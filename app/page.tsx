@@ -146,7 +146,7 @@ const translations: Record<Language, Translation> = {
         position: "Customer Relationship Specialist",
         period: "Sep 2025 - Present",
         description:
-          "I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand.",
+          "I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand. I performed necessary backlink work in the SEO field, analyzed competitor companies, and improved our company's SEO performance.",
       },
       {
         company: "Smod Business Solutions",
@@ -360,7 +360,7 @@ const translations: Record<Language, Translation> = {
         position: "Müşteri İlişkileri Uzmanı",
         period: "Eylül 2025 - Günümüz",
         description:
-          "Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım.",
+          "Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım. Seo alanında gerekli Backlink çalışmalarını yapıp rakip firmaları analiz edip firmamızın Seo performansını arttırdım.",
       },
       {
         company: "Smod İş Çözümleri",
@@ -573,7 +573,7 @@ const translations: Record<Language, Translation> = {
         position: "Chuyên viên Quan hệ Khách hàng",
         period: "Tháng 9 năm 2025 – Hiện tại",
         description:
-          "Tôi đã hỗ trợ khách hàng thông qua hệ thống xử lý yêu cầu và các cuộc gọi, giải quyết vấn đề một cách hiệu quả và chuyên nghiệp. Tôi cũng đã đóng góp vào việc xây dựng và duy trì cơ sở kiến thức cùng trang Câu hỏi thường gặp (FAQ), giúp khách hàng tự phục vụ tốt hơn và giảm tải cho bộ phận hỗ trợ.",
+          "Tôi đã hỗ trợ khách hàng thông qua hệ thống xử lý yêu cầu và các cuộc gọi, giải quyết vấn đề một cách hiệu quả và chuyên nghiệp. Tôi cũng đã đóng góp vào việc xây dựng và duy trì cơ sở kiến thức cùng trang Câu hỏi thường gặp (FAQ), giúp khách hàng tự phục vụ tốt hơn và giảm tải cho bộ phận hỗ trợ. Tôi đã thực hiện các công việc backlink cần thiết trong lĩnh vực SEO, phân tích các công ty đối thủ và cải thiện hiệu suất SEO của công ty chúng tôi.",
       },
       {
         company: "Smod Business Solutions",
