@@ -797,6 +797,22 @@ const portfolioGallery = [
     },
     link: "https://bagciperde.netlify.app/",
   },
+    {
+    title: {
+      en: "Techno Store",
+      tr: "Techno Store",
+      vi: "Techno Store",
+    },
+    category: "website",
+    image: "/technostore.png",
+    description: {
+      en: "Modern e-commerce website demo .",
+      tr: "Modern e ticaret web sitesi demosu",
+      vi: " Website cửa hàng bán hàng hình thực mẫu.",
+    },
+    link: "https://kaancancalkantechnostore.netlify.app/",
+  },
+  
   {
     title: {
       en: "Hades",
@@ -884,6 +900,21 @@ const portfolioGallery = [
       en: "Vietnamese language and coding learning platform by letting users plant virtual seeds that grow as they complete lessons and exercises.",
       tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
       vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
+    },
+    link: "https://kaancancalkancodegrowbloom.netlify.app/",
+  },
+    {
+    title: {
+      en: "CodeTemple",
+      tr: "CodeTemple",
+      vi: "CodeTemple",
+    },
+    category: "education",
+    image: "/templecode.png",
+    description: {
+      en: "Platform planning to teach coding by having users complete coding tasks in Vietnamese temples.",
+      tr: "Kullanıcıların Vietnam tapınaklarında kodlama görevlerini yaparak kodlama öğretmeyi planlayan bir platform",
+      vi: "Nền tảng dự định dạy lập trình bằng cách để người dùng hoàn thành các nhiệm vụ lập trình trong các ngôi đền Việt Nam.",
     },
     link: "https://kaancancalkancodegrowbloom.netlify.app/",
   },
