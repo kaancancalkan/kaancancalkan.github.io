@@ -916,7 +916,7 @@ const portfolioGallery = [
       tr: "Kullanıcıların Vietnam tapınaklarında kodlama görevlerini yaparak kodlama öğretmeyi planlayan bir platform",
       vi: "Nền tảng dự định dạy lập trình bằng cách để người dùng hoàn thành các nhiệm vụ lập trình trong các ngôi đền Việt Nam.",
     },
-    link: "https://kaancancalkancodegrowbloom.netlify.app/",
+    link: "https://kaancancalkancodetemple.netlify.app/",
   },
 ];
 
