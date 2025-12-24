@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',       
-  distDir: 'build',       
-  reactStrictMode: true,
+  output: 'export',        // ✅ statik export için doğru
+  distDir: 'build',        // build çıktısı 'build/' klasörüne alınacak
+  reactStrictMode: true,   // ✅ best practice
   images: {
-    unoptimized: true,
+    unoptimized: true,     // ✅ GitHub Pages için gerekli (Image Optimization yok)
   },
-  basePath: '',        // boş string, root repo için
-  assetPrefix: '',     // boş string, root repo için
-  trailingSlash: true,
+  basePath: '',            // ✅ root repo için boş bırakılmalı
+  assetPrefix: '',         // ✅ root repo için boş bırakılmalı
+  trailingSlash: true,     // ✅ GitHub Pages ile uyumlu (her dosya /index.html olarak çıkacak)
 }
-
-module.exports = nextConfig
+module.exports = nextConfig;
