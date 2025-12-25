@@ -105,8 +105,7 @@ const translations: Record<Language, Translation> = {
   en: {
     heroTitle: "Hi, I'm Kaan Can Calkan",
     heroSubtitle: "ERP Consultant And Business Analyst - SAP HR & Abap & Fiori",
-    heroDescription:
-      "I hold a Bachelor's degree in Management Information Systems from Sakarya University and have experience as an Oracle HR Cloud Technical Consultant at Athena Information Solutions, as well as a SAP ABAP & Fiori Consultant. I am actively seeking new opportunities in Asian countries, where I can apply my technical expertise in information systems and contribute to innovative projects.",
+    heroDescription:"As a Management Information Systems graduate from Sakarya University, I have 3 years of experience in SAP HCM, ABAP, and Fiori. Alongside my expertise in SAP, I have a background in freelance web development and a proven track record in optimizing customer service operations through knowledge base creation and process improvement. I aim to leverage my technical background and analytical skills in roles such as Business Analyst, ERP Consultant, or Customer Experience Specialist.",
     downloadResume: "Download my resume",
     sendEmail: "Send me a mail",
     findMeOn: "Find Me On",
@@ -320,8 +319,7 @@ const translations: Record<Language, Translation> = {
     heroTitle: "Merhaba Ben Kaan Can Calkan",
     heroSubtitle:
       "ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım",
-    heroDescription:
-      "Sakarya Üniversitesi'nden Yönetim Bilişim Sistemleri lisans diplomasına sahibim; bilgi teknolojisi, iş analizi ve proje yönetimi temellerini burada öğrendim. Athena Bilişim Çözümleri'nde Oracle HR Cloud Teknik Danışmanı olarak çalıştım ve şu anda SAP ABAP ve Fiori Danışmanı olarak görev yaptım. Aktif olarak kariyer fırsatlarını değerlendiriyor ve bilişim sistemlerindeki teknik uzmanlığımı yenilikçi projelerde kullanmayı hedefliyorum.",
+    heroDescription:"Sakarya Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. 3 yıllık SAP HCM, ABAP ve Fiori deneyimime ek olarak, freelance web geliştirme projeleriyle teknik dikeyde yetkinlik kazandım. Müşteri hizmetleri süreçlerinde çözüm odaklı stratejiler geliştirerek bilgi tabanı ve süreç dökümantasyonu çalışmalarını yürüttüm. Teknik birikimimi iş süreçleriyle harmanlayarak; İş Analisti, ERP Danışmanı veya Müşteri Hizmetleri alanlarında değer katmayı hedefliyorum.",
     downloadResume: "Özgeçmişimi İndirin",
     sendEmail: "Bana e posta atın",
     findMeOn: "Bana Ulaşın",
@@ -533,7 +531,7 @@ const translations: Record<Language, Translation> = {
     heroSubtitle:
       "Chuyên gia tư vấn ERP và Chuyên viên phân tích nghiệp vụ - SAP HR & Abap & Fiori",
     heroDescription:
-      "Tôi có bằng Cử nhân Hệ thống Thông tin Quản lý từ Đại học Sakarya và có kinh nghiệm làm Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Solutions, cũng như Chuyên viên tư vấn SAP ABAP & Fiori. Tôi đang tích cực tìm kiếm cơ hội mới tại các nước châu Á, nơi tôi có thể áp dụng chuyên môn kỹ thuật trong Hệ thống thông tin và đóng góp vào các dự án sáng tạo.",
+      "Tôi tốt nghiệp ngành Hệ thống thông tin quản lý (MIS) tại Đại học Sakarya. Bên cạnh 3 năm kinh nghiệm làm việc với SAP HCM, ABAP và Fiori, tôi đã nâng cao năng lực kỹ thuật chuyên sâu thông qua các dự án phát triển web tự do (freelance). Tôi có kinh nghiệm trong việc phát triển các chiến lược tập trung vào giải pháp cho quy trình dịch vụ khách hàng, đồng thời thực hiện các nghiên cứu về cơ sở dữ liệu tri thức và tài liệu hóa quy trình. Bằng cách kết hợp kiến thức kỹ thuật với các quy trình kinh doanh, tôi đặt mục tiêu đóng góp giá trị trong các lĩnh vực như Phân tích nghiệp vụ (Business Analyst), Tư vấn ERP hoặc Dịch vụ khách hàng.",
     downloadResume: "Tải CV của tôi",
     sendEmail: "Gửi email cho tôi",
     findMeOn: "Tìm tôi trên",
