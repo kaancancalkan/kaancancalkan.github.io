@@ -893,7 +893,7 @@ const portfolioGallery = [
       vi: "CosmoCode",
     },
     category: "education",
-    image: "/cosmocode.png",
+    image: "/Cosmocode.png",
     description: {
       en: "Space-themed Python learning platform.",
       tr: "Uzay yolculuğu temalı Python öğrenme platformu.",
