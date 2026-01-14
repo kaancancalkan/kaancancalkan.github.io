@@ -888,6 +888,22 @@ const portfolioGallery = [
   },
     {
     title: {
+      en: "CosmoCode",
+      tr: "CosmoCode",
+      vi: "CosmoCode",
+    },
+    category: "education",
+    image: "/cosmocode.png",
+    description: {
+      en: "Space-themed Python learning platform.",
+      tr: "Uzay yolculuğu temalı Python öğrenme platformu.",
+      vi: "Nền tảng học Python theo chủ đề du hành vũ trụ.",
+    },
+    link: "https://cosmocodekaancancalkan.netlify.app/",
+  },
+
+    {
+    title: {
       en: "CodeGrowBloom",
       tr: "CodeGrowBloom",
       vi: "CodeGrowBloom",
