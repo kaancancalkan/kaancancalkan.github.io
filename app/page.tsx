@@ -826,21 +826,21 @@ const portfolioGallery = [
     },
     link: "https://hadess.netlify.app/",
   },
-  {
-    title: {
-      en: "FitTrack",
-      tr: "FitTrack",
-      vi: "FitTrack",
-    },
-    category: "webapp",
-    image: "/fittrack.jpg",
-    description: {
-      en: "Fitness tracking web app for daily workouts.",
-      tr: "Günlük antrenmanlar için fitness takip uygulaması.",
-      vi: "Ứng dụng web theo dõi tập luyện thể dục hằng ngày.",
-    },
-    link: "https://fittrackkaancancalkan.netlify.app/",
-  },
+  // {
+  //   title: {
+  //     en: "FitTrack",
+  //     tr: "FitTrack",
+  //     vi: "FitTrack",
+  //   },
+  //   category: "webapp",
+  //   image: "/fittrack.jpg",
+  //   description: {
+  //     en: "Fitness tracking web app for daily workouts.",
+  //     tr: "Günlük antrenmanlar için fitness takip uygulaması.",
+  //     vi: "Ứng dụng web theo dõi tập luyện thể dục hằng ngày.",
+  //   },
+  //   link: "https://fittrackkaancancalkan.netlify.app/",
+  // },
   {
     title: {
       en: "Vietnam SAP Consulting",
@@ -915,6 +915,21 @@ const portfolioGallery = [
       tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
       vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
     },
+    link: "https://learnenglishwithcat.netlify.app/",
+  },
+  {
+    title: {
+      en: "LearnEnglishWithCat",
+      tr: "LearnEnglishWithCat",
+      vi: "LearnEnglishWithCat",
+    },
+    category: "education",
+    image: "/learnenglishwithcat.png",
+    description: {
+      en: "Cat-themed English learning platform for young children.",
+      tr: "Küçük çocuklar için kedi temalı İngilizce öğrenme platformu.",
+      vi: "Nền tảng học tiếng Anh theo chủ đề mèo dành cho trẻ nhỏ.",
+    },
     link: "https://kaancancalkancodegrowbloom.netlify.app/",
   },
     {
@@ -956,9 +971,9 @@ function PortfolioGallery({ lang }: { lang: Language }) {
     <section className="py-16 px-4 bg-muted/10">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl font-bold mb-2 text-center">
-          {lang === "en" && "My Projects"}
-          {lang === "tr" && "Projelerim"}
-          {lang === "vi" && "Dự án của tôi"}
+          {lang === "en" && "My  Web Projects"}
+          {lang === "tr" && " Web Projelerim"}
+          {lang === "vi" && "Dự Án Web Của Tôi"}
         </h2>
         {/* <p className="text-center mb-8 text-muted-foreground">
           {lang === "en" && "Some of my recent works"}
