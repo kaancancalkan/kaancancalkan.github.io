@@ -820,11 +820,26 @@ const portfolioGallery = [
     category: "website",
     image: "/hades-heroai.jpg",
     description: {
-      en: "Landing page for the Hades creative project.",
-      tr: "Hades yaratıcı projesi için açılış sayfası.",
+      en: "Website introducing the photo gallery of a cute cat named Hades.",
+      tr: "Hades adlı tatlı kedinin fotoğraf galerisi",
       vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
     },
     link: "https://hadess.netlify.app/",
+  },
+  {
+    title: {
+      en: "Vietnam Culture",
+      tr: "Vietnam Kültürü",
+      vi: "Văn hóa Việt Nam",
+    },
+    category: "website",
+    image: "/ho-chi-minh-portrait.png",
+    description: {
+      en: "Website introducing Vietnamese culture.",
+      tr: "Vietnam kültürünü anlatmak ",
+      vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
+    },
+    link: "https://vietnamculture.netlify.app/",
   },
   // {
   //   title: {
