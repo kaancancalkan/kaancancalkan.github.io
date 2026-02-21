@@ -91,6 +91,10 @@ interface Translation {
     name: string;
     level: string;
     percentage: number;
+    certificate?: {
+      name: string;
+      url: string;
+    };
   }[];
 
   // Interests
@@ -283,7 +287,15 @@ const translations: Record<Language, Translation> = {
     ],
     languagesList: [
       { name: "Native Turkish", level: "Native", percentage: 100 },
-      { name: "English", level: "Fluent", percentage: 85 },
+      { 
+        name: "English", 
+        level: "Fluent", 
+        percentage: 85,
+        certificate: {
+          name: "Level 5 Diploma in Teaching English as a Foreign Language (TEFL) (Premier TEFL)",
+          url: "/CanCalkan%20TEFL.pdf"
+        }
+      },
       { name: "Vietnamese", level: "Starter", percentage: 10 },
     ],
     interestsList: [
@@ -495,7 +507,15 @@ const translations: Record<Language, Translation> = {
     ],
     languagesList: [
       { name: "Ana Dil Türkçe", level: "Ana Dil", percentage: 100 },
-      { name: "İngilizce", level: "Akıcı", percentage: 85 },
+      { 
+        name: "İngilizce", 
+        level: "Akıcı", 
+        percentage: 85,
+        certificate: {
+          name: "Yabancı Dil Olarak İngilizce Öğretimi (TEFL) Seviye 5 Diploması (Premier TEFL)",
+          url: "/CanCalkan%20TEFL.pdf"
+        }
+      },
       { name: "Vietnamca", level: "Başlangıç", percentage: 10 },
     ],
     interestsList: [
@@ -712,7 +732,15 @@ const translations: Record<Language, Translation> = {
     ],
     languagesList: [
       { name: "Tiếng Thổ Nhĩ Kỳ ", level: "Bản ngữ", percentage: 100 },
-      { name: "Tiếng Anh", level: "Thành thạo", percentage: 85 },
+      { 
+        name: "Tiếng Anh", 
+        level: "Thành thạo", 
+        percentage: 85,
+        certificate: {
+          name: "Chứng chỉ Giảng dạy Tiếng Anh như Ngoại ngữ (TEFL) Cấp độ 5 (Premier TEFL)",
+          url: "/CanCalkan%20TEFL.pdf"
+        }
+      },
       { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 },
     ],
     interestsList: [
@@ -1391,13 +1419,28 @@ export default function Portfolio() {
           <h2 className="text-3xl font-bold mb-8 text-center">{t.languages}</h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {t.languagesList.map((lang, index) => (
-              <Card key={index}>
-                <CardContent className="p-6">
-                  <div className="flex justify-between items-center mb-2">
-                    <h3 className="text-lg font-semibold">{lang.name}</h3>
-                    <Badge>{lang.level}</Badge>
+              <Card key={index} className="flex flex-col">
+                <CardContent className="p-6 flex-1 flex flex-col justify-between">
+                  <div>
+                    <div className="flex justify-between items-center mb-2">
+                      <h3 className="text-lg font-semibold">{lang.name}</h3>
+                      <Badge>{lang.level}</Badge>
+                    </div>
+                    <SkillBar name="" percentage={lang.percentage} />
                   </div>
-                  <SkillBar name="" percentage={lang.percentage} />
+                  {lang.certificate && (
+                    <div className="mt-4 pt-4 border-t border-border">
+                      <a 
+                        href={lang.certificate.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-foreground hover:opacity-80 hover:underline transition-all flex items-start gap-2"
+                      >
+                        <FileText className="h-4 w-4 shrink-0 mt-0.5" />
+                        <span>{lang.certificate.name}</span>
+                      </a>
+                    </div>
+                  )}
                 </CardContent>
               </Card>
             ))}
