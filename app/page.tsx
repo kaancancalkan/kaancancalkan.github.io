@@ -973,7 +973,7 @@ const portfolioGallery = [
       tr: "Küçük çocuklar için kedi temalı İngilizce öğrenme platformu.",
       vi: "Nền tảng học tiếng Anh theo chủ đề mèo dành cho trẻ nhỏ.",
     },
-    link: "https://kaancancalkancodegrowbloom.netlify.app/",
+    link: "https://learnenglishwithcat.netlify.app/",
   },
     {
     title: {
