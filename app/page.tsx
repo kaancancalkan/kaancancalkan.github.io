@@ -958,7 +958,7 @@ const portfolioGallery = [
       tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
       vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
     },
-    link: "https://learnenglishwithcat.netlify.app/",
+    link: "https://kaancancalkancodegrowbloom.netlify.app/",
   },
   {
     title: {
