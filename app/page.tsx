@@ -856,9 +856,9 @@ const portfolioGallery = [
   },
   {
     title: {
-      en: "Vietnam Culture",
-      tr: "Vietnam Kültürü",
-      vi: "Văn hóa Việt Nam",
+      en: "Vietnam Chronicle",
+      tr: "Vietnam Kroniği",
+      vi: "Biên niên sử Việt Nam",
     },
     category: "website",
     image: "/ho-chi-minh-portrait.png",
