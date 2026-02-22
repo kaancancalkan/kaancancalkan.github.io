@@ -886,18 +886,18 @@ const portfolioGallery = [
   // },
   {
     title: {
-      en: "Vietnam SAP Consulting",
-      tr: "Vietnam SAP Danışmanlığı",
-      vi: "Tư vấn SAP tại Việt Nam",
+      en: "Vietnam ESL Teaching",
+      tr: "Vietnam için İngilizce Öğretimi",
+      vi: "Dạy tiếng Anh cho người Việt Nam",
     },
     category: "website",
     image: "/vietnamsap.jpg",
     description: {
-      en: "Personal website created during my SAP consulting job search in Vietnam.",
-      tr: "Vietnam’daki SAP danışmanlığı iş arama sürecimde oluşturduğum kişisel web sitesi.",
-      vi: "Trang web cá nhân được tạo trong quá trình tìm việc tư vấn SAP tại Việt Nam.",
+      en: "Personal website created during my IT& English job search process in Vietnam.",
+      tr: "Vietnam'da IT ve İngilizce iş arama sürecimde oluşturduğum kişisel web sitesi.",
+      vi: "Trang web cá nhân được tạo ra trong quá trình tìm kiếm việc làm IT và tiếng Anh của tôi tại Việt Nam.",
     },
-    link: "https://kaancancalkanvietnam.netlify.app/",
+    link: "https://cancalkaneslteacher.netlify.app/",
   },
   {
     title: {
