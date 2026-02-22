@@ -884,21 +884,21 @@ const portfolioGallery = [
   //   },
   //   link: "https://fittrackkaancancalkan.netlify.app/",
   // },
-  {
-    title: {
-      en: "Vietnam ESL Teaching",
-      tr: "Vietnam için İngilizce Öğretimi",
-      vi: "Dạy tiếng Anh cho người Việt Nam",
-    },
-    category: "website",
-    image: "/vietnamsap.jpg",
-    description: {
-      en: "Personal website created during my IT& English job search process in Vietnam.",
-      tr: "Vietnam'da IT ve İngilizce iş arama sürecimde oluşturduğum kişisel web sitesi.",
-      vi: "Trang web cá nhân được tạo ra trong quá trình tìm kiếm việc làm IT và tiếng Anh của tôi tại Việt Nam.",
-    },
-    link: "https://cancalkaneslteacher.netlify.app/",
-  },
+  // {
+  //   title: {
+  //     en: "Vietnam ESL Teaching",
+  //     tr: "Vietnam için İngilizce Öğretimi",
+  //     vi: "Dạy tiếng Anh cho người Việt Nam",
+  //   },
+  //   category: "website",
+  //   image: "/vietnamsap.jpg",
+  //   description: {
+  //     en: "Personal website created during my IT& English job search process in Vietnam.",
+  //     tr: "Vietnam'da IT ve İngilizce iş arama sürecimde oluşturduğum kişisel web sitesi.",
+  //     vi: "Trang web cá nhân được tạo ra trong quá trình tìm kiếm việc làm IT và tiếng Anh của tôi tại Việt Nam.",
+  //   },
+  //   link: "https://cancalkaneslteacher.netlify.app/",
+  // },
   {
     title: {
       en: "VietCulture Quiz",
