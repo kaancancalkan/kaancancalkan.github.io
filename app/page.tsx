@@ -990,6 +990,20 @@ const portfolioGallery = [
     },
     link: "https://kaancancalkancodetemple.netlify.app/",
   },
+  {
+    title: {
+      en: "Fishy English",
+      tr: "Fishy English",
+      vi: "Fishy English",
+    },
+    category: "education",
+    image: "/grammarfishing.png",
+    description: {
+      en: "Grammar Fishing is an interactive, bilingual (TR/VN) web game where players practice English tenses by catching fish through grammar questions.",
+      tr: "Grammar Fishing, oyuncuların dilbilgisi soruları aracılığıyla balık tutarak İngilizce zamanları pratik yapabilecekleri etkileşimli, çift dilli (TR/VN) bir web oyunudur.",
+      vi: "Grammar Fishing là một trò chơi web tương tác, song ngữ (TR/VN) nơi người chơi luyện tập các thì tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
+    link: "https://englishwithfishing.netlify.app/",
+  }
 ];
 
 
