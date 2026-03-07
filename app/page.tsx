@@ -1003,7 +1003,25 @@ const portfolioGallery = [
       tr: "Grammar Fishing, oyuncuların dilbilgisi soruları aracılığıyla balık tutarak İngilizce zamanları pratik yapabilecekleri etkileşimli, çift dilli (TR/VN) bir web oyunudur.",
       vi: "Grammar Fishing là một trò chơi web tương tác, song ngữ (TR/VN) nơi người chơi luyện tập các thì tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://englishwithfishing.netlify.app/",
-  }
+  },
+
+    {
+    title: {
+      en: "English Penalty",
+      tr: "English Penalty",
+      vi: "English Penalty",
+    },
+    category: "education",
+    image:"/English Penalty.png",
+  description: {
+      en: "English learning platform by solving English questions and taking penalty shots.",
+      tr: "İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu.",
+      vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
+    link: "https://englishpenalty.netlify.app/",
+  },
+
+
+  
 ];
 
 
