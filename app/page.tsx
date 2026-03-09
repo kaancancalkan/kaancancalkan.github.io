@@ -945,21 +945,21 @@ const portfolioGallery = [
     link: "https://cosmocodekaancancalkan.netlify.app/",
   },
 
-    {
-    title: {
-      en: "CodeGrowBloom",
-      tr: "CodeGrowBloom",
-      vi: "CodeGrowBloom",
-    },
-    category: "education",
-    image: "/seedgame.png",
-    description: {
-      en: "Vietnamese language and coding learning platform by letting users plant virtual seeds that grow as they complete lessons and exercises.",
-      tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
-      vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
-    },
-    link: "https://kaancancalkancodegrowbloom.netlify.app/",
-  },
+  //   {
+  //   title: {
+  //     en: "CodeGrowBloom",
+  //     tr: "CodeGrowBloom",
+  //     vi: "CodeGrowBloom",
+  //   },
+  //   category: "education",
+  //   image: "/seedgame.png",
+  //   description: {
+  //     en: "Vietnamese language and coding learning platform by letting users plant virtual seeds that grow as they complete lessons and exercises.",
+  //     tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
+  //     vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
+  //   },
+  //   link: "https://kaancancalkancodegrowbloom.netlify.app/",
+  // },
   {
     title: {
       en: "LearnEnglishWithCat",
@@ -975,21 +975,21 @@ const portfolioGallery = [
     },
     link: "https://learnenglishwithcat.netlify.app/",
   },
-    {
-    title: {
-      en: "CodeTemple",
-      tr: "CodeTemple",
-      vi: "CodeTemple",
-    },
-    category: "education",
-    image: "/templecode.png",
-    description: {
-      en: "Platform planning to teach coding by having users complete coding tasks in Vietnamese temples.",
-      tr: "Kullanıcıların Vietnam tapınaklarında kodlama görevlerini yaparak kodlama öğretmeyi planlayan bir platform",
-      vi: "Nền tảng dự định dạy lập trình bằng cách để người dùng hoàn thành các nhiệm vụ lập trình trong các ngôi đền Việt Nam.",
-    },
-    link: "https://kaancancalkancodetemple.netlify.app/",
-  },
+  //   {
+  //   title: {
+  //     en: "CodeTemple",
+  //     tr: "CodeTemple",
+  //     vi: "CodeTemple",
+  //   },
+  //   category: "education",
+  //   image: "/templecode.png",
+  //   description: {
+  //     en: "Platform planning to teach coding by having users complete coding tasks in Vietnamese temples.",
+  //     tr: "Kullanıcıların Vietnam tapınaklarında kodlama görevlerini yaparak kodlama öğretmeyi planlayan bir platform",
+  //     vi: "Nền tảng dự định dạy lập trình bằng cách để người dùng hoàn thành các nhiệm vụ lập trình trong các ngôi đền Việt Nam.",
+  //   },
+  //   link: "https://kaancancalkancodetemple.netlify.app/",
+  // },
   {
     title: {
       en: "Fishy English",
@@ -1018,6 +1018,20 @@ const portfolioGallery = [
       tr: "İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu.",
       vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://englishpenalty.netlify.app/",
+  },
+  {
+    title: {
+      en: "English Basketball",
+      tr: "English Basketball",
+      vi: "English Basketball",
+    },
+    category: "education",
+    image:"/basketballenglish.png",
+  description: {
+      en: "English learning platform by solving English questions and playing basketball.",
+      tr: "İngilizce sorularını çözerek basketbol oynayarak İngilizce öğrenme platformu.",
+      vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
+    link: "https://basketballenglish.netlify.app/",
   },
 
 
