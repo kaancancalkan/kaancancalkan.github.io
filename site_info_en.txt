@@ -1,0 +1,252 @@
+=== SITE INFORMATION - Kaan Can Calkan's Portfolio (ENGLISH) ===
+
+================================================================================
+ENGLISH (en)
+================================================================================
+
+--- Header ---
+Title: Kaan Can Calkan
+Subtitle: SAP HR & ABAP & Fiori Consultant
+Download Resume: Download my resume
+Send Email: Send me a mail
+
+--- Hero ---
+Hero Title: Hi, I'm Kaan Can Calkan
+Hero Subtitle: ERP Consultant And Business Analyst - SAP HR & Abap & Fiori
+Hero Description: As a Management Information Systems graduate from Sakarya University, I have 3 years of experience in SAP HCM, ABAP, and Fiori. Alongside my expertise in SAP, I have a background in freelance web development and a proven track record in optimizing customer service operations through knowledge base creation and process improvement. I aim to leverage my technical background and analytical skills in roles such as Business Analyst, ERP Consultant, or Customer Experience Specialist.
+Find Me On: Find Me On
+
+--- Sections ---
+Education: Education
+Work Experience: Work Experience
+Project Experience: Project Experience
+Skills: Skills
+Languages: Languages
+Interests: Interests
+Software Skills: Software Skills
+Code Skills: Code Skills
+
+--- Education Entries ---
+1. Title: Management Information Systems
+   Institution: Sakarya University (2017-2020) Graduated
+   Period: 2017-2020
+   Description: My GPA is 3.18/4.
+
+2. Title: Management Information Systems
+   Institution: Istanbul Medipol University (2016-2017)
+   Period: 2016-2017
+   Description: I made an undergraduate transfer to Sakarya University.
+
+3. Title: Social Sciences High School
+   Institution: Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016
+   Period: 2011-2016
+   Description: I completed one year of compulsory English preparatory training.
+
+--- Work Experience Entries ---
+1. Company: Bulutfon Telecommunications
+   Position: Customer Relationship Specialist
+   Period: Sep 2025 - Dec 2025
+   Description: I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand. I performed necessary backlink work in the SEO field, analyzed competitor companies, and improved our company's SEO performance.
+
+2. Company: Smod Business Solutions
+   Position: SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)
+   Period: Feb 2024 - July 2024
+   Description: I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider).
+
+3. Company: Athena Information Services
+   Position: Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)
+   Period: Nov 2023 - Jan 2024
+   Description: I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools.
+
+4. Company: Mbis Consulting
+   Position: SAP HCM Consultant (Jan 2021 - July 2023)
+   Period: Jan 2021 - July 2023
+   Description: I worked on the SAP HCM module at MBIS Consultancy Services.
+
+5. Company: Ömer Hazıroglu
+   Position: SAP Fiori Consultant (Jan 2023 - July 2023)
+   Period: Jan 2023 - July 2023
+   Description: I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services.
+
+6. Company: Seyit Usta Trailer
+   Position: Intern (Feb 2020 - Apr 2020)
+   Period: Feb 2020 - Apr 2020
+   Description: I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19.
+
+7. Company: Freelance Web & Wordpress Developer
+   Position: (Apr 2019 - Jan 2021)
+   Period: Apr 2019 - Jan 2021
+   Description: I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS.
+
+--- Project Experience Entries ---
+1. Company: Support Tickets
+   Position: SAP HCM ABAP & Fiori Consultant
+   Description: I made front-end and back-end developments in Istac, Sedef Ship, and THY. I resolved support requests from customers.
+
+2. Company: Lesaffre
+   Position: SAP HCM ABAP & Fiori Consultant
+   Description: I solved back-end and front-end bugs, made improvements, and organized local and virtual meetings with customers to analyze their processes and business needs. I also provided SAP HR training.
+
+3. Company: Taha LC Waikiki
+   Position: SAP HCM Fiori Consultant
+   Description: I implemented the front-end side of the Annual Leave Plan Application, fixed some back-end bugs, added an approver page, and completed SAP Fiori development configuration.
+
+4. Company: Air Ties
+   Position: Oracle Technical Consultant
+   Description: I worked on vacation queries in the Air Ties project.
+
+5. Company: Kahve Dünyası
+   Position: Oracle Technical Consultant
+   Description: As the technical responsible for the Kahve Dünyası Project, I participated in online and local meetings and resolved customer support tickets.
+
+6. Company: Enerya
+   Position: Junior SAP Fiori Consultant
+   Description: I coded the website panel, designed Fiori screens, and bound oData to tables with a filter bar.
+
+7. Company: TOGG Turkish national car
+   Position: Junior SAP HCM Consultant
+   Description: I tested the Fiori screens of the travel management system and resolved bugs together with ABAP and Fiori developers.
+
+8. Company: Zen Diamond
+   Position: Junior SAP HCM Consultant
+   Description: I prepared LSMW templates for customers, provided post-go-live migration support, wrote specifications for additional developments, and tested ABAP improvements with the technical advisor.
+
+9. Company: Ozler Plastic
+   Position: Junior SAP HCM Consultant
+   Description: I performed payroll tests, adapted the 'Çarşaf İcmal' payroll summary, assisted customers with master data transfer, tested ABAP programs, and provided SAP HCM training.
+
+10. Company: ALY Food
+    Position: Junior SAP HCM Consultant
+    Description: I performed payroll tests, adapted the payroll envelope, worked on salary adaptations, and supported customers with master data transfer.
+
+11. Company: Camsan Entegre
+    Position: SAP HCM Consultant
+    Description: I conducted payroll tests, provided SAP HCM training in local meetings, and implemented customizations.
+
+12. Company: Istanbul Finance Center
+    Position: SAP HCM Consultant
+    Description: I made customizations on the Travel Management Module and tested Fiori screens.
+
+--- Skills ---
+Software Skills:
+- SAP HCM: 75%
+- WordPress: 75%
+- Microsoft Office: 70%
+- Server Configurations: 60%
+- Adobe Products: 50%
+- Microsoft SQL Server: 50%
+- Git Bash and GUI: 50%
+- Jira: 50%
+
+Code Skills:
+- HTML / XML: 75%
+- CSS: 75%
+- JavaScript: 65%
+- Fiori UI5: 60%
+- ABAP: 55%
+- Python for Data Science: 40%
+
+--- Languages ---
+1. Name: Native Turkish
+   Level: Native
+   Percentage: 100%
+
+2. Name: English
+   Level: Fluent
+   Percentage: 85%
+   Certificate: Level 5 Diploma in Teaching English as a Foreign Language (TEFL) (Premier TEFL)
+   URL: /CanCalkan%20TEFL.pdf
+
+3. Name: Vietnamese
+   Level: Starter
+   Percentage: 10%
+
+--- Interests ---
+1. Title: Movies
+   Description: As the child of a cinema-loving father, I was captivated by cinema at an early age. You can see the movies I have watched from the link below.
+   Link: https://trakt.tv/users/kaancalkan/history
+
+2. Title: Weight Lifting
+   Description: After 24 years of inactivity, I started going to the gym and lifting weights. It has now become a lifestyle for me. You can see my weightlifting stats from the link below.
+   Link: https://kaancancalkan.github.io/My-Weights/
+
+3. Title: Books
+   Description: Reading has become an important part of my life, especially since Social Sciences High School. I enjoy books on sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, check the link below.
+   Link: https://1000kitap.com/Never119
+
+4. Title: Technological Devices
+   Description: I have had a great interest in the software and hardware of technological devices ever since I first started using computers.
+
+================================================================================
+PORTFOLIO GALLERY PROJECTS (English)
+================================================================================
+
+1. Title: Bagci Perde
+   Category: website
+   Image: /bagciperde.jpg
+   Description: Modern curtain shop website for Bagcı Perde.
+   Link: https://bagciperde.netlify.app/
+
+2. Title: Techno Store
+   Category: website
+   Image: /technostore.png
+   Description: Modern e-commerce website demo .
+   Link: https://kaancancalkantechnostore.netlify.app/
+
+3. Title: Hades
+   Category: website
+   Image: /hades-heroai.jpg
+   Description: Website introducing the photo gallery of a cute cat named Hades.
+   Link: https://hadess.netlify.app/
+
+4. Title: Vietnam Chronicle
+   Category: website
+   Image: /ho-chi-minh-portrait.png
+   Description: Website introducing Vietnamese culture.
+   Link: https://vietnamculture.netlify.app/
+
+5. Title: VietCulture Quiz
+   Category: webapp
+   Image: /vietquiz.jpg
+   Description: Quiz app about Vietnamese culture.
+   Link: https://vietculturequizkaancancalkan.netlify.app/
+
+6. Title: VietTeach
+   Category: education
+   Image: /canhoctiengviet.png
+   Description: Vietnamese word  learning platform based on flashcards. and my own Vietnamese learning journey.
+   Link: https://kaancancalkanhoctiengviet.netlify.app/
+
+7. Title: CosmoCode
+   Category: education
+   Image: /Cosmocode.png
+   Description: Space-themed Python learning platform.
+   Link: https://cosmocodekaancancalkan.netlify.app/
+
+8. Title: LearnEnglishWithCat
+   Category: education
+   Image: /learnenglishwithcat.png
+   Description: Cat-themed English learning platform for young children.
+   Link: https://learnenglishwithcat.netlify.app/
+
+9. Title: Fishy English
+   Category: education
+   Image: /grammarfishing.png
+   Description: Grammar Fishing is an interactive, bilingual (TR/VN) web game where players practice English tenses by catching fish through grammar questions.
+   Link: https://englishwithfishing.netlify.app/
+
+10. Title: English Penalty
+    Category: education
+    Image: /English Penalty.png
+    Description: English learning platform by solving English questions and taking penalty shots.
+    Link: https://englishpenalty.netlify.app/
+
+11. Title: English Basketball
+    Category: education
+    Image: /basketballenglish.png
+    Description: English learning platform by solving English questions and playing basketball.
+    Link: https://basketballenglish.netlify.app/
+
+================================================================================
+END OF FILE
+================================================================================

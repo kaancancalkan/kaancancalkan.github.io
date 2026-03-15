@@ -1,0 +1,252 @@
+=== SITE INFORMATION - Kaan Can Calkan's Portfolio (TÜRKÇE) ===
+
+================================================================================
+TÜRKÇE (tr)
+================================================================================
+
+--- Başlık ---
+Başlık: Kaan Can Calkan
+Alt Başlık: SAP HR & ABAP & Fiori Consultant
+Özgeçmiş İndir: Özgeçmişimi İndirin
+E-posta Gönder: Bana e posta atın
+
+--- Hero ---
+Hero Başlık: Merhaba Ben Kaan Can Calkan
+Hero Alt Başlık: ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım
+Hero Açıklaması: Sakarya Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. 3 yıllık SAP HCM, ABAP ve Fiori deneyimime ek olarak, freelance web geliştirme projeleriyle teknik dikeyde yetkinlik kazandım. Müşteri hizmetleri süreçlerinde çözüm odaklı stratejiler geliştirerek bilgi tabanı ve süreç dökümantasyonu çalışmalarını yürüttüm. Teknik birikimimi iş süreçleriyle harmanlayarak; İş Analisti, ERP Danışmanı veya Müşteri Hizmetleri alanlarında değer katmayı hedefliyorum.
+Bana Ulaşın: Bana Ulaşın
+
+--- Bölümler ---
+Eğitim: Eğitim
+İş Deneyimi: İş Deneyimi
+Proje Deneyimi: Proje Deneyimi
+Yetenekler: Yetenekler
+Diller: Diller
+İlgi Alanları: İlgi Alanlarım
+Yazılım Yetenekleri: Yazılım Yetenekleri
+Kodlama Becerileri: Kodlama Becerileri
+
+--- Eğitim Girişleri ---
+1. Başlık: Yönetim Bilişim Sistemleri
+   Kurum: Sakarya Üniversitesi (2017-2020) Mezun Oldum
+   Dönem: 2017-2020
+   Açıklama: Ortalamam 3.18/4.
+
+2. Başlık: Yönetim Bilişim Sistemleri
+   Kurum: İstanbul Medipol Üniversitesi (2016-2017)
+   Dönem: 2016-2017
+   Açıklama: Sakarya Üniversitesi'ne yatay geçiş yaptım.
+
+3. Başlık: Sosyal Bilimler Lisesi
+   Kurum: Denizli İbrahim Cinkaya Sosyal Bilimler Lisesi(2011-2016) Temmuz 2016 Mezuniyet
+   Dönem: 2011-2016
+   Açıklama: 1 sene zorunlu İngilizce Hazırlık eğitimi aldım
+
+--- İş Deneyimi Girişleri ---
+1. Şirket: Bulutfon Telekomünikasyon
+   Pozisyon: Müşteri İlişkileri Uzmanı
+   Dönem: Eylül 2025 - Aralık 2025
+   Açıklama: Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım. Seo alanında gerekli Backlink çalışmalarını yapıp rakip firmaları analiz edip firmamızın Seo performansını arttırdım.
+
+2. Şirket: Smod İş Çözümleri
+   Pozisyon: SAP Abap Fiori Danışmanı (Şubat 2024 - Temmuz 2024)
+   Dönem: Şubat 2024 - Temmuz 2024
+   Açıklama: SMOD Busıness Solutions (Sap HR Servis Sağlayıcısı ) bünyesinde Sap Abap ve Fiori Danışmanı olarak çalıştım.
+
+3. Şirket: Athena Information Services
+   Pozisyon: Oracle HR Cloud Teknik Danışmanı (Kasım 2023 - Ocak 2024)
+   Dönem: Kasım 2023 - Ocak 2024
+   Açıklama: Athena Bilişim Çözümlerinde Oracle HR Cloud Teknik Danışmanı olarak çalıştım. SQL sorguları ve iş zekası araçları ile raporlar hazırladım.
+
+4. Şirket: Mbis Danışmanlık
+   Pozisyon: Sap HCM Danışmanı (Ocak 2021- Temmuz 2023)
+   Dönem: Ocak 2021 - Temmuz 2023
+   Açıklama: Mbis Danışmanlıkta Sap HCM modülünde çalıştım.
+
+5. Şirket: Ömer Hazıroğlu
+   Pozisyon: Sap Fiori Danışmanı (Ocak 2023- Temmuz 2023)
+   Dönem: Ocak 2023 - Temmuz 2023
+   Açıklama: Ömer Hazıroğlu'dan Fiori danışmanlık eğitimi aldım. Bu süreçte Enerya projesinde ekran tasarımlarını gerçekleştirdim. Aynı zamanda Abap servislerinin yazım sürecini de gözlemledim
+
+6. Şirket: Seyit Usta Treyler
+   Pozisyon: Stajyer (Şubat-Nisan 2020)
+   Dönem: Şubat 2020 - Nisan 2020
+   Açıklama: WordPress'te web sitesi çevirileri, mobil arayüz optimizasyonları yaptım. Stajım Covid-19 salgını sebebiyle erken bitti.
+
+7. Şirket: Freelance Web & Wordpress Geliştirici
+   Pozisyon: (Nisan 2019 -Ocak 2021)
+   Dönem: Nisan 2019 - Ocak 2021
+   Açıklama: Web kariyerime Wix ile başladım ve stajımda öğrendiğim wordpress ile devam ettim. HTML CSS ve JS ile statik web sayfaları da tasarladım.
+
+--- Proje Deneyimi Girişleri ---
+1. Şirket: Destek Talepleri
+   Pozisyon: Sap HCM Abap & Fiori Danışmanı
+   Açıklama: İstaç,Sedef Gemi, THY'de Front end ve Backend geliştirmeleri yaptım. Müşteriden gelen destek taleplerini çözdüm.
+
+2. Şirket: Lesaffre
+   Pozisyon: Sap HCM Abap & Fiori Danışmanı
+   Açıklama: Back-end ve front-end hatalarını çözdüm, Front-end ve Back-end'de bazı geliştirmeler yaptım. Müşterilerle yerel ve sanal toplantılar düzenleyerek süreçlerini ve iş ihtiyaçlarını analiz ettim ve onlara SAP HR eğitimi verdim.
+
+3. Şirket: Taha LC Waikiki
+   Pozisyon: Sap HCM Fiori Danışmanı
+   Açıklama: Yıllık izin planlama uygulamasının ön yüzünü implemente ettim. Bazı backend hatalarını çözdüm. Onaycı ekranını tasarladım ve SAP Fiori Developmentini gerçekleştirdim.
+
+4. Şirket: Air Ties
+   Pozisyon: Oracle Teknik Danışmanı
+   Açıklama: Air Ties projesinde izin sorguları üzerine çalıştım.
+
+5. Şirket: Kahve Dünyası
+   Pozisyon: Oracle Teknik Danışmanı
+   Açıklama: Kahve Dünyası Projesinde teknik sorumlu olarak online ve lokaldeki toplantılara katıldım. Müşterilerden gelen destek ticketlarını çözümledim.
+
+6. Şirket: Enerya
+   Pozisyon: Junior Sap Fiori Danışmanı
+   Açıklama: Web Terminal giriş ekranını tasarladım. Fiori ekran tasarımlarını gerçekleştirdim. Sap'den gelen verileri Filterbar ile Tablolara bağladım.
+
+7. Şirket: TOGG Türkiye'nin Yerli Otomobili
+   Pozisyon: Junior Sap HCM Danışmanı
+   Açıklama: Projedeki seyahat yönetim sisteminin fiori ekranlarını test ettim. Bulduğum hataları Abap ve Fiori Developerlar ile birlikte çözümledim.
+
+8. Şirket: Zen Pırlanta
+   Pozisyon: Junior Sap HCM Danışmanı
+   Açıklama: Müşterilerin kullanacağı LSMW şablonlarını hazırladım. Müşterilere canlı geçiş sonrası desteği verdim. Ek geliştirmelerin Spec dökümanlarını oluşturdum. Abap geliştirmelerini test edip hataları teknik danışman ile birlikte çözdük.
+
+9. Şirket: Özler Plastik
+   Pozisyon: Junior Sap HCM Danışmanı
+   Açıklama: Bordro testlerini gerçekleştirdim. Çarsaf icmal uyarlamasını gerçekleştirdim. Müşterilere ana veri aktarımı konusunda hizmet verdim. Abap programlarını test edip bulduğum bugları Abapçılar ile çözdüm. Müşteri eğitimlerini lokasyonda gerçekleştirdim.
+
+10. Şirket: Aksular Gıda
+    Pozisyon: Junior Sap HCM Danışmanı
+    Açıklama: Bordro testlerini gerçekleştirdim. Bordro zarfı uyarlaması yaptım.Ücret uyarlamaları üzerine çalıştım. Ana veri aktarımında müşteriye destek verdim.
+
+11. Şirket: Camsan Entegre
+    Pozisyon: Sap HCM Danışmanı
+    Açıklama: Bordro testlerini gerçekleştirdim. Uyarlamaları gerçekleştirdim. Müşterilere lokasyonda eğitimler verdim.
+
+12. Şirket: İstanbul Finans Merkezi
+    Pozisyon: Sap HCM Danışmanı
+    Açıklama: Seyahat Masraf Modülü uyarlamalarını gerçekleştirdim. .Fiori testlerini gerçekleştirdim.
+
+--- Yetenekler ---
+Yazılım Yetenekleri:
+- SAP HCM: 75%
+- WordPress: 75%
+- Microsoft Office: 70%
+- Sunucu Konfigürasyonları: 60%
+- Adobe Ürünleri: 50%
+- Microsoft Sql Server: 50%
+- Git Bash ve GUI: 50%
+- Jira: 50%
+
+Kodlama Becerileri:
+- Html / XML: 75%
+- CSS: 75%
+- JavaScript: 65%
+- ABAP: 55%
+- Fiori UI5: 55%
+- Veri Bilimi İçin Python: 40%
+
+--- Diller ---
+1. İsim: Ana Dil Türkçe
+   Seviye: Ana Dil
+   Yüzde: 100%
+
+2. İsim: İngilizce
+   Seviye: Akıcı
+   Yüzde: 85%
+   Sertifika: Yabancı Dil Olarak İngilizce Öğretimi (TEFL) Seviye 5 Diploması (Premier TEFL)
+   URL: /CanCalkan%20TEFL.pdf
+
+3. İsim: Vietnamca
+   Seviye: Başlangıç
+   Yüzde: 10%
+
+--- İlgi Alanları ---
+1. Başlık: Filmler
+   Açıklama: Sinema sever bir babanın oğlu olarak erken yaşta sinemanın büyüsüne kapıldım, izlediğim filmleri aşağıdaki bağlantıdan görebilirsiniz.
+   Bağlantı: https://trakt.tv/users/kaancalkan/history
+
+2. Başlık: Ağırlık Kaldırma
+   Açıklama: Hareketsiz geçirdiğim 24 yılın ardından spor salonuna gidip ağırlık kaldırmaya başladım. Ve bunu bir yaşam tarzı haline getirdim. Ağırlık kaldırma istatistiklerimi aşağıdaki linkten görebilirsiniz.
+   Bağlantı: https://kaancancalkan.github.io/My-Weights/
+
+3. Başlık: Kitaplar
+   Açıklama: Okumak, özellikle Sosyal Bilimler Lisesine başladıktan sonra hayatımın bir parçası haline geldi.Sosyoloji, felsefe ve tarih kitaplarını okumayı çok seviyorum, En sevdiğim tür distopya. Okuduğum kitapları görmek isterseniz aşağıdaki bağlantıya göz atabilirsiniz.
+   Bağlantı: https://1000kitap.com/Never119
+
+4. Başlık: Teknolojik Cihazlar
+   Açıklama: Bilgisayarla ilk tanıştığım zamandan beri teknolojik cihazların yazılım ve donanımlarına büyük ilgi duydum.
+
+================================================================================
+PORTFOLYO GALERİ PROJELERİ (Türkçe)
+================================================================================
+
+1. Başlık: Bagcı Perde
+   Kategori: website
+   Resim: /bagciperde.jpg
+   Açıklama: Bagcı Perde için modern perde mağazası web sitesi.
+   Bağlantı: https://bagciperde.netlify.app/
+
+2. Başlık: Techno Store
+   Kategori: website
+   Resim: /technostore.png
+   Açıklama: Modern e ticaret web sitesi demosu
+   Bağlantı: https://kaancancalkantechnostore.netlify.app/
+
+3. Başlık: Hades
+   Kategori: website
+   Resim: /hades-heroai.jpg
+   Açıklama: Hades adlı tatlı kedinin fotoğraf galerisi
+   Bağlantı: https://hadess.netlify.app/
+
+4. Başlık: Vietnam Kroniği
+   Kategori: website
+   Resim: /ho-chi-minh-portrait.png
+   Açıklama: Vietnam kültürünü anlatmak
+   Bağlantı: https://vietnamculture.netlify.app/
+
+5. Başlık: VietCulture Quiz
+   Kategori: webapp
+   Resim: /vietquiz.jpg
+   Açıklama: Vietnam kültürü hakkında quiz uygulaması.
+   Bağlantı: https://vietculturequizkaancancalkan.netlify.app/
+
+6. Başlık: VietTeach
+   Kategori: education
+   Resim: /canhoctiengviet.png
+   Açıklama: Kendi Vietnamca öğrenme yolculuğuma ve flashcard tabanlı Vietnamca kelime öğrenme platformu.
+   Bağlantı: https://kaancancalkanhoctiengviet.netlify.app/
+
+7. Başlık: CosmoCode
+   Kategori: education
+   Resim: /Cosmocode.png
+   Açıklama: Uzay yolculuğu temalı Python öğrenme platformu.
+   Bağlantı: https://cosmocodekaancancalkan.netlify.app/
+
+8. Başlık: LearnEnglishWithCat
+   Kategori: education
+   Resim: /learnenglishwithcat.png
+   Açıklama: Küçük çocuklar için kedi temalı İngilizce öğrenme platformu.
+   Bağlantı: https://learnenglishwithcat.netlify.app/
+
+9. Başlık: Fishy English
+   Kategori: education
+   Resim: /grammarfishing.png
+   Açıklama: Grammar Fishing, oyuncuların dilbilgisi soruları aracılığıyla balık tutarak İngilizce zamanları pratik yapabilecekleri etkileşimli, çift dilli (TR/VN) bir web oyunudur.
+   Bağlantı: https://englishwithfishing.netlify.app/
+
+10. Başlık: English Penalty
+    Kategori: education
+    Resim: /English Penalty.png
+    Açıklama: İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu.
+    Bağlantı: https://englishpenalty.netlify.app/
+
+11. Başlık: English Basketball
+    Kategori: education
+    Resim: /basketballenglish.png
+    Açıklama: İngilizce sorularını çözerek basketbol oynayarak İngilizce öğrenme platformu.
+    Bağlantı: https://basketballenglish.netlify.app/
+
+================================================================================
+DOSYA SONU
+================================================================================

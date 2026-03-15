@@ -1,0 +1,252 @@
+=== SITE INFORMATION - Kaan Can Calkan's Portfolio (TIẾNG VIỆT) ===
+
+================================================================================
+TIẾNG VIỆT (vi)
+================================================================================
+
+--- Tiêu đề ---
+Tiêu đề: Kaan Can Calkan
+Phụ đề: Chuyên viên tư vấn SAP HR & ABAP & Fiori
+Tải CV: Tải CV của tôi
+Gửi Email: Gửi email cho tôi
+
+--- Hero ---
+Tiêu đề Hero: Xin chào, tôi là Kaan Can Calkan
+Phụ đề Hero: Chuyên gia tư vấn ERP và Chuyên viên phân tích nghiệp vụ - SAP HR & Abap & Fiori
+Mô tả Hero: Tôi tốt nghiệp ngành Hệ thống thông tin quản lý (MIS) tại Đại học Sakarya. Bên cạnh 3 năm kinh nghiệm làm việc với SAP HCM, ABAP và Fiori, tôi đã nâng cao năng lực kỹ thuật chuyên sâu thông qua các dự án phát triển web tự do (freelance). Tôi có kinh nghiệm trong việc phát triển các chiến lược tập trung vào giải pháp cho quy trình dịch vụ khách hàng, đồng thời thực hiện các nghiên cứu về cơ sở dữ liệu tri thức và tài liệu hóa quy trình. Bằng cách kết hợp kiến thức kỹ thuật với các quy trình kinh doanh, tôi đặt mục tiêu đóng góp giá trị trong các lĩnh vực như Phân tích nghiệp vụ (Business Analyst), Tư vấn ERP hoặc Dịch vụ khách hàng.
+Tìm tôi trên: Tìm tôi trên
+
+--- Các phần ---
+Học vấn: Học vấn
+Kinh nghiệm làm việc: Kinh nghiệm làm việc
+Kinh nghiệm dự án: Kinh nghiệm dự án
+Kỹ năng: Kỹ năng
+Ngôn ngữ: Ngôn ngữ
+Sở thích: Sở thích
+Kỹ năng phần mềm: Kỹ năng phần mềm
+Kỹ năng lập trình: Kỹ năng lập trình
+
+--- Các mục học vấn ---
+1. Tiêu đề: Hệ thống Thông tin Quản lý
+   Cơ sở: Đại học Sakarya (2017-2020) Đã tốt nghiệp
+   Thời gian: 2017-2020
+   Mô tả: GPA của tôi là 3.18/4.
+
+2. Tiêu đề: Hệ thống Thông tin Quản lý
+   Cơ sở: Đại học Istanbul Medipol (2016-2017)
+   Thời gian: 2016-2017
+   Mô tả: Tôi đã chuyển trường đến Đại học Sakarya.
+
+3. Tiêu đề: Trường Trung học Khoa học Xã hội
+   Cơ sở: Trường Trung học Khoa học Xã hội Denizli Ibrahim Cinkaya (2011-2016) Tốt nghiệp tháng 6 năm 2016
+   Thời gian: 2011-2016
+   Mô tả: Tôi đã nhận được khóa đào tạo tiếng Anh bắt buộc trong 1 năm.
+
+--- Các mục kinh nghiệm làm việc ---
+1. Công ty: Bulutfon Telecommunications
+   Vị trí: Chuyên viên Quan hệ Khách hàng
+   Thời gian: Tháng 9 năm 2025 – Tháng 12 năm 2025
+   Mô tả: Tôi đã hỗ trợ khách hàng thông qua hệ thống xử lý yêu cầu và các cuộc gọi, giải quyết vấn đề một cách hiệu quả và chuyên nghiệp. Tôi cũng đã đóng góp vào việc xây dựng và duy trì cơ sở kiến thức cùng trang Câu hỏi thường gặp (FAQ), giúp khách hàng tự phục vụ tốt hơn và giảm tải cho bộ phận hỗ trợ. Tôi đã thực hiện các công việc backlink cần thiết trong lĩnh vực SEO, phân tích các công ty đối thủ và cải thiện hiệu suất SEO của công ty chúng tôi.
+
+2. Công ty: Smod Business Solutions
+   Vị trí: Chuyên viên tư vấn SAP Abap Fiori (Tháng 2 2024 - Tháng 7 2024)
+   Thời gian: Tháng 2 2024 - Tháng 7 2024
+   Mô tả: Tôi đã làm việc với tư cách là Chuyên viên tư vấn Sap Abap và Fiori tại SMOD Business Solutions (Nhà cung cấp dịch vụ Sap HR).
+
+3. Công ty: Athena Information Services
+   Vị trí: Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)
+   Thời gian: Tháng 11 2023 - Tháng 1 2024
+   Mô tả: Tôi đã làm việc với tư cách là Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Services. Tôi đã viết các truy vấn SQL và sử dụng các công cụ BI.
+
+4. Công ty: Mbis Consulting
+   Vị trí: Chuyên viên tư vấn Sap HCM (Tháng 1 2021 - Tháng 7 2023)
+   Thời gian: Tháng 1 2021 - Tháng 7 2023
+   Mô tả: Tôi đã làm việc trên mô-đun Sap HCM tại Dịch vụ Tư vấn Mbis.
+
+5. Công ty: Ömer Hazıroglu
+   Vị trí: Chuyên viên tư vấn Sap Fiori (Tháng 1 2023 - Tháng 7 2023)
+   Thời gian: Tháng 1 2023 - Tháng 7 2023
+   Mô tả: Tôi đã nhận được đào tạo tư vấn Fiori từ Ömer Hazıroğlu. Trong quá trình này, tôi đã thực hiện các thiết kế màn hình trong dự án Enerya. Đồng thời, tôi đã quan sát quá trình viết các dịch vụ Abap
+
+6. Công ty: Seyit Usta Trailer
+   Vị trí: Thực tập sinh (Tháng 2 - Tháng 4 2020)
+   Thời gian: Tháng 2 2020 - Tháng 4 2020
+   Mô tả: Tôi đã làm việc về dịch thuật trang web và tối ưu hóa giao diện di động trên WordPress. Tôi cũng đã thực hiện một số nghiên cứu thời gian bên trong nhà máy. Kỳ thực tập của tôi đã kết thúc sau khi Covid-19 xảy ra.
+
+7. Công ty: Nhà phát triển Web & Wordpress Tự do
+   Vị trí: (Tháng 4 2019 - Tháng 1 2021)
+   Thời gian: Tháng 4 2019 - Tháng 1 2021
+   Mô tả: Tôi bắt đầu sự nghiệp web với Wix và tiếp tục với wordpress, mà tôi đã học trong thời gian thực tập. Tôi cũng đã thiết kế các trang web tĩnh với HTML CSS và JS.
+
+--- Các mục kinh nghiệm dự án ---
+1. Công ty: Vé hỗ trợ
+   Vị trí: Chuyên viên tư vấn Sap HCM Abap & Fiori
+   Mô tả: Tôi đã thực hiện phát triển Front end và Backend tại Istac, Sedef Ship, THY. Tôi đã giải quyết các yêu cầu hỗ trợ từ khách hàng.
+
+2. Công ty: Lesaffre
+   Vị trí: Chuyên viên tư vấn Sap HCM Abap & Fiori
+   Mô tả: Tôi đã giải quyết các lỗi back-end và front-end, thực hiện một số cải tiến trong Front-end và Back-end. Tôi đã tổ chức các cuộc họp địa phương và ảo với khách hàng để phân tích quy trình và nhu cầu kinh doanh của họ và cung cấp đào tạo SAP HR cho họ.
+
+3. Công ty: Taha LC Waikiki
+   Vị trí: Chuyên viên tư vấn Sap HCM Fiori
+   Mô tả: Tôi đã triển khai phía Front End của Ứng dụng Kế hoạch Nghỉ phép Hàng năm. Đã sửa một số lỗi Backend. Đã thêm Trang Phê duyệt và Hoàn thành Cấu hình Phát triển Sap Fiori.
+
+4. Công ty: Air Ties
+   Vị trí: Chuyên viên tư vấn Kỹ thuật Oracle
+   Mô tả: Tôi đã làm việc về các truy vấn kỳ nghỉ trong dự án Air Ties.
+
+5. Công ty: Kahve Dünyası
+   Vị trí: Chuyên viên tư vấn Kỹ thuật Oracle
+   Mô tả: Với tư cách là người chịu trách nhiệm kỹ thuật cho Dự án Kahve Dünyası, tôi đã tham gia các cuộc họp trực tuyến và địa phương. Tôi đã giải quyết các vấn đề về vé và hỗ trợ khách hàng.
+
+6. Công ty: Enerya
+   Vị trí: Chuyên viên tư vấn Sap Fiori Cấp độ Junior
+   Mô tả: Tôi đã lập trình Bảng điều khiển Trang web. Tôi đã Thiết kế Màn hình Fiori. Tôi đã liên kết oData với các bảng với filterbar.
+
+7. Công ty: TOGG xe quốc gia Thổ Nhĩ Kỳ
+   Vị trí: Chuyên viên tư vấn Sap HCM Cấp độ Junior
+   Mô tả: Tôi đã kiểm tra các màn hình fiori của hệ thống quản lý du lịch trong dự án. Tôi đã giải quyết các lỗi mà tôi tìm thấy với các Nhà phát triển Abap và Fiori.
+
+8. Công ty: Zen Diamond
+   Vị trí: Chuyên viên tư vấn Sap HCM Cấp độ Junior
+   Mô tả: Tôi đã chuẩn bị các mẫu LSMW cho khách hàng sử dụng. Đã cung cấp hỗ trợ di chuyển hệ thống sau khi đi vào hoạt động cho khách hàng. Tôi đã viết Specs cho các phát triển bổ sung. Đã kiểm tra các cải tiến Abap và sửa các lỗi cùng với cố vấn kỹ thuật.
+
+9. Công ty: Ozler Plastic
+   Vị trí: Chuyên viên tư vấn Sap HCM Cấp độ Junior
+   Mô tả: Tôi đã thực hiện các bài kiểm tra bảng lương. Tôi đã thực hiện việc điều chỉnh carsaf icmal. Tôi đã phục vụ khách hàng về việc chuyển giao dữ liệu chính. Tôi đã kiểm tra các Chương trình Abap và sửa lỗi với các Nhà phát triển Abap. Tôi đã đào tạo Sap HCM cho khách hàng với các cuộc họp địa phương. Tôi đã thực hiện tùy chỉnh trên Sap HCM
+
+10. Công ty: ALY Food
+    Vị trí: Chuyên viên tư vấn Sap HCM Cấp độ Junior
+    Mô tả: Tôi đã thực hiện các bài kiểm tra bảng lương. Tôi đã thực hiện việc điều chỉnh phong bì bảng lương. Tôi đã làm việc về các điều chỉnh lương. Tôi đã hỗ trợ khách hàng trong việc chuyển giao dữ liệu chính.
+
+11. Công ty: Camsan Entegre
+    Vị trí: Chuyên viên tư vấn Sap HCM
+    Mô tả: Tôi đã thực hiện các bài kiểm tra bảng lương. Tôi đã đào tạo Sap HCM cho khách hàng với các cuộc họp địa phương. Tôi đã thực hiện tùy chỉnh.
+
+12. Công ty: Trung tâm Tài chính Istanbul
+    Vị trí: Chuyên viên tư vấn Sap HCM
+    Mô tả: Tôi đã thực hiện tùy chỉnh trên Mô-đun Quản lý Du lịch. Tôi đã kiểm tra Màn hình Fiori
+
+--- Kỹ năng ---
+Kỹ năng phần mềm:
+- SAP HCM: 75%
+- WordPress: 75%
+- Microsoft Office: 70%
+- Cấu hình Máy chủ: 60%
+- Sản phẩm Adobe: 50%
+- Microsoft Sql Server: 50%
+- Git Bash và GUI: 50%
+- Jira: 50%
+
+Kỹ năng lập trình:
+- Html / XML: 75%
+- CSS: 75%
+- JavaScript: 65%
+- ABAP: 55%
+- Fiori UI5: 55%
+- Python cho Khoa học Dữ liệu: 40%
+
+--- Ngôn ngữ ---
+1. Tên: Tiếng Thổ Nhĩ Kỳ 
+   Cấp độ: Bản ngữ
+   Phần trăm: 100%
+
+2. Tên: Tiếng Anh
+   Cấp độ: Thành thạo
+   Phần trăm: 85%
+   Chứng chỉ: Chứng chỉ Giảng dạy Tiếng Anh như Ngoại ngữ (TEFL) Cấp độ 5 (Premier TEFL)
+   URL: /CanCalkan%20TEFL.pdf
+
+3. Tên: Tiếng Việt
+   Cấp độ: Mới bắt đầu
+   Phần trăm: 10%
+
+--- Sở thích ---
+1. Tiêu đề: Phim ảnh
+   Mô tả: Là con của một người cha yêu điện ảnh, tôi đã bị mê hoặc bởi điện ảnh từ khi còn nhỏ. Bạn có thể xem những bộ phim tôi đã xem từ liên kết bên dưới.
+   Liên kết: https://trakt.tv/users/kaancalkan/history
+
+2. Tiêu đề: Cử tạ
+   Mô tả: Sau 24 năm sống khép mình, tôi đã đến phòng gym và bắt đầu tập thể hình. Tôi đã biến nó thành lối sống lành mạnh của mình. Bạn có thể xem các số liệu thống kê cử tạ của tôi từ liên kết bên dưới.
+   Liên kết: https://kaancancalkan.github.io/My-Weights/
+
+3. Tiêu đề: Sách
+   Mô tả: Đọc sách đã trở thành một phần của cuộc sống tôi, đặc biệt là sau khi tôi bắt đầu học Trường Trung học Khoa học Xã hội. Tôi thích đọc sách về xã hội học, triết học và lịch sử. Thể loại yêu thích của tôi là dystopia. Nếu bạn muốn xem những cuốn sách tôi đã đọc, bạn có thể kiểm tra liên kết bên dưới.
+   Liên kết: https://1000kitap.com/Never119
+
+4. Tiêu đề: Thiết bị công nghệ
+   Mô tả: Tôi đã có sự quan tâm lớn đến phần mềm và phần cứng của các thiết bị công nghệ kể từ lần đầu tiên tôi được tiếp xúc với máy tính.
+
+================================================================================
+CÁC DỰ ÁN GALERIE PORTFOLIO (Tiếng Việt)
+================================================================================
+
+1. Tiêu đề: Bagci Perde
+   Danh mục: website
+   Hình ảnh: /bagciperde.jpg
+   Mô tả: Website cửa hàng rèm hiện đại cho Bagcı Perde.
+   Liên kết: https://bagciperde.netlify.app/
+
+2. Tiêu đề: Techno Store
+   Danh mục: website
+   Hình ảnh: /technostore.png
+   Mô tả:  Website cửa hàng bán hàng hình thực mẫu.
+   Liên kết: https://kaancancalkantechnostore.netlify.app/
+
+3. Tiêu đề: Hades
+   Danh mục: website
+   Hình ảnh: /hades-heroai.jpg
+   Mô tả: Trang giới thiệu cho dự án sáng tạo Hades.
+   Liên kết: https://hadess.netlify.app/
+
+4. Tiêu đề: Biên niên sử Việt Nam
+   Danh mục: website
+   Hình ảnh: /ho-chi-minh-portrait.png
+   Mô tả: Trang giới thiệu cho dự án sáng tạo Hades.
+   Liên kết: https://vietnamculture.netlify.app/
+
+5. Tiêu đề: VietCulture Quiz
+   Danh mục: webapp
+   Hình ảnh: /vietquiz.jpg
+   Mô tả: Ứng dụng quiz về văn hóa Việt Nam.
+   Liên kết: https://vietculturequizkaancancalkan.netlify.app/
+
+6. Tiêu đề: VietTeach
+   Danh mục: education
+   Hình ảnh: /canhoctiengviet.png
+   Mô tả: Nền tảng học từ tiếng Việt dựa trên thẻ flash và hành trình học tiếng Việt của riêng tôi.
+   Liên kết: https://kaancancalkanhoctiengviet.netlify.app/
+
+7. Tiêu đề: CosmoCode
+   Danh mục: education
+   Hình ảnh: /Cosmocode.png
+   Mô tả: Nền tảng học Python theo chủ đề du hành vũ trụ.
+   Liên kết: https://cosmocodekaancancalkan.netlify.app/
+
+8. Tiêu đề: LearnEnglishWithCat
+   Danh mục: education
+   Hình ảnh: /learnenglishwithcat.png
+   Mô tả: Nền tảng học tiếng Anh theo chủ đề mèo dành cho trẻ nhỏ.
+   Liên kết: https://learnenglishwithcat.netlify.app/
+
+9. Tiêu đề: Fishy English
+   Danh mục: education
+   Hình ảnh: /grammarfishing.png
+   Mô tả: Grammar Fishing là một trò chơi web tương tác, song ngữ (TR/VN) nơi người chơi luyện tập các thì tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.
+   Liên kết: https://englishwithfishing.netlify.app/
+
+10. Tiêu đề: English Penalty
+    Danh mục: education
+    Hình ảnh: /English Penalty.png
+    Mô tả: Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.
+    Liên kết: https://englishpenalty.netlify.app/
+
+11. Tiêu đề: English Basketball
+    Danh mục: education
+    Hình ảnh: /basketballenglish.png
+    Mô tả: Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.
+    Liên kết: https://basketballenglish.netlify.app/
+
+================================================================================
+KẾT THÚC TỆP
+================================================================================
