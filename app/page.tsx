@@ -1033,6 +1033,21 @@ const portfolioGallery = [
       vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://basketballenglish.netlify.app/",
   },
+  {
+    title: {
+      en: "AI CV",
+      tr: "AI CV",
+      vi: "AI CV",
+    },
+    category: "webapp",
+    image: "/aicv.jpg",
+    description: {
+      en: "A platform that allows creating resumes easily with AI and manual editing capabilities.",
+      tr: "Yapay zeka ile kolayca özgeçmiş oluşturmaya sağlayan manuel edit imkanı sunan bir platform.",
+      vi: "Một nền tảng cho phép tạo CV dễ dàng bằng AI và khả năng chỉnh sửa thủ công.",
+    },
+    link: "https://aicvkaancancalkan.netlify.app/",
+  },
 
 
   
