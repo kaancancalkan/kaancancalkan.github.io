@@ -91,10 +91,10 @@ interface Translation {
     name: string;
     level: string;
     percentage: number;
-    certificate?: {
+    certificates?: {
       name: string;
       url: string;
-    };
+    }[];
   }[];
 
   // Interests
@@ -291,10 +291,16 @@ const translations: Record<Language, Translation> = {
         name: "English", 
         level: "Fluent", 
         percentage: 85,
-        certificate: {
-          name: "Level 5 Diploma in Teaching English as a Foreign Language (TEFL) (Premier TEFL)",
-          url: "/CanCalkan%20TEFL.pdf"
-        }
+        certificates: [
+          {
+            name: "Level 5 Diploma in Teaching English as a Foreign Language (TEFL) (Premier TEFL)",
+            url: "/CanCalkan%20TEFL.pdf"
+          },
+          {
+            name: "EFSET Certificate",
+            url: "https://cert.efset.org/en/FtAZ7i"
+          }
+        ]
       },
       { name: "Vietnamese", level: "Starter", percentage: 10 },
     ],
@@ -511,10 +517,16 @@ const translations: Record<Language, Translation> = {
         name: "İngilizce", 
         level: "Akıcı", 
         percentage: 85,
-        certificate: {
-          name: "Yabancı Dil Olarak İngilizce Öğretimi (TEFL) Seviye 5 Diploması (Premier TEFL)",
-          url: "/CanCalkan%20TEFL.pdf"
-        }
+        certificates: [
+          {
+            name: "Yabancı Dil Olarak İngilizce Öğretimi (TEFL) Seviye 5 Diploması (Premier TEFL)",
+            url: "/CanCalkan%20TEFL.pdf"
+          },
+          {
+            name: "EFSET Sertifikası",
+            url: "https://cert.efset.org/en/FtAZ7i"
+          }
+        ]
       },
       { name: "Vietnamca", level: "Başlangıç", percentage: 10 },
     ],
@@ -736,10 +748,16 @@ const translations: Record<Language, Translation> = {
         name: "Tiếng Anh", 
         level: "Thành thạo", 
         percentage: 85,
-        certificate: {
-          name: "Chứng chỉ Giảng dạy Tiếng Anh như Ngoại ngữ (TEFL) Cấp độ 5 (Premier TEFL)",
-          url: "/CanCalkan%20TEFL.pdf"
-        }
+        certificates: [
+          {
+            name: "Chứng chỉ Giảng dạy Tiếng Anh như Ngoại ngữ (TEFL) Cấp độ 5 (Premier TEFL)",
+            url: "/CanCalkan%20TEFL.pdf"
+          },
+          {
+            name: "Chứng chỉ EFSET",
+            url: "https://cert.efset.org/en/FtAZ7i"
+          }
+        ]
       },
       { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 },
     ],
@@ -1489,17 +1507,20 @@ export default function Portfolio() {
                     </div>
                     <SkillBar name="" percentage={lang.percentage} />
                   </div>
-                  {lang.certificate && (
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <a 
-                        href={lang.certificate.url} 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        className="text-sm font-medium text-foreground hover:opacity-80 hover:underline transition-all flex items-start gap-2"
-                      >
-                        <FileText className="h-4 w-4 shrink-0 mt-0.5" />
-                        <span>{lang.certificate.name}</span>
-                      </a>
+                  {lang.certificates && lang.certificates.length > 0 && (
+                    <div className="mt-4 pt-4 border-t border-border space-y-2">
+                      {lang.certificates.map((cert, certIndex) => (
+                        <a 
+                          key={certIndex}
+                          href={cert.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="text-sm font-medium text-foreground hover:opacity-80 hover:underline transition-all flex items-start gap-2"
+                        >
+                          <FileText className="h-4 w-4 shrink-0 mt-0.5" />
+                          <span>{cert.name}</span>
+                        </a>
+                      ))}
                     </div>
                   )}
                 </CardContent>
