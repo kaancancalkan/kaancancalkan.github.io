@@ -858,6 +858,21 @@ const SkillBar = ({
 const portfolioGallery = [
   {
     title: {
+      en: "Rock Paper Scissors",
+      tr: "Taş Kağıt Makas",
+      vi: "Đá Giấy Kéo",
+    },
+    category: "webapp",
+    image: "/rockpaperscissors.png",
+    description: {
+      en: "Interactive Rock Paper Scissors game where you play against the computer with score tracking.",
+      tr: "Bilgisayara karşı oynayabileceğiniz, puan takibi olan etkileşimli Taş Kağıt Makas oyunu.",
+      vi: "Trò chơi Đá Giấy Kéo tương tác nơi bạn chơi với máy tính có theo dõi điểm số.",
+    },
+    link: "https://kaancancalkanrockpaperscissors.netlify.app/",
+  },
+  {
+    title: {
       en: "Currency Converter",
       tr: "Döviz Dönüştürücü",
       vi: "Trình Chuyển Đổi Tiền Tệ",
