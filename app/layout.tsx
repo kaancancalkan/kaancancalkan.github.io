@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     "ERP Development"
   ],
   authors: [{ name: "Kaan Can Calkan" }],
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
     title: "Kaan Can Calkan - ERP Consultant",
     description:

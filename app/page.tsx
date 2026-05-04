@@ -302,7 +302,17 @@ const translations: Record<Language, Translation> = {
           }
         ]
       },
-      { name: "Vietnamese", level: "Starter", percentage: 10 },
+      { 
+        name: "Vietnamese", 
+        level: "Starter", 
+        percentage: 10,
+        certificates: [
+          {
+            name: "Duolingo Score 30",
+            url: "https://en.duolingo.com/profile/CanHocTiengViet"
+          }
+        ]
+      },
     ],
     interestsList: [
       {
@@ -528,7 +538,17 @@ const translations: Record<Language, Translation> = {
           }
         ]
       },
-      { name: "Vietnamca", level: "Başlangıç", percentage: 10 },
+      { 
+        name: "Vietnamca", 
+        level: "Başlangıç", 
+        percentage: 10,
+        certificates: [
+          {
+            name: "Duolingo Puanı 30",
+            url: "https://en.duolingo.com/profile/CanHocTiengViet"
+          }
+        ]
+      },
     ],
     interestsList: [
       {
@@ -759,7 +779,17 @@ const translations: Record<Language, Translation> = {
           }
         ]
       },
-      { name: "Tiếng Việt", level: "Mới bắt đầu", percentage: 10 },
+      { 
+        name: "Tiếng Việt", 
+        level: "Mới bắt đầu", 
+        percentage: 10,
+        certificates: [
+          {
+            name: "Duolingo Điểm 30",
+            url: "https://en.duolingo.com/profile/CanHocTiengViet"
+          }
+        ]
+      },
     ],
     interestsList: [
       {
@@ -826,6 +856,21 @@ const SkillBar = ({
 
 // Portfolio Gallery Data (multi-language)
 const portfolioGallery = [
+  {
+    title: {
+      en: "Currency Converter",
+      tr: "Döviz Dönüştürücü",
+      vi: "Trình Chuyển Đổi Tiền Tệ",
+    },
+    category: "webapp",
+    image: "/currencyconventer.png",
+    description: {
+      en: "Live currency converter with real-time exchange rates for multiple currencies.",
+      tr: "Birden fazla para birimi için gerçek zamanlı döviz kurları ile canlı döviz dönüştürücü.",
+      vi: "Trình chuyển đổi tiền tệ trực tiếp với tỷ giá hối đoái thực tế cho nhiều loại tiền tệ.",
+    },
+    link: "https://currencyconventer.netlify.app/",
+  },
   {
     title: {
       en: "Bagci Perde",
