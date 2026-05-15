@@ -55,7 +55,6 @@ interface Translation {
     institution: string;
     period: string;
     description: string;
-    diplomaUrl?: string;
   }[];
 
   // Work experience entries
@@ -128,7 +127,6 @@ const translations: Record<Language, Translation> = {
         institution: "Sakarya University (2017-2020) Graduated",
         period: "2017-2020",
         description: "My GPA is 3.18/4.",
-        diplomaUrl: "/lisans%20diplomas%C4%B1%20.pdf",
       },
       {
         title: "Management Information Systems",
@@ -367,7 +365,6 @@ const translations: Record<Language, Translation> = {
         institution: "Sakarya Üniversitesi (2017-2020) Mezun Oldum",
         period: "2017-2020",
         description: "Ortalamam 3.18/4.",
-        diplomaUrl: "/lisans%20diplomas%C4%B1%20.pdf",
       },
       {
         title: "Yönetim Bilişim Sistemleri",
@@ -604,7 +601,6 @@ const translations: Record<Language, Translation> = {
         institution: "Đại học Sakarya (2017-2020) Đã tốt nghiệp",
         period: "2017-2020",
         description: "GPA của tôi là 3.18/4.",
-        diplomaUrl: "/lisans%20diplomas%C4%B1%20.pdf",
       },
       {
         title: "Hệ thống Thông tin Quản lý",
@@ -1462,17 +1458,7 @@ export default function Portfolio() {
                     {edu.institution}
                   </p>
                   <p className="text-sm">{edu.description}</p>
-                  {edu.diplomaUrl && (
-                    <a
-                      href={edu.diplomaUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 mt-3 text-sm font-medium text-primary hover:underline"
-                    >
-                      <FileText className="w-4 h-4" />
-                      {t === translations.tr ? "Diplomayı Görüntüle" : t === translations.vi ? "Xem Bằng Cấp" : "View Diploma"}
-                    </a>
-                  )}
+
                 </CardContent>
               </Card>
             ))}
