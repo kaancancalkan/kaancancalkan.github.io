@@ -43,37 +43,42 @@ Code Skills: Code Skills
    Description: I completed one year of compulsory English preparatory training.
 
 --- Work Experience Entries ---
-1. Company: Bulutfon Telecommunications
+1. Company: Center of International English (CIE)
+   Position: English Teacher
+   Period: July 2026 - Now
+   Description: Teaching English with Interactive AI-Powered Annotations at Lam Dong Province. Delivering engaging, tech-enhanced English lessons utilizing cutting-edge AI annotation tools to provide real-time, personalized feedback on student writing, pronunciation, and grammar. Implementing innovative digital learning strategies that seamlessly blend traditional ESL methodologies with advanced AI technology to maximize student engagement, comprehension, and learning outcomes. Fostering interactive classroom environments that leverage EdTech to create transformative educational experiences.
+
+2. Company: Bulutfon Telecommunications
    Position: Customer Relationship Specialist
    Period: Sep 2025 - Dec 2025
    Description: I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand. I performed necessary backlink work in the SEO field, analyzed competitor companies, and improved our company's SEO performance.
 
-2. Company: Smod Business Solutions
+3. Company: Smod Business Solutions
    Position: SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)
    Period: Feb 2024 - July 2024
    Description: I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider).
 
-3. Company: Athena Information Services
+4. Company: Athena Information Services
    Position: Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)
    Period: Nov 2023 - Jan 2024
    Description: I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools.
 
-4. Company: Mbis Consulting
+5. Company: Mbis Consulting
    Position: SAP HCM Consultant (Jan 2021 - July 2023)
    Period: Jan 2021 - July 2023
    Description: I worked on the SAP HCM module at MBIS Consultancy Services.
 
-5. Company: Ömer Hazıroglu
+6. Company: Ömer Hazıroglu
    Position: SAP Fiori Consultant (Jan 2023 - July 2023)
    Period: Jan 2023 - July 2023
    Description: I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services.
 
-6. Company: Seyit Usta Trailer
+7. Company: Seyit Usta Trailer
    Position: Intern (Feb 2020 - Apr 2020)
    Period: Feb 2020 - Apr 2020
    Description: I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19.
 
-7. Company: Freelance Web & Wordpress Developer
+8. Company: Freelance Web & Wordpress Developer
    Position: (Apr 2019 - Jan 2021)
    Period: Apr 2019 - Jan 2021
    Description: I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS.

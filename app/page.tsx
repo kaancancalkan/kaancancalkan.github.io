@@ -145,6 +145,13 @@ const translations: Record<Language, Translation> = {
     ],
     workEntries: [
       {
+        company: "Center of International English (CIE)",
+        position: "English Teacher",
+        period: "July 2026 - Now",
+        description:
+          "Teaching English with Interactive AI-Powered Annotations at Lam Dong Province. Delivering engaging, tech-enhanced English lessons utilizing cutting-edge AI annotation tools to provide real-time, personalized feedback on student writing, pronunciation, and grammar. Implementing innovative digital learning strategies that seamlessly blend traditional ESL methodologies with advanced AI technology to maximize student engagement, comprehension, and learning outcomes. Fostering interactive classroom environments that leverage EdTech to create transformative educational experiences.",
+      },
+      {
         company: "Bulutfon Telecommunications",
         position: "Customer Relationship Specialist",
         period: "Sep 2025 - Dec 2025",
@@ -153,42 +160,42 @@ const translations: Record<Language, Translation> = {
       },
       {
         company: "Smod Business Solutions",
-        position: "SAP ABAP & Fiori Consultant (Feb 2024 - July 2024)",
+        position: "SAP ABAP & Fiori Consultant",
         period: "Feb 2024 - July 2024",
         description:
           "I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider).",
       },
       {
         company: "Athena Information Services",
-        position: "Oracle HR Cloud Technical Consultant (Nov 2023 - Jan 2024)",
+        position: "Oracle HR Cloud Technical Consultant",
         period: "Nov 2023 - Jan 2024",
         description:
           "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools.",
       },
       {
         company: "Mbis Consulting",
-        position: "SAP HCM Consultant (Jan 2021 - July 2023)",
+        position: "SAP HCM Consultant",
         period: "Jan 2021 - July 2023",
         description:
           "I worked on the SAP HCM module at MBIS Consultancy Services.",
       },
       {
         company: "Ömer Hazıroglu",
-        position: "SAP Fiori Consultant (Jan 2023 - July 2023)",
+        position: "SAP Fiori Consultant",
         period: "Jan 2023 - July 2023",
         description:
           "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services.",
       },
       {
         company: "Seyit Usta Trailer",
-        position: "Intern (Feb 2020 - Apr 2020)",
+        position: "Intern",
         period: "Feb 2020 - Apr 2020",
         description:
           "I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19.",
       },
       {
         company: "Freelance Web & Wordpress Developer",
-        position: "(Apr 2019 - Jan 2021)",
+        position: "Web Developer",
         period: "Apr 2019 - Jan 2021",
         description:
           "I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS.",
@@ -382,6 +389,13 @@ const translations: Record<Language, Translation> = {
     ],
     workEntries: [
       {
+        company: "Center of International English (CIE)",
+        position: "İngilizce Öğretmeni",
+        period: "Temmuz 2026 - Devam Ediyor",
+        description:
+          "Lam Dong Eyaletinde İngilizce dilini Etkileşimli AI-Destekli Açıklamalarla öğretiyorum. Son teknoloji AI açıklama araçlarını kullanarak öğrenci yazısı, telaffuz ve gramer konularında gerçek zamanlı ve kişiselleştirilmiş geri bildirim sağlayan, ilgi çekici ve teknoloji-destekli İngilizce dersleri sunuyorum. Geleneksel ESL metodolojilerini ileri düzey AI teknolojisiyle sorunsuzca bir araya getiren ve öğrenci katılımını, anlayışını ve öğrenme çıktılarını maksimize eden yenilikçi dijital öğrenme stratejileri uygulamaktayım. Öğrenci deneyimini dönüştürmek için EdTech'ten yararlanan etkileşimli sınıf ortamları oluşturmaktayım.",
+      },
+      {
         company: "Bulutfon Telekomünikasyon",
         position: "Müşteri İlişkileri Uzmanı",
         period: "Eylül 2025 - Aralık 2025",
@@ -390,41 +404,41 @@ const translations: Record<Language, Translation> = {
       },
       {
         company: "Smod İş Çözümleri",
-        position: "SAP Abap Fiori Danışmanı (Şubat 2024 - Temmuz 2024)",
+        position: "SAP Abap Fiori Danışmanı",
         period: "Şubat 2024 - Temmuz 2024",
         description:
           "SMOD Busıness Solutions (Sap HR Servis Sağlayıcısı ) bünyesinde Sap Abap ve Fiori Danışmanı olarak çalıştım.",
       },
       {
         company: "Athena Information Services",
-        position: "Oracle HR Cloud Teknik Danışmanı (Kasım 2023 - Ocak 2024)",
+        position: "Oracle HR Cloud Teknik Danışmanı",
         period: "Kasım 2023 - Ocak 2024",
         description:
           "Athena Bilişim Çözümlerinde Oracle HR Cloud Teknik Danışmanı olarak çalıştım. SQL sorguları ve iş zekası araçları ile raporlar hazırladım.",
       },
       {
         company: "Mbis Danışmanlık",
-        position: "Sap HCM Danışmanı (Ocak 2021- Temmuz 2023)",
+        position: "Sap HCM Danışmanı",
         period: "Ocak 2021 - Temmuz 2023",
         description: "Mbis Danışmanlıkta Sap HCM modülünde çalıştım.",
       },
       {
         company: "Ömer Hazıroğlu",
-        position: "Sap Fiori Danışmanı (Ocak 2023- Temmuz 2023)",
+        position: "Sap Fiori Danışmanı",
         period: "Ocak 2023 - Temmuz 2023",
         description:
           "Ömer Hazıroğlu'dan Fiori danışmanlık eğitimi aldım. Bu süreçte Enerya projesinde ekran tasarımlarını gerçekleştirdim. Aynı zamanda Abap servislerinin yazım sürecini de gözlemledim",
       },
       {
         company: "Seyit Usta Treyler",
-        position: "Stajyer (Şubat-Nisan 2020)",
+        position: "Stajyer",
         period: "Şubat 2020 - Nisan 2020",
         description:
           "WordPress'te web sitesi çevirileri, mobil arayüz optimizasyonları yaptım. Stajım Covid-19 salgını sebebiyle erken bitti.",
       },
       {
         company: "Freelance Web & Wordpress Geliştirici",
-        position: "(Nisan 2019 -Ocak 2021)",
+        position: "Web Geliştirici",
         period: "Nisan 2019 - Ocak 2021",
         description:
           "Web kariyerime Wix ile başladım ve stajımda öğrendiğim wordpress ile devam ettim. HTML CSS ve JS ile statik web sayfaları da tasarladım.",
@@ -619,6 +633,13 @@ const translations: Record<Language, Translation> = {
     ],
     workEntries: [
       {
+        company: "Center of International English (CIE)",
+        position: "Giáo viên Tiếng Anh",
+        period: "Tháng 7 năm 2026 - Hiện tại",
+        description:
+          "Giảng dạy tiếng Anh với các Chú thích được Hỗ trợ bởi Trí tuệ Nhân tạo Tương tác tại Tỉnh Lâm Đông. Cung cấp các bài học tiếng Anh hấp dẫn, được hỗ trợ bởi công nghệ, sử dụng các công cụ chú thích AI tiên tiến để cung cấp phản hồi theo thời gian thực, được cá nhân hóa về viết lách, phát âm và ngữ pháp của học sinh. Triển khai các chiến lược học tập kỹ thuật số sáng tạo kết hợp liền mạch các phương pháp giáo dục tiếng Anh truyền thống với công nghệ AI tiên tiến để tối đa hóa sự tham gia, hiểu biết và kết quả học tập của học sinh. Tạo dựng các môi trường lớp học tương tác tận dụng EdTech để tạo ra các trải nghiệm giáo dục biến đổi.",
+      },
+      {
         company: "Bulutfon Telecommunications",
         position: "Chuyên viên Quan hệ Khách hàng",
         period: "Tháng 9 năm 2025 – Tháng 12 năm 2025",
@@ -628,7 +649,7 @@ const translations: Record<Language, Translation> = {
       {
         company: "Smod Business Solutions",
         position:
-          "Chuyên viên tư vấn SAP Abap Fiori (Tháng 2 2024 - Tháng 7 2024)",
+          "Chuyên viên tư vấn SAP Abap Fiori",
         period: "Tháng 2 2024 - Tháng 7 2024",
         description:
           "Tôi đã làm việc với tư cách là Chuyên viên tư vấn Sap Abap và Fiori tại SMOD Business Solutions (Nhà cung cấp dịch vụ Sap HR).",
@@ -636,35 +657,35 @@ const translations: Record<Language, Translation> = {
       {
         company: "Athena Information Services",
         position:
-          "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)",
+          "Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud",
         period: "Tháng 11 2023 - Tháng 1 2024",
         description:
           "Tôi đã làm việc với tư cách là Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Services. Tôi đã viết các truy vấn SQL và sử dụng các công cụ BI.",
       },
       {
         company: "Mbis Consulting",
-        position: "Chuyên viên tư vấn Sap HCM (Tháng 1 2021 - Tháng 7 2023)",
+        position: "Chuyên viên tư vấn Sap HCM",
         period: "Tháng 1 2021 - Tháng 7 2023",
         description:
           "Tôi đã làm việc trên mô-đun Sap HCM tại Dịch vụ Tư vấn Mbis.",
       },
       {
         company: "Ömer Hazıroglu",
-        position: "Chuyên viên tư vấn Sap Fiori (Tháng 1 2023 - Tháng 7 2023)",
+        position: "Chuyên viên tư vấn Sap Fiori",
         period: "Tháng 1 2023 - Tháng 7 2023",
         description:
           "Tôi đã nhận được đào tạo tư vấn Fiori từ Ömer Hazıroğlu. Trong quá trình này, tôi đã thực hiện các thiết kế màn hình trong dự án Enerya. Đồng thời, tôi đã quan sát quá trình viết các dịch vụ Abap",
       },
       {
         company: "Seyit Usta Trailer",
-        position: "Thực tập sinh (Tháng 2 - Tháng 4 2020)",
+        position: "Thực tập sinh",
         period: "Tháng 2 2020 - Tháng 4 2020",
         description:
           "Tôi đã làm việc về dịch thuật trang web và tối ưu hóa giao diện di động trên WordPress. Tôi cũng đã thực hiện một số nghiên cứu thời gian bên trong nhà máy. Kỳ thực tập của tôi đã kết thúc sau khi Covid-19 xảy ra.",
       },
       {
         company: "Nhà phát triển Web & Wordpress Tự do",
-        position: "(Tháng 4 2019 - Tháng 1 2021)",
+        position: "Web Developer",
         period: "Tháng 4 2019 - Tháng 1 2021",
         description:
           "Tôi bắt đầu sự nghiệp web với Wix và tiếp tục với wordpress, mà tôi đã học trong thời gian thực tập. Tôi cũng đã thiết kế các trang web tĩnh với HTML CSS và JS.",

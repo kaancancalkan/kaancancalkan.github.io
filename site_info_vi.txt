@@ -43,37 +43,42 @@ Kỹ năng lập trình: Kỹ năng lập trình
    Mô tả: Tôi đã nhận được khóa đào tạo tiếng Anh bắt buộc trong 1 năm.
 
 --- Các mục kinh nghiệm làm việc ---
-1. Công ty: Bulutfon Telecommunications
+1. Công ty: Center of International English (CIE)
+   Vị trí: Giáo viên Tiếng Anh
+   Thời gian: Tháng 7 năm 2026 - Hiện tại
+   Mô tả: Giảng dạy tiếng Anh với các Chú thích được Hỗ trợ bởi Trí tuệ Nhân tạo Tương tác tại Tỉnh Lâm Đông. Cung cấp các bài học tiếng Anh hấp dẫn, được hỗ trợ bởi công nghệ, sử dụng các công cụ chú thích AI tiên tiến để cung cấp phản hồi theo thời gian thực, được cá nhân hóa về viết lách, phát âm và ngữ pháp của học sinh. Triển khai các chiến lược học tập kỹ thuật số sáng tạo kết hợp liền mạch các phương pháp giáo dục tiếng Anh truyền thống với công nghệ AI tiên tiến để tối đa hóa sự tham gia, hiểu biết và kết quả học tập của học sinh. Tạo dựng các môi trường lớp học tương tác tận dụng EdTech để tạo ra các trải nghiệm giáo dục biến đổi.
+
+2. Công ty: Bulutfon Telecommunications
    Vị trí: Chuyên viên Quan hệ Khách hàng
    Thời gian: Tháng 9 năm 2025 – Tháng 12 năm 2025
    Mô tả: Tôi đã hỗ trợ khách hàng thông qua hệ thống xử lý yêu cầu và các cuộc gọi, giải quyết vấn đề một cách hiệu quả và chuyên nghiệp. Tôi cũng đã đóng góp vào việc xây dựng và duy trì cơ sở kiến thức cùng trang Câu hỏi thường gặp (FAQ), giúp khách hàng tự phục vụ tốt hơn và giảm tải cho bộ phận hỗ trợ. Tôi đã thực hiện các công việc backlink cần thiết trong lĩnh vực SEO, phân tích các công ty đối thủ và cải thiện hiệu suất SEO của công ty chúng tôi.
 
-2. Công ty: Smod Business Solutions
+3. Công ty: Smod Business Solutions
    Vị trí: Chuyên viên tư vấn SAP Abap Fiori (Tháng 2 2024 - Tháng 7 2024)
    Thời gian: Tháng 2 2024 - Tháng 7 2024
    Mô tả: Tôi đã làm việc với tư cách là Chuyên viên tư vấn Sap Abap và Fiori tại SMOD Business Solutions (Nhà cung cấp dịch vụ Sap HR).
 
-3. Công ty: Athena Information Services
+4. Công ty: Athena Information Services
    Vị trí: Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud (Tháng 11 2023 - Tháng 1 2024)
    Thời gian: Tháng 11 2023 - Tháng 1 2024
    Mô tả: Tôi đã làm việc với tư cách là Chuyên viên tư vấn Kỹ thuật Oracle HR Cloud tại Athena Information Services. Tôi đã viết các truy vấn SQL và sử dụng các công cụ BI.
 
-4. Công ty: Mbis Consulting
+5. Công ty: Mbis Consulting
    Vị trí: Chuyên viên tư vấn Sap HCM (Tháng 1 2021 - Tháng 7 2023)
    Thời gian: Tháng 1 2021 - Tháng 7 2023
    Mô tả: Tôi đã làm việc trên mô-đun Sap HCM tại Dịch vụ Tư vấn Mbis.
 
-5. Công ty: Ömer Hazıroglu
+6. Công ty: Ömer Hazıroglu
    Vị trí: Chuyên viên tư vấn Sap Fiori (Tháng 1 2023 - Tháng 7 2023)
    Thời gian: Tháng 1 2023 - Tháng 7 2023
    Mô tả: Tôi đã nhận được đào tạo tư vấn Fiori từ Ömer Hazıroğlu. Trong quá trình này, tôi đã thực hiện các thiết kế màn hình trong dự án Enerya. Đồng thời, tôi đã quan sát quá trình viết các dịch vụ Abap
 
-6. Công ty: Seyit Usta Trailer
+7. Công ty: Seyit Usta Trailer
    Vị trí: Thực tập sinh (Tháng 2 - Tháng 4 2020)
    Thời gian: Tháng 2 2020 - Tháng 4 2020
    Mô tả: Tôi đã làm việc về dịch thuật trang web và tối ưu hóa giao diện di động trên WordPress. Tôi cũng đã thực hiện một số nghiên cứu thời gian bên trong nhà máy. Kỳ thực tập của tôi đã kết thúc sau khi Covid-19 xảy ra.
 
-7. Công ty: Nhà phát triển Web & Wordpress Tự do
+8. Công ty: Nhà phát triển Web & Wordpress Tự do
    Vị trí: (Tháng 4 2019 - Tháng 1 2021)
    Thời gian: Tháng 4 2019 - Tháng 1 2021
    Mô tả: Tôi bắt đầu sự nghiệp web với Wix và tiếp tục với wordpress, mà tôi đã học trong thời gian thực tập. Tôi cũng đã thiết kế các trang web tĩnh với HTML CSS và JS.

@@ -43,37 +43,42 @@ Kodlama Becerileri: Kodlama Becerileri
    Açıklama: 1 sene zorunlu İngilizce Hazırlık eğitimi aldım
 
 --- İş Deneyimi Girişleri ---
-1. Şirket: Bulutfon Telekomünikasyon
+1. Şirket: Center of International English (CIE)
+   Pozisyon: İngilizce Öğretmeni
+   Dönem: Temmuz 2026 - Devam Ediyor
+   Açıklama: Lam Dong Eyaletinde İngilizce dilini Etkileşimli AI-Destekli Açıklamalarla öğretiyorum. Son teknoloji AI açıklama araçlarını kullanarak öğrenci yazısı, telaffuz ve gramer konularında gerçek zamanlı ve kişiselleştirilmiş geri bildirim sağlayan, ilgi çekici ve teknoloji-destekli İngilizce dersleri sunuyorum. Geleneksel ESL metodolojilerini ileri düzey AI teknolojisiyle sorunsuzca bir araya getiren ve öğrenci katılımını, anlayışını ve öğrenme çıktılarını maksimize eden yenilikçi dijital öğrenme stratejileri uygulamaktayım. Öğrenci deneyimini dönüştürmek için EdTech'ten yararlanan etkileşimli sınıf ortamları oluşturmaktayım.
+
+2. Şirket: Bulutfon Telekomünikasyon
    Pozisyon: Müşteri İlişkileri Uzmanı
    Dönem: Eylül 2025 - Aralık 2025
    Açıklama: Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım. Seo alanında gerekli Backlink çalışmalarını yapıp rakip firmaları analiz edip firmamızın Seo performansını arttırdım.
 
-2. Şirket: Smod İş Çözümleri
+3. Şirket: Smod İş Çözümleri
    Pozisyon: SAP Abap Fiori Danışmanı (Şubat 2024 - Temmuz 2024)
    Dönem: Şubat 2024 - Temmuz 2024
    Açıklama: SMOD Busıness Solutions (Sap HR Servis Sağlayıcısı ) bünyesinde Sap Abap ve Fiori Danışmanı olarak çalıştım.
 
-3. Şirket: Athena Information Services
+4. Şirket: Athena Information Services
    Pozisyon: Oracle HR Cloud Teknik Danışmanı (Kasım 2023 - Ocak 2024)
    Dönem: Kasım 2023 - Ocak 2024
    Açıklama: Athena Bilişim Çözümlerinde Oracle HR Cloud Teknik Danışmanı olarak çalıştım. SQL sorguları ve iş zekası araçları ile raporlar hazırladım.
 
-4. Şirket: Mbis Danışmanlık
+5. Şirket: Mbis Danışmanlık
    Pozisyon: Sap HCM Danışmanı (Ocak 2021- Temmuz 2023)
    Dönem: Ocak 2021 - Temmuz 2023
    Açıklama: Mbis Danışmanlıkta Sap HCM modülünde çalıştım.
 
-5. Şirket: Ömer Hazıroğlu
+6. Şirket: Ömer Hazıroğlu
    Pozisyon: Sap Fiori Danışmanı (Ocak 2023- Temmuz 2023)
    Dönem: Ocak 2023 - Temmuz 2023
    Açıklama: Ömer Hazıroğlu'dan Fiori danışmanlık eğitimi aldım. Bu süreçte Enerya projesinde ekran tasarımlarını gerçekleştirdim. Aynı zamanda Abap servislerinin yazım sürecini de gözlemledim
 
-6. Şirket: Seyit Usta Treyler
+7. Şirket: Seyit Usta Treyler
    Pozisyon: Stajyer (Şubat-Nisan 2020)
    Dönem: Şubat 2020 - Nisan 2020
    Açıklama: WordPress'te web sitesi çevirileri, mobil arayüz optimizasyonları yaptım. Stajım Covid-19 salgını sebebiyle erken bitti.
 
-7. Şirket: Freelance Web & Wordpress Geliştirici
+8. Şirket: Freelance Web & Wordpress Geliştirici
    Pozisyon: (Nisan 2019 -Ocak 2021)
    Dönem: Nisan 2019 - Ocak 2021
    Açıklama: Web kariyerime Wix ile başladım ve stajımda öğrendiğim wordpress ile devam ettim. HTML CSS ve JS ile statik web sayfaları da tasarladım.
