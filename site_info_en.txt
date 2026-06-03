@@ -252,6 +252,12 @@ PORTFOLIO GALLERY PROJECTS (English)
     Description: English learning platform by solving English questions and playing basketball.
     Link: https://basketballenglish.netlify.app/
 
+12. Title: AI Teacher
+    Category: education
+    Image: /aiteacher.png
+    Description: Interactive AI-powered educational platform designed to teach AI and machine learning concepts through engaging mini-games.
+    Link: https://aiteacherr.netlify.app/
+
 ================================================================================
 END OF FILE
 ================================================================================

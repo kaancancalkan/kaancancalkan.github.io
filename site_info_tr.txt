@@ -252,6 +252,12 @@ PORTFOLYO GALERİ PROJELERİ (Türkçe)
     Açıklama: İngilizce sorularını çözerek basketbol oynayarak İngilizce öğrenme platformu.
     Bağlantı: https://basketballenglish.netlify.app/
 
+12. Başlık: AI Teacher
+    Kategori: education
+    Resim: /aiteacher.png
+    Açıklama: Yapay zeka ve makine öğrenimi kavramlarını eğlenceli mini oyunlarla öğreten yapay zeka destekli etkileşimli eğitim platformu.
+    Bağlantı: https://aiteacherr.netlify.app/
+
 ================================================================================
 DOSYA SONU
 ================================================================================

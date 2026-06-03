@@ -252,6 +252,12 @@ CÁC DỰ ÁN GALERIE PORTFOLIO (Tiếng Việt)
     Mô tả: Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.
     Liên kết: https://basketballenglish.netlify.app/
 
+12. Tiêu đề: AI Teacher
+    Danh mục: education
+    Hình ảnh: /aiteacher.png
+    Mô tả: Nền tảng giáo dục tương tác hỗ trợ bởi AI, giúp học sinh tìm hiểu các khái niệm trí tuệ nhân tạo và học máy qua các trò chơi nhỏ thú vị.
+    Liên kết: https://aiteacherr.netlify.app/
+
 ================================================================================
 KẾT THÚC TỆP
 ================================================================================

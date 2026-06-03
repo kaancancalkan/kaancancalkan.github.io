@@ -603,6 +603,12 @@ PORTFOLIO GALLERY PROJECTS
     Description: English learning platform by solving English questions and playing basketball. (en), İngilizce sorularını çözerek basketbol oynayarak İngilizce öğrenme platformu. (tr), Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp. (vi)
     Link: https://basketballenglish.netlify.app/
 
+12. Title: AI Teacher (en), AI Teacher (tr), AI Teacher (vi)
+    Category: education
+    Image: /aiteacher.png
+    Description: Interactive AI-powered educational platform designed to teach AI and machine learning concepts through engaging mini-games. (en), Yapay zeka ve makine öğrenimi kavramlarını eğlenceli mini oyunlarla öğreten yapay zeka destekli etkileşimli eğitim platformu. (tr), Nền tảng giáo dục tương tác hỗ trợ bởi AI, giúp học sinh tìm hiểu các khái niệm trí tuệ nhân tạo và học máy qua các trò chơi nhỏ thú vị. (vi)
+    Link: https://aiteacherr.netlify.app/
+
 ================================================================================
 END OF FILE
 ================================================================================

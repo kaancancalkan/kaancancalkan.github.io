@@ -1120,6 +1120,21 @@ const portfolioGallery = [
   },
   {
     title: {
+      en: "AI Teacher",
+      tr: "AI Teacher",
+      vi: "AI Teacher",
+    },
+    category: "education",
+    image: "/aiteacher.png",
+    description: {
+      en: "Interactive AI-powered educational platform designed to teach AI and machine learning concepts through engaging mini-games.",
+      tr: "Yapay zeka ve makine öğrenimi kavramlarını eğlenceli mini oyunlarla öğreten yapay zeka destekli etkileşimli eğitim platformu.",
+      vi: "Nền tảng giáo dục tương tác hỗ trợ bởi AI, giúp học sinh tìm hiểu các khái niệm trí tuệ nhân tạo và học máy qua các trò chơi nhỏ thú vị.",
+    },
+    link: "https://aiteacherr.netlify.app/",
+  },
+  {
+    title: {
       en: "AI CV",
       tr: "AI CV",
       vi: "AI CV",
