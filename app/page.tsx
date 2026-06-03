@@ -28,6 +28,55 @@ import Image from "next/image";
 
 type Language = "en" | "tr" | "vi";
 
+function isPeriodInFuture(period: string): boolean {
+  const yearMatch = period.match(/\b\d{4}\b/);
+  if (!yearMatch) return false;
+  const year = parseInt(yearMatch[0], 10);
+
+  let month = 1;
+  const periodLower = period.toLowerCase();
+
+  const enMonths = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
+  const enFullMonths = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
+  
+  const trMonths = ["ocak", "şubat", "subat", "mart", "nisan", "mayıs", "mayis", "haziran", "temmuz", "ağustos", "agustos", "eylül", "eylul", "ekim", "kasım", "kasim", "aralık", "aralik"];
+  const trMonthMap: Record<string, number> = {
+    ocak: 1, şubat: 2, subat: 2, mart: 3, nisan: 4, mayıs: 5, mayis: 5, haziran: 6,
+    temmuz: 7, ağustos: 8, agustos: 8, eylül: 9, eylul: 9, ekim: 10, kasım: 11, kasim: 11, aralık: 12, aralik: 12
+  };
+
+  const viMatch = periodLower.match(/tháng\s*(\d+)/);
+  if (viMatch) {
+    month = parseInt(viMatch[1], 10);
+  } else {
+    let found = false;
+    for (let i = 0; i < 12; i++) {
+      if (periodLower.includes(enFullMonths[i]) || periodLower.includes(enMonths[i])) {
+        month = i + 1;
+        found = true;
+        break;
+      }
+    }
+    if (!found) {
+      for (const trM of Object.keys(trMonthMap)) {
+        if (periodLower.includes(trM)) {
+          month = trMonthMap[trM];
+          found = true;
+          break;
+        }
+      }
+    }
+  }
+
+  const now = new Date();
+  const currentYear = now.getFullYear();
+  const currentMonth = now.getMonth() + 1; // 1-indexed (e.g. June = 6)
+
+  if (year > currentYear) return true;
+  if (year === currentYear && month > currentMonth) return true;
+  return false;
+}
+
 interface Translation {
   // Header
   title: string;
@@ -108,11 +157,11 @@ interface Translation {
 const translations: Record<Language, Translation> = {
   en: {
     heroTitle: "Hi, I'm Kaan Can Calkan",
-    heroSubtitle: "ERP Consultant And Business Analyst - SAP HR & Abap & Fiori",
-    heroDescription:"As a Management Information Systems graduate from Sakarya University, I have 3 years of experience in SAP HCM, ABAP, and Fiori. Alongside my expertise in SAP, I have a background in freelance web development and a proven track record in optimizing customer service operations through knowledge base creation and process improvement. I aim to leverage my technical background and analytical skills in roles such as Business Analyst, ERP Consultant, or Customer Experience Specialist.",
+    heroSubtitle: "ERP Consultant & Business Analyst | SAP HR, ABAP & Fiori",
+    heroDescription: "As a Management Information Systems graduate from Sakarya University, I have 3 years of experience in SAP HCM, ABAP, and Fiori. Alongside my expertise in SAP, I have a background in freelance web development and a proven track record in optimizing customer service operations through knowledge base creation and process improvement. I aim to leverage my technical background and analytical skills in roles such as Business Analyst, ERP Consultant, or Customer Experience Specialist.",
     downloadResume: "Download my resume",
-    sendEmail: "Send me a mail",
-    findMeOn: "Find Me On",
+    sendEmail: "Send me an email",
+    findMeOn: "Connect With Me",
     education: "Education",
     workExperience: "Work Experience",
     projectExperience: "Project Experience",
@@ -124,23 +173,21 @@ const translations: Record<Language, Translation> = {
     educationEntries: [
       {
         title: "Management Information Systems",
-        institution: "Sakarya University (2017-2020) Graduated",
+        institution: "Sakarya University",
         period: "2017-2020",
-        description: "My GPA is 3.18/4.",
+        description: "GPA: 3.18/4",
       },
       {
         title: "Management Information Systems",
-        institution: "Istanbul Medipol University (2016-2017)",
+        institution: "Istanbul Medipol University",
         period: "2016-2017",
-        description: "I made an undergraduate transfer to Sakarya University.",
+        description: "Transferred to Sakarya University.",
       },
       {
         title: "Social Sciences High School",
-        institution:
-          "Denizli Ibrahim Cinkaya Social Sciences High School (2011-2016) Graduation June 2016",
+        institution: "Denizli Ibrahim Cinkaya Social Sciences High School",
         period: "2011-2016",
-        description:
-          "I completed one year of compulsory English preparatory training.",
+        description: "Completed one year of compulsory English preparatory education.",
       },
     ],
     workEntries: [
@@ -149,56 +196,56 @@ const translations: Record<Language, Translation> = {
         position: "English Teacher",
         period: "July 2026 - Now",
         description:
-          "Teaching English with Interactive AI-Powered Annotations at Lam Dong Province. Delivering engaging, tech-enhanced English lessons utilizing cutting-edge AI annotation tools to provide real-time, personalized feedback on student writing, pronunciation, and grammar. Implementing innovative digital learning strategies that seamlessly blend traditional ESL methodologies with advanced AI technology to maximize student engagement, comprehension, and learning outcomes. Fostering interactive classroom environments that leverage EdTech to create transformative educational experiences.",
+          "Teaching English using interactive, AI-powered tools in Lam Dong Province. Delivering engaging, technology-enhanced English lessons and utilizing advanced AI feedback tools to provide real-time, personalized guidance on students' writing, pronunciation, and grammar. Implementing innovative digital learning strategies that blend traditional ESL methodologies with modern EdTech to maximize student engagement and learning outcomes.",
       },
       {
         company: "Bulutfon Telecommunications",
         position: "Customer Relationship Specialist",
         period: "Sep 2025 - Dec 2025",
         description:
-          "I provided customer support through ticketing systems and phone calls, resolving issues efficiently and professionally. I also contributed to the creation and maintenance of the knowledge base and FAQ pages to enhance customer self-service and reduce support demand. I performed necessary backlink work in the SEO field, analyzed competitor companies, and improved our company's SEO performance.",
+          "Provided customer support through ticketing systems and phone calls, resolving inquiries efficiently and professionally. Maintained and expanded the corporate knowledge base and FAQ pages to enhance customer self-service and reduce inbound support volume. Conducted SEO keyword research, backlink building, and competitor analysis to improve search engine rankings and organic performance.",
       },
       {
         company: "Smod Business Solutions",
         position: "SAP ABAP & Fiori Consultant",
         period: "Feb 2024 - July 2024",
         description:
-          "I worked as a SAP ABAP and Fiori Consultant in SMOD Business Solutions (SAP HR Service Provider).",
+          "Worked as a SAP ABAP and Fiori Consultant at SMOD, a specialized SAP HR service provider. Developed custom ABAP reports, user exits, and implemented Fiori applications to streamline human resources processes.",
       },
       {
         company: "Athena Information Services",
         position: "Oracle HR Cloud Technical Consultant",
         period: "Nov 2023 - Jan 2024",
         description:
-          "I worked as an Oracle HR Cloud Technical Consultant at Athena Information Services. I wrote SQL queries and used BI tools.",
+          "Served as an Oracle HR Cloud Technical Consultant. Developed complex SQL queries and utilized Business Intelligence (BI) tools to generate comprehensive reports and dashboards for HR decision-making.",
       },
       {
         company: "Mbis Consulting",
         position: "SAP HCM Consultant",
         period: "Jan 2021 - July 2023",
         description:
-          "I worked on the SAP HCM module at MBIS Consultancy Services.",
+          "Worked as a SAP HCM Consultant, configuring and adapting Human Capital Management modules to meet client business requirements. Provided post-implementation support and user training.",
       },
       {
         company: "Ömer Hazıroglu",
         position: "SAP Fiori Consultant",
         period: "Jan 2023 - July 2023",
         description:
-          "I received Fiori consultancy training from Ömer Hazıroğlu. During this process, I implemented screen designs in the Enerya project. At the same time, I observed the process of writing ABAP services.",
+          "Received hands-on SAP Fiori consultancy training under senior advisor Ömer Hazıroğlu. Designed and built UI screens for the Enerya project and actively participated in the integration of ABAP oData services.",
       },
       {
         company: "Seyit Usta Trailer",
         position: "Intern",
         period: "Feb 2020 - Apr 2020",
         description:
-          "I worked on website translations and mobile interface optimizations in WordPress. I also conducted time studies inside the factory. My internship ended due to Covid-19.",
+          "Conducted website translations and mobile responsiveness optimizations using WordPress. Assisted in manufacturing operations by performing time and motion studies on the factory floor.",
       },
       {
         company: "Freelance Web & Wordpress Developer",
         position: "Web Developer",
         period: "Apr 2019 - Jan 2021",
         description:
-          "I started my web career with Wix and continued on WordPress, which I learned during my internship. I also designed static web pages with HTML, CSS, and JS.",
+          "Began freelance web development using Wix and subsequently expanded into WordPress site customization. Designed and built responsive static landing pages utilizing HTML5, CSS3, and JavaScript.",
       },
     ],
     projectEntries: [
@@ -206,72 +253,73 @@ const translations: Record<Language, Translation> = {
         company: "Support Tickets",
         position: "SAP HCM ABAP & Fiori Consultant",
         description:
-          "I made front-end and back-end developments in Istac, Sedef Ship, and THY. I resolved support requests from customers.",
+          "Developed front-end and back-end solutions for ISTAC, Sedef Shipyard, and THY projects, and resolved post-implementation client support requests.",
       },
       {
         company: "Lesaffre",
         position: "SAP HCM ABAP & Fiori Consultant",
         description:
-          "I solved back-end and front-end bugs, made improvements, and organized local and virtual meetings with customers to analyze their processes and business needs. I also provided SAP HR training.",
+          "Resolved front-end and back-end bugs, conducted process analysis through remote and on-site client meetings, and delivered comprehensive SAP HR training.",
       },
       {
         company: "Taha LC Waikiki",
         position: "SAP HCM Fiori Consultant",
         description:
-          "I implemented the front-end side of the Annual Leave Plan Application, fixed some back-end bugs, added an approver page, and completed SAP Fiori development configuration.",
+          "Implemented the user interface for the Annual Leave Plan Application, developed approval screen flows, and completed SAP Fiori application deployments.",
       },
       {
         company: "Air Ties",
         position: "Oracle Technical Consultant",
-        description: "I worked on vacation queries in the Air Ties project.",
+        description:
+          "Developed and optimized vacation and leave-related database queries for the Air Ties project.",
       },
       {
         company: "Kahve Dünyası",
         position: "Oracle Technical Consultant",
         description:
-          "As the technical responsible for the Kahve Dünyası Project, I participated in online and local meetings and resolved customer support tickets.",
+          "Served as the primary technical contact for the Kahve Dünyası project, coordinating client meetings and resolving system support tickets.",
       },
       {
         company: "Enerya",
         position: "Junior SAP Fiori Consultant",
         description:
-          "I coded the website panel, designed Fiori screens, and bound oData to tables with a filter bar.",
+          "Designed and built custom Fiori screens, developed the management panel, and bound oData services to interactive data tables with custom filter bars.",
       },
       {
         company: "TOGG Turkish national car",
         position: "Junior SAP HCM Consultant",
         description:
-          "I tested the Fiori screens of the travel management system and resolved bugs together with ABAP and Fiori developers.",
+          "Executed test scenarios for the Travel Management Fiori interface and collaborated with ABAP and Fiori developers to resolve issues.",
       },
       {
         company: "Zen Diamond",
         position: "Junior SAP HCM Consultant",
         description:
-          "I prepared LSMW templates for customers, provided post-go-live migration support, wrote specifications for additional developments, and tested ABAP improvements with the technical advisor.",
+          "Created LSMW templates for data migration, provided post-go-live support, drafted technical specification documents, and performed integration testing.",
       },
       {
         company: "Ozler Plastic",
         position: "Junior SAP HCM Consultant",
         description:
-          "I performed payroll tests, adapted the 'Çarşaf İcmal' payroll summary, assisted customers with master data transfer, tested ABAP programs, and provided SAP HCM training.",
+          "Conducted payroll testing, customized payroll journals, managed master data migration, and delivered on-site training sessions.",
       },
       {
         company: "ALY Food",
         position: "Junior SAP HCM Consultant",
         description:
-          "I performed payroll tests, adapted the payroll envelope, worked on salary adaptations, and supported customers with master data transfer.",
+          "Executed payroll tests, customized payslip layouts, adapted salary scales, and assisted clients with master data migration.",
       },
       {
         company: "Camsan Entegre",
         position: "SAP HCM Consultant",
         description:
-          "I conducted payroll tests, provided SAP HCM training in local meetings, and implemented customizations.",
+          "Conducted payroll simulation tests, configured custom schemas, and delivered user training during on-site workshops.",
       },
       {
         company: "Istanbul Finance Center",
         position: "SAP HCM Consultant",
         description:
-          "I made customizations on the Travel Management Module and tested Fiori screens.",
+          "Configured custom workflows for the Travel Management module and performed user acceptance testing (UAT) on Fiori screens.",
       },
     ],
     skillsList: [
@@ -325,38 +373,37 @@ const translations: Record<Language, Translation> = {
       {
         title: "Movies",
         description:
-          "As the child of a cinema-loving father, I was captivated by cinema at an early age. You can see the movies I have watched from the link below.",
+          "Growing up with a father who loved cinema, I was captivated by movies at an early age. You can explore my watch history using the link below.",
         link: "https://trakt.tv/users/kaancalkan/history",
       },
       {
         title: "Weight Lifting",
         description:
-          "After 24 years of inactivity, I started going to the gym and lifting weights. It has now become a lifestyle for me. You can see my weightlifting stats from the link below.",
+          "After 24 years of a sedentary lifestyle, I took up weightlifting. It has since evolved into a core part of my daily routine. You can track my lifting stats via the link below.",
         link: "https://kaancancalkan.github.io/My-Weights/",
       },
       {
         title: "Books",
         description:
-          "Reading has become an important part of my life, especially since Social Sciences High School. I enjoy books on sociology, philosophy, and history. My favorite genre is dystopia. If you want to see the books I read, check the link below.",
+          "Reading became a cornerstone of my life during my time at Social Sciences High School. I enjoy books on sociology, philosophy, and history, with dystopia being my favorite genre. You can see my reading list at the link below.",
         link: "https://1000kitap.com/Never119",
       },
       {
         title: "Technological Devices",
         description:
-          "I have had a great interest in the software and hardware of technological devices ever since I first started using computers.",
+          "I have been deeply fascinated by the software and hardware architecture of technological devices ever since I first laid hands on a computer.",
       },
     ],
     title: "Kaan Can Calkan",
-    subtitle: "SAP HR & ABAP & Fiori Consultant",
+    subtitle: "SAP HR, ABAP & Fiori Consultant",
   },
 
   tr: {
-    heroTitle: "Merhaba Ben Kaan Can Calkan",
-    heroSubtitle:
-      "ERP Danışmanı ve İş Analisti - SAP HR & Abap & Fiori Danışmanıyım",
-    heroDescription:"Sakarya Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. 3 yıllık SAP HCM, ABAP ve Fiori deneyimime ek olarak, freelance web geliştirme projeleriyle teknik dikeyde yetkinlik kazandım. Müşteri hizmetleri süreçlerinde çözüm odaklı stratejiler geliştirerek bilgi tabanı ve süreç dökümantasyonu çalışmalarını yürüttüm. Teknik birikimimi iş süreçleriyle harmanlayarak; İş Analisti, ERP Danışmanı veya Müşteri Hizmetleri alanlarında değer katmayı hedefliyorum.",
-    downloadResume: "Özgeçmişimi İndirin",
-    sendEmail: "Bana e posta atın",
+    heroTitle: "Merhaba, ben Kaan Can Calkan",
+    heroSubtitle: "ERP Danışmanı & İş Analisti | SAP HR, ABAP & Fiori",
+    heroDescription: "Sakarya Üniversitesi Yönetim Bilişim Sistemleri mezunuyum. 3 yıllık SAP HCM, ABAP ve Fiori deneyimime ek olarak, freelance web geliştirme projeleriyle teknik dikeyde yetkinlik kazandım. Müşteri hizmetleri süreçlerinde çözüm odaklı stratejiler geliştirerek bilgi tabanı ve süreç dökümantasyonu çalışmalarını yürüttüm. Teknik birikimimi iş süreçleriyle harmanlayarak; İş Analisti, ERP Danışmanı veya Müşteri Hizmetleri alanlarında değer katmayı hedefliyorum.",
+    downloadResume: "Özgeçmişimi İndir",
+    sendEmail: "E-posta Gönder",
     findMeOn: "Bana Ulaşın",
     education: "Eğitim",
     workExperience: "İş Deneyimi",
@@ -369,22 +416,21 @@ const translations: Record<Language, Translation> = {
     educationEntries: [
       {
         title: "Yönetim Bilişim Sistemleri",
-        institution: "Sakarya Üniversitesi (2017-2020) Mezun Oldum",
+        institution: "Sakarya Üniversitesi",
         period: "2017-2020",
-        description: "Ortalamam 3.18/4.",
+        description: "Genel Not Ortalaması: 3.18/4",
       },
       {
         title: "Yönetim Bilişim Sistemleri",
-        institution: "İstanbul Medipol Üniversitesi (2016-2017)",
+        institution: "İstanbul Medipol Üniversitesi",
         period: "2016-2017",
         description: "Sakarya Üniversitesi'ne yatay geçiş yaptım.",
       },
       {
         title: "Sosyal Bilimler Lisesi",
-        institution:
-          "Denizli İbrahim Cinkaya Sosyal Bilimler Lisesi(2011-2016) Temmuz 2016 Mezuniyet",
+        institution: "Denizli İbrahim Cinkaya Sosyal Bilimler Lisesi",
         period: "2011-2016",
-        description: "1 sene zorunlu İngilizce Hazırlık eğitimi aldım",
+        description: "1 yıl zorunlu İngilizce hazırlık eğitimi aldım.",
       },
     ],
     workEntries: [
@@ -393,128 +439,130 @@ const translations: Record<Language, Translation> = {
         position: "İngilizce Öğretmeni",
         period: "Temmuz 2026 - Devam Ediyor",
         description:
-          "Lam Dong Eyaletinde İngilizce dilini Etkileşimli AI-Destekli Açıklamalarla öğretiyorum. Son teknoloji AI açıklama araçlarını kullanarak öğrenci yazısı, telaffuz ve gramer konularında gerçek zamanlı ve kişiselleştirilmiş geri bildirim sağlayan, ilgi çekici ve teknoloji-destekli İngilizce dersleri sunuyorum. Geleneksel ESL metodolojilerini ileri düzey AI teknolojisiyle sorunsuzca bir araya getiren ve öğrenci katılımını, anlayışını ve öğrenme çıktılarını maksimize eden yenilikçi dijital öğrenme stratejileri uygulamaktayım. Öğrenci deneyimini dönüştürmek için EdTech'ten yararlanan etkileşimli sınıf ortamları oluşturmaktayım.",
+          "Lam Dong eyaletinde yapay zeka destekli interaktif araçlarla İngilizce eğitimi veriyorum. Öğrencilerin yazma, telaffuz ve dil bilgi becerilerini geliştirmek amacıyla, son teknoloji yapay zeka tabanlı geribildirim araçlarını derslerime entegre ediyorum. Geleneksel ESL (İkinci Dil Olarak İngilizce) öğretim metotlarını ileri teknolojiyle harmanlayarak, öğrenci katılımını ve öğrenme çıktılarını en üst düzeye çıkaran yenilikçi dijital öğrenme stratejileri uyguluyorum. Eğitim teknolojilerini (EdTech) kullanarak dersleri daha verimli ve etkileşimli hale getiriyorum.",
       },
       {
         company: "Bulutfon Telekomünikasyon",
         position: "Müşteri İlişkileri Uzmanı",
         period: "Eylül 2025 - Aralık 2025",
         description:
-          "Müşteri destek süreçlerinde çağrılar ve talep sistemleri üzerinden etkin çözümler sundum. Ayrıca bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının oluşturulması ve güncellenmesine katkı sağladım, böylece müşteri deneyimini iyileştirdim ve destek yükünü azalttım. Seo alanında gerekli Backlink çalışmalarını yapıp rakip firmaları analiz edip firmamızın Seo performansını arttırdım.",
+          "Müşteri destek süreçlerinde çağrı ve talep (ticket) sistemleri üzerinden etkin ve çözüm odaklı hizmet verdim. Bilgi tabanı ve SSS (Sıkça Sorulan Sorular) sayfalarının hazırlanması ve güncellenmesi çalışmalarını yürüterek müşteri deneyimini iyileştirdim ve destek talebi yoğunluğunu azalttım. Ayrıca SEO çalışmaları kapsamında backlink yönetimi ve rakip analizleri gerçekleştirerek şirketin arama motoru görünürlüğünü ve SEO performansını artırdım.",
       },
       {
         company: "Smod İş Çözümleri",
         position: "SAP Abap Fiori Danışmanı",
         period: "Şubat 2024 - Temmuz 2024",
         description:
-          "SMOD Busıness Solutions (Sap HR Servis Sağlayıcısı ) bünyesinde Sap Abap ve Fiori Danışmanı olarak çalıştım.",
+          "SAP HR alanında uzmanlaşmış SMOD bünyesinde SAP ABAP ve Fiori Danışmanı olarak görev yaptım. Müşteri ihtiyaçları doğrultusunda özel ABAP geliştirmeleri ve kullanıcı dostu Fiori ekran tasarımları gerçekleştirdim.",
       },
       {
         company: "Athena Information Services",
         position: "Oracle HR Cloud Teknik Danışmanı",
         period: "Kasım 2023 - Ocak 2024",
         description:
-          "Athena Bilişim Çözümlerinde Oracle HR Cloud Teknik Danışmanı olarak çalıştım. SQL sorguları ve iş zekası araçları ile raporlar hazırladım.",
+          "Oracle HR Cloud modülünde Teknik Danışman olarak görev aldım. Karmaşık veri modelleri üzerinde SQL sorguları yazarak iş zekası (BI) araçları ile yönetimsel ve operasyonel raporlar hazırladım.",
       },
       {
         company: "Mbis Danışmanlık",
-        position: "Sap HCM Danışmanı",
+        position: "SAP HCM Danışmanı",
         period: "Ocak 2021 - Temmuz 2023",
-        description: "Mbis Danışmanlıkta Sap HCM modülünde çalıştım.",
+        description:
+          "MBIS Danışmanlık bünyesinde SAP HCM (İnsan Kaynakları) modülü danışmanı olarak görev yaptım. Müşterilerin insan kaynakları süreçlerini SAP sistemine uyarlayarak teknik destek ve danışmanlık hizmetleri sağladım.",
       },
       {
         company: "Ömer Hazıroğlu",
-        position: "Sap Fiori Danışmanı",
+        position: "SAP Fiori Danışmanı",
         period: "Ocak 2023 - Temmuz 2023",
         description:
-          "Ömer Hazıroğlu'dan Fiori danışmanlık eğitimi aldım. Bu süreçte Enerya projesinde ekran tasarımlarını gerçekleştirdim. Aynı zamanda Abap servislerinin yazım sürecini de gözlemledim",
+          "Kıdemli danışman Ömer Hazıroğlu'nden SAP Fiori danışmanlığı üzerine uygulamalı eğitim aldım. Bu süreçte Enerya projesinde kullanıcı arayüzü tasarımlarını üstlendim ve arka planda çalışan ABAP oData servislerinin entegrasyon süreçlerinde yer aldım.",
       },
       {
         company: "Seyit Usta Treyler",
         position: "Stajyer",
         period: "Şubat 2020 - Nisan 2020",
         description:
-          "WordPress'te web sitesi çevirileri, mobil arayüz optimizasyonları yaptım. Stajım Covid-19 salgını sebebiyle erken bitti.",
+          "WordPress tabanlı kurumsal web sitesinin çok dilli çevirilerini ve mobil arayüz optimizasyonları gerçekleştirdim. Ayrıca üretim tesisinde zaman etüdü çalışmaları yürüttüm.",
       },
       {
         company: "Freelance Web & Wordpress Geliştirici",
         position: "Web Geliştirici",
         period: "Nisan 2019 - Ocak 2021",
         description:
-          "Web kariyerime Wix ile başladım ve stajımda öğrendiğim wordpress ile devam ettim. HTML CSS ve JS ile statik web sayfaları da tasarladım.",
+          "Web geliştirme kariyerime Wix projeleriyle başlayıp ardından WordPress platformunda uzmanlaşarak devam ettim. HTML, CSS ve JavaScript kullanarak modern ve duyarlı (responsive) statik web siteleri geliştirdim.",
       },
     ],
     projectEntries: [
       {
         company: "Destek Talepleri",
-        position: "Sap HCM Abap & Fiori Danışmanı",
+        position: "SAP HCM ABAP & Fiori Danışmanı",
         description:
-          "İstaç,Sedef Gemi, THY'de Front end ve Backend geliştirmeleri yaptım. Müşteriden gelen destek taleplerini çözdüm.",
+          "İSTAÇ, Sedef Tersanesi ve THY projelerinde hem ön yüz (Fiori) hem de arka plan (ABAP) geliştirmeleri yaparak müşterilerin destek taleplerine çözümler sundum.",
       },
       {
         company: "Lesaffre",
-        position: "Sap HCM Abap & Fiori Danışmanı",
+        position: "SAP HCM ABAP & Fiori Danışmanı",
         description:
-          "Back-end ve front-end hatalarını çözdüm, Front-end ve Back-end'de bazı geliştirmeler yaptım. Müşterilerle yerel ve sanal toplantılar düzenleyerek süreçlerini ve iş ihtiyaçlarını analiz ettim ve onlara SAP HR eğitimi verdim.",
+          "Arka plan ve ön yüz hatalarını gidererek sistem optimizasyonu sağladım. Müşterilerle çevrim içi ve yüz yüze toplantılar düzenleyerek iş süreçlerini analiz ettim ve anahtar kullanıcılara SAP HR eğitimleri verdim.",
       },
       {
         company: "Taha LC Waikiki",
-        position: "Sap HCM Fiori Danışmanı",
+        position: "SAP HCM Fiori Danışmanı",
         description:
-          "Yıllık izin planlama uygulamasının ön yüzünü implemente ettim. Bazı backend hatalarını çözdüm. Onaycı ekranını tasarladım ve SAP Fiori Developmentini gerçekleştirdim.",
+          "Yıllık İzin Planlama uygulamasının kullanıcı arayüzünü (front-end) geliştirdim, onay mekanizması ekranlarını tasarladım ve SAP Fiori dağıtım süreçlerini tamamladım.",
       },
       {
         company: "Air Ties",
         position: "Oracle Teknik Danışmanı",
-        description: "Air Ties projesinde izin sorguları üzerine çalıştım.",
+        description:
+          "Proje kapsamında yıllık izin ve devir izinlerine yönelik veritabanı sorgularının geliştirilmesi ve optimize edilmesi süreçlerini yürüttüm.",
       },
       {
         company: "Kahve Dünyası",
         position: "Oracle Teknik Danışmanı",
         description:
-          "Kahve Dünyası Projesinde teknik sorumlu olarak online ve lokaldeki toplantılara katıldım. Müşterilerden gelen destek ticketlarını çözümledim.",
+          "Projenin teknik sorumlusu olarak müşteri toplantılarını koordine ettim, sistem sorunlarını analiz ederek destek taleplerini (ticket) sonuçlandırdım.",
       },
       {
         company: "Enerya",
-        position: "Junior Sap Fiori Danışmanı",
+        position: "Junior SAP Fiori Danışmanı",
         description:
-          "Web Terminal giriş ekranını tasarladım. Fiori ekran tasarımlarını gerçekleştirdim. Sap'den gelen verileri Filterbar ile Tablolara bağladım.",
+          "Web terminali giriş paneli ve Fiori ekran tasarımlarını yaptım. SAP'den gelen verileri dinamik filtreleme (Filterbar) özellikleriyle tablolara entegre ettim.",
       },
       {
         company: "TOGG Türkiye'nin Yerli Otomobili",
-        position: "Junior Sap HCM Danışmanı",
+        position: "Junior SAP HCM Danışmanı",
         description:
-          "Projedeki seyahat yönetim sisteminin fiori ekranlarını test ettim. Bulduğum hataları Abap ve Fiori Developerlar ile birlikte çözümledim.",
+          "Seyahat Yönetim Sistemi'ne ait Fiori ekranlarının test senaryolarını yürüttüm, tespit edilen arayüz hatalarını ABAP ve Fiori geliştirici ekipleriyle koordineli şekilde giderdim.",
       },
       {
         company: "Zen Pırlanta",
-        position: "Junior Sap HCM Danışmanı",
+        position: "Junior SAP HCM Danışmanı",
         description:
-          "Müşterilerin kullanacağı LSMW şablonlarını hazırladım. Müşterilere canlı geçiş sonrası desteği verdim. Ek geliştirmelerin Spec dökümanlarını oluşturdum. Abap geliştirmelerini test edip hataları teknik danışman ile birlikte çözdük.",
+          "Veri aktarımı için LSMW şablonlarını hazırlayarak canlıya geçiş desteği sağladım. Ek geliştirme gereksinimleri için fonksiyonel spesifikasyon (spec) dokümanları hazırladım ve ABAP geliştirmelerini test ettim.",
       },
       {
         company: "Özler Plastik",
-        position: "Junior Sap HCM Danışmanı",
+        position: "Junior SAP HCM Danışmanı",
         description:
-          "Bordro testlerini gerçekleştirdim. Çarsaf icmal uyarlamasını gerçekleştirdim. Müşterilere ana veri aktarımı konusunda hizmet verdim. Abap programlarını test edip bulduğum bugları Abapçılar ile çözdüm. Müşteri eğitimlerini lokasyonda gerçekleştirdim.",
+          "Bordro simülasyonları ve 'Çarşaf İcmal' raporu uyarlamalarını gerçekleştirdim. Müşterilere ana veri aktarımı ve ABAP program testleri konusunda destek vererek yerinde kullanıcı eğitimleri düzenledim.",
       },
       {
         company: "Aksular Gıda",
-        position: "Junior Sap HCM Danışmanı",
+        position: "Junior SAP HCM Danışmanı",
         description:
-          "Bordro testlerini gerçekleştirdim. Bordro zarfı uyarlaması yaptım.Ücret uyarlamaları üzerine çalıştım. Ana veri aktarımında müşteriye destek verdim.",
+          "Bordro testlerini gerçekleştirdim. Bordro zarfı uyarlaması yaptım. Ücret uyarlamaları üzerine çalıştım. Ana veri aktarımında müşteriye destek verdim.",
       },
       {
         company: "Camsan Entegre",
-        position: "Sap HCM Danışmanı",
+        position: "SAP HCM Danışmanı",
         description:
-          "Bordro testlerini gerçekleştirdim. Uyarlamaları gerçekleştirdim. Müşterilere lokasyonda eğitimler verdim.",
+          "Bordro testlerini ve sistemsel uyarlamaları gerçekleştirdim. Müşteri lokasyonunda anahtar kullanıcı eğitimleri verdim.",
       },
       {
         company: "İstanbul Finans Merkezi",
-        position: "Sap HCM Danışmanı",
+        position: "SAP HCM Danışmanı",
         description:
-          "Seyahat Masraf Modülü uyarlamalarını gerçekleştirdim. .Fiori testlerini gerçekleştirdim.",
+          "Seyahat ve Masraf Yönetimi Modülü uyarlamalarını gerçekleştirdim ve Fiori ekranlarının kullanıcı kabul testlerini (UAT) yönettim.",
       },
     ],
     skillsList: [
@@ -568,29 +616,29 @@ const translations: Record<Language, Translation> = {
       {
         title: "Filmler",
         description:
-          "Sinema sever bir babanın oğlu olarak erken yaşta sinemanın büyüsüne kapıldım, izlediğim filmleri aşağıdaki bağlantıdan görebilirsiniz.",
+          "Sinema sever bir babanın oğlu olarak sinemanın büyüsüne erken yaşta kapıldım. İzlediğim filmleri aşağıdaki bağlantıdan inceleyebilirsiniz.",
         link: "https://trakt.tv/users/kaancalkan/history",
       },
       {
         title: "Ağırlık Kaldırma",
         description:
-          "Hareketsiz geçirdiğim 24 yılın ardından spor salonuna gidip ağırlık kaldırmaya başladım. Ve bunu bir yaşam tarzı haline getirdim. Ağırlık kaldırma istatistiklerimi aşağıdaki linkten görebilirsiniz.",
+          "Hareketsiz geçen 24 yılın ardından ağırlık kaldırmaya başladım ve bunu zamanla bir yaşam tarzı haline getirdim. Ağırlık kaldırma gelişimimi aşağıdaki bağlantıdan takip edebilirsiniz.",
         link: "https://kaancancalkan.github.io/My-Weights/",
       },
       {
         title: "Kitaplar",
         description:
-          "Okumak, özellikle Sosyal Bilimler Lisesine başladıktan sonra hayatımın bir parçası haline geldi.Sosyoloji, felsefe ve tarih kitaplarını okumayı çok seviyorum, En sevdiğim tür distopya. Okuduğum kitapları görmek isterseniz aşağıdaki bağlantıya göz atabilirsiniz.",
+          "Okumak, özellikle Sosyal Bilimler Lisesine başladıktan sonra hayatımın vazgeçilmez bir parçası haline geldi. Sosyoloji, felsefe ve tarih kitapları okumayı çok seviyorum; en sevdiğim tür ise distopya. Okuduğum kitapları aşağıdaki bağlantıdan inceleyebilirsiniz.",
         link: "https://1000kitap.com/Never119",
       },
       {
         title: "Teknolojik Cihazlar",
         description:
-          "Bilgisayarla ilk tanıştığım zamandan beri teknolojik cihazların yazılım ve donanımlarına büyük ilgi duydum.",
+          "Bilgisayarla ilk tanıştığım günden beri teknolojik cihazların yazılım ve donanım mimarilerine büyük ilgi duyuyorum.",
       },
     ],
     title: "Kaan Can Calkan",
-    subtitle: "SAP HR & ABAP & Fiori Consultant",
+    subtitle: "SAP HR, ABAP & Fiori Consultant",
   },
   vi: {
     heroTitle: "Xin chào, tôi là Kaan Can Calkan",
@@ -931,8 +979,8 @@ const portfolioGallery = [
     category: "website",
     image: "/technostore.png",
     description: {
-      en: "Modern e-commerce website demo .",
-      tr: "Modern e ticaret web sitesi demosu",
+      en: "Modern e-commerce website demo.",
+      tr: "Modern e-ticaret web sitesi demosu.",
       vi: " Website cửa hàng bán hàng hình thực mẫu.",
     },
     link: "https://kaancancalkantechnostore.netlify.app/",
@@ -947,8 +995,8 @@ const portfolioGallery = [
     category: "website",
     image: "/hades-heroai.jpg",
     description: {
-      en: "Website introducing the photo gallery of a cute cat named Hades.",
-      tr: "Hades adlı tatlı kedinin fotoğraf galerisi",
+      en: "Website showcasing the photo gallery of a cute cat named Hades.",
+      tr: "Hades isimli sevimli bir kedinin fotoğraf galerisini barındıran web sitesi.",
       vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
     },
     link: "https://hadess.netlify.app/",
@@ -962,42 +1010,12 @@ const portfolioGallery = [
     category: "website",
     image: "/ho-chi-minh-portrait.png",
     description: {
-      en: "Website introducing Vietnamese culture.",
-      tr: "Vietnam kültürünü anlatmak ",
+      en: "Interactive website introducing Vietnamese culture and traditions.",
+      tr: "Vietnam kültürünü ve geleneklerini tanıtan etkileşimli web sitesi.",
       vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
     },
     link: "https://vietnamculture.netlify.app/",
   },
-  // {
-  //   title: {
-  //     en: "FitTrack",
-  //     tr: "FitTrack",
-  //     vi: "FitTrack",
-  //   },
-  //   category: "webapp",
-  //   image: "/fittrack.jpg",
-  //   description: {
-  //     en: "Fitness tracking web app for daily workouts.",
-  //     tr: "Günlük antrenmanlar için fitness takip uygulaması.",
-  //     vi: "Ứng dụng web theo dõi tập luyện thể dục hằng ngày.",
-  //   },
-  //   link: "https://fittrackkaancancalkan.netlify.app/",
-  // },
-  // {
-  //   title: {
-  //     en: "Vietnam ESL Teaching",
-  //     tr: "Vietnam için İngilizce Öğretimi",
-  //     vi: "Dạy tiếng Anh cho người Việt Nam",
-  //   },
-  //   category: "website",
-  //   image: "/vietnamsap.jpg",
-  //   description: {
-  //     en: "Personal website created during my IT& English job search process in Vietnam.",
-  //     tr: "Vietnam'da IT ve İngilizce iş arama sürecimde oluşturduğum kişisel web sitesi.",
-  //     vi: "Trang web cá nhân được tạo ra trong quá trình tìm kiếm việc làm IT và tiếng Anh của tôi tại Việt Nam.",
-  //   },
-  //   link: "https://cancalkaneslteacher.netlify.app/",
-  // },
   {
     title: {
       en: "VietCulture Quiz",
@@ -1022,8 +1040,8 @@ const portfolioGallery = [
     category: "education",
     image: "/canhoctiengviet.png",
     description: {
-      en: "Vietnamese word  learning platform based on flashcards. and my own Vietnamese learning journey.",
-      tr: "Kendi Vietnamca öğrenme yolculuğuma ve flashcard tabanlı Vietnamca kelime öğrenme platformu.",
+      en: "Flashcard-based Vietnamese vocabulary learning platform showcasing my own language learning journey.",
+      tr: "Kendi Vietnamca öğrenme yolculuğumu destekleyen, flashcard tabanlı bir kelime öğrenme platformu.",
       vi: "Nền tảng học từ tiếng Việt dựa trên thẻ flash và hành trình học tiếng Việt của riêng tôi.",
     },
     link: "https://kaancancalkanhoctiengviet.netlify.app/",
@@ -1043,22 +1061,6 @@ const portfolioGallery = [
     },
     link: "https://cosmocodekaancancalkan.netlify.app/",
   },
-
-  //   {
-  //   title: {
-  //     en: "CodeGrowBloom",
-  //     tr: "CodeGrowBloom",
-  //     vi: "CodeGrowBloom",
-  //   },
-  //   category: "education",
-  //   image: "/seedgame.png",
-  //   description: {
-  //     en: "Vietnamese language and coding learning platform by letting users plant virtual seeds that grow as they complete lessons and exercises.",
-  //     tr: "Kullanıcıların dersleri ve alıştırmaları tamamladıkça büyüyen sanal tohumlar dikmelerine izin vererek Vietnamca ve kodlama öğrenme platformu.",
-  //     vi: "Nền tảng học tiếng Việt và lập trình bằng cách cho phép người dùng trồng hạt giống ảo phát triển khi họ hoàn thành các bài học và bài tập.",
-  //   },
-  //   link: "https://kaancancalkancodegrowbloom.netlify.app/",
-  // },
   {
     title: {
       en: "LearnEnglishWithCat",
@@ -1074,21 +1076,6 @@ const portfolioGallery = [
     },
     link: "https://learnenglishwithcat.netlify.app/",
   },
-  //   {
-  //   title: {
-  //     en: "CodeTemple",
-  //     tr: "CodeTemple",
-  //     vi: "CodeTemple",
-  //   },
-  //   category: "education",
-  //   image: "/templecode.png",
-  //   description: {
-  //     en: "Platform planning to teach coding by having users complete coding tasks in Vietnamese temples.",
-  //     tr: "Kullanıcıların Vietnam tapınaklarında kodlama görevlerini yaparak kodlama öğretmeyi planlayan bir platform",
-  //     vi: "Nền tảng dự định dạy lập trình bằng cách để người dùng hoàn thành các nhiệm vụ lập trình trong các ngôi đền Việt Nam.",
-  //   },
-  //   link: "https://kaancancalkancodetemple.netlify.app/",
-  // },
   {
     title: {
       en: "Fishy English",
@@ -1103,8 +1090,7 @@ const portfolioGallery = [
       vi: "Grammar Fishing là một trò chơi web tương tác, song ngữ (TR/VN) nơi người chơi luyện tập các thì tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://englishwithfishing.netlify.app/",
   },
-
-    {
+  {
     title: {
       en: "English Penalty",
       tr: "English Penalty",
@@ -1113,8 +1099,8 @@ const portfolioGallery = [
     category: "education",
     image:"/English Penalty.png",
   description: {
-      en: "English learning platform by solving English questions and taking penalty shots.",
-      tr: "İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu.",
+      en: "Interactive game-based platform to learn English by solving grammar questions and taking penalty shots.",
+      tr: "İngilizce dil bilgisi sorularını çözerek penaltı atışları yapılan oyun tabanlı İngilizce öğrenme platformu.",
       vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://englishpenalty.netlify.app/",
   },
@@ -1127,8 +1113,8 @@ const portfolioGallery = [
     category: "education",
     image:"/basketballenglish.png",
   description: {
-      en: "English learning platform by solving English questions and playing basketball.",
-      tr: "İngilizce sorularını çözerek basketbol oynayarak İngilizce öğrenme platformu.",
+      en: "Interactive game-based platform to learn English by solving grammar questions and playing basketball.",
+      tr: "Dil bilgisisi sorularını çözerek basketbol oynanan eğlenceli ve etkileşimli İngilizce öğrenme platformu.",
       vi: "Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp.",},
     link: "https://basketballenglish.netlify.app/",
   },
@@ -1141,8 +1127,8 @@ const portfolioGallery = [
     category: "webapp",
     image: "/aicv.jpg",
     description: {
-      en: "A platform that allows creating resumes easily with AI and manual editing capabilities.",
-      tr: "Yapay zeka ile kolayca özgeçmiş oluşturmaya sağlayan manuel edit imkanı sunan bir platform.",
+      en: "AI-powered resume builder allowing users to generate professional CVs with manual customization.",
+      tr: "Yapay zeka destekli ve manuel özelleştirme imkanı sunan, kolay özgeçmiş oluşturma platformu.",
       vi: "Một nền tảng cho phép tạo CV dễ dàng bằng AI và khả năng chỉnh sửa thủ công.",
     },
     link: "https://aicvkaancancalkan.netlify.app/",
@@ -1494,8 +1480,10 @@ export default function Portfolio() {
             {t.workExperience}
           </h2>
           <div className="space-y-6">
-            {t.workEntries.map((work, index) => (
-              <Card key={index}>
+            {t.workEntries
+              .filter((work) => !isPeriodInFuture(work.period))
+              .map((work, index) => (
+                <Card key={index}>
                 <CardContent className="p-6">
                   <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-2">
                     <div>
