@@ -1092,6 +1092,21 @@ const portfolioGallery = [
   },
   {
     title: {
+      en: "English Chef",
+      tr: "English Chef",
+      vi: "English Chef",
+    },
+    category: "education",
+    image: "/englishchef.png",
+    description: {
+      en: "Chef Lin's Pho Academy is a playful English grammar game for children, using cooking-themed lessons and fun mini-challenges to teach grammar naturally.",
+      tr: "Chef Lin's Pho Academy, çocuklara yemek temalı dersler ve eğlenceli mini görevlerle İngilizce dil bilgisini doğal bir şekilde öğretmeyi amaçlayan bir oyundur.",
+      vi: "Chef Lin's Pho Academy là trò chơi ngữ pháp tiếng Anh dành cho trẻ em, sử dụng các bài học theo chủ đề nấu ăn và thử thách nhỏ thú vị để dạy ngữ pháp một cách tự nhiên.",
+    },
+    link: "https://englishchef.netlify.app/",
+  },
+  {
+    title: {
       en: "English Penalty",
       tr: "English Penalty",
       vi: "English Penalty",

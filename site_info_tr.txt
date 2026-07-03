@@ -240,7 +240,13 @@ PORTFOLYO GALERİ PROJELERİ (Türkçe)
    Açıklama: Grammar Fishing, oyuncuların dilbilgisi soruları aracılığıyla balık tutarak İngilizce zamanları pratik yapabilecekleri etkileşimli, çift dilli (TR/VN) bir web oyunudur.
    Bağlantı: https://englishwithfishing.netlify.app/
 
-10. Başlık: English Penalty
+10. Başlık: English Chef
+    Kategori: education
+    Resim: /englishchef.svg
+    Açıklama: Chef Lin's Pho Academy, çocuklara yemek temalı dersler ve eğlenceli mini görevlerle İngilizce dil bilgisini doğal bir şekilde öğretmeyi amaçlayan bir oyundur.
+    Bağlantı: https://englishchef.netlify.app/
+
+11. Başlık: English Penalty
     Kategori: education
     Resim: /English Penalty.png
     Açıklama: İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu.

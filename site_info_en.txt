@@ -240,7 +240,13 @@ PORTFOLIO GALLERY PROJECTS (English)
    Description: Grammar Fishing is an interactive, bilingual (TR/VN) web game where players practice English tenses by catching fish through grammar questions.
    Link: https://englishwithfishing.netlify.app/
 
-10. Title: English Penalty
+10. Title: English Chef
+    Category: education
+    Image: /englishchef.svg
+    Description: Chef Lin's Pho Academy is a playful English grammar game for children, using cooking-themed lessons and fun mini-challenges to teach grammar naturally.
+    Link: https://englishchef.netlify.app/
+
+11. Title: English Penalty
     Category: education
     Image: /English Penalty.png
     Description: English learning platform by solving English questions and taking penalty shots.

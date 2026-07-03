@@ -591,7 +591,13 @@ PORTFOLIO GALLERY PROJECTS
    Description: Grammar Fishing is an interactive, bilingual (TR/VN) web game where players practice English tenses by catching fish through grammar questions. (en), Grammar Fishing, oyuncuların dilbilgisi soruları aracılığıyla balık tutarak İngilizce zamanları pratik yapabilecekleri etkileşimli, çift dilli (TR/VN) bir web oyunudur. (tr), Grammar Fishing là một trò chơi web tương tác, song ngữ (TR/VN) nơi người chơi luyện tập các thì tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp. (vi)
    Link: https://englishwithfishing.netlify.app/
 
-10. Title: English Penalty (en), English Penalty (tr), English Penalty (vi)
+10. Title: English Chef (en), English Chef (tr), English Chef (vi)
+    Category: education
+    Image: /englishchef.svg
+    Description: Chef Lin's Pho Academy is a playful English grammar game for children, using cooking-themed lessons and fun mini-challenges to teach grammar naturally. (en), Chef Lin's Pho Academy, çocuklara yemek temalı dersler ve eğlenceli mini görevlerle İngilizce dil bilgisini doğal bir şekilde öğretmeyi amaçlayan bir oyundur. (tr), Chef Lin's Pho Academy là trò chơi ngữ pháp tiếng Anh dành cho trẻ em, sử dụng chủ đề nấu ăn và thử thách nhỏ thú vị để dạy ngữ pháp một cách tự nhiên. (vi)
+    Link: https://englishchef.netlify.app/
+
+11. Title: English Penalty (en), English Penalty (tr), English Penalty (vi)
     Category: education
     Image: /English Penalty.png
     Description: English learning platform by solving English questions and taking penalty shots. (en), İngilizce sorularını çözerek penaltı atarak İngilizce öğrenme platformu. (tr), Nền tảng học tiếng Anh bằng cách bắt cá thông qua các câu hỏi ngữ pháp. (vi)
