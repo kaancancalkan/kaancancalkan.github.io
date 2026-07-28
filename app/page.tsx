@@ -1078,6 +1078,21 @@ const portfolioGallery = [
   },
   {
     title: {
+      en: "English Crush",
+      tr: "English Crush",
+      vi: "English Crush",
+    },
+    category: "education",
+    image: "/englishcrush.png",
+    description: {
+      en: "English Crush is a playful word game that teaches young children simple English vocabulary through gamified lessons.",
+      tr: "English Crush, küçük yaştaki çocuklara basit İngilizce kelimeleri oyunlaştırarak öğreten eğlenceli bir kelime oyunudur.",
+      vi: "English Crush là một trò chơi từ vựng vui nhộn giúp trẻ em học các từ tiếng Anh đơn giản qua phương pháp trò chơi hóa.",
+    },
+    link: "https://englishcrush.netlify.app/",
+  },
+  {
+    title: {
       en: "Fishy English",
       tr: "Fishy English",
       vi: "Fishy English",
