@@ -986,7 +986,7 @@ const portfolioGallery = [
     link: "https://kaancancalkantechnostore.netlify.app/",
   },
   
-  {
+  /* {
     title: {
       en: "Hades",
       tr: "Hades",
@@ -1000,7 +1000,7 @@ const portfolioGallery = [
       vi: "Trang giới thiệu cho dự án sáng tạo Hades.",
     },
     link: "https://hadess.netlify.app/",
-  },
+  }, */
   {
     title: {
       en: "Vietnam Chronicle",
