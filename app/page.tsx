@@ -194,7 +194,7 @@ const translations: Record<Language, Translation> = {
       {
         company: "Center of International English (CIE)",
         position: "English Teacher",
-        period: "July 2026 - Now",
+        period: "September 2026 - Now",
         description:
           "Teaching English using interactive, AI-powered tools in Lam Dong Province. Delivering engaging, technology-enhanced English lessons and utilizing advanced AI feedback tools to provide real-time, personalized guidance on students' writing, pronunciation, and grammar. Implementing innovative digital learning strategies that blend traditional ESL methodologies with modern EdTech to maximize student engagement and learning outcomes.",
       },
@@ -437,7 +437,7 @@ const translations: Record<Language, Translation> = {
       {
         company: "Center of International English (CIE)",
         position: "İngilizce Öğretmeni",
-        period: "Temmuz 2026 - Devam Ediyor",
+        period: "Eylül 2026 - Devam Ediyor",
         description:
           "Lam Dong eyaletinde yapay zeka destekli interaktif araçlarla İngilizce eğitimi veriyorum. Öğrencilerin yazma, telaffuz ve dil bilgi becerilerini geliştirmek amacıyla, son teknoloji yapay zeka tabanlı geribildirim araçlarını derslerime entegre ediyorum. Geleneksel ESL (İkinci Dil Olarak İngilizce) öğretim metotlarını ileri teknolojiyle harmanlayarak, öğrenci katılımını ve öğrenme çıktılarını en üst düzeye çıkaran yenilikçi dijital öğrenme stratejileri uyguluyorum. Eğitim teknolojilerini (EdTech) kullanarak dersleri daha verimli ve etkileşimli hale getiriyorum.",
       },
@@ -683,7 +683,7 @@ const translations: Record<Language, Translation> = {
       {
         company: "Center of International English (CIE)",
         position: "Giáo viên Tiếng Anh",
-        period: "Tháng 7 năm 2026 - Hiện tại",
+        period: "Tháng 9 năm 2026 - Hiện tại",
         description:
           "Giảng dạy tiếng Anh với các Chú thích được Hỗ trợ bởi Trí tuệ Nhân tạo Tương tác tại Tỉnh Lâm Đông. Cung cấp các bài học tiếng Anh hấp dẫn, được hỗ trợ bởi công nghệ, sử dụng các công cụ chú thích AI tiên tiến để cung cấp phản hồi theo thời gian thực, được cá nhân hóa về viết lách, phát âm và ngữ pháp của học sinh. Triển khai các chiến lược học tập kỹ thuật số sáng tạo kết hợp liền mạch các phương pháp giáo dục tiếng Anh truyền thống với công nghệ AI tiên tiến để tối đa hóa sự tham gia, hiểu biết và kết quả học tập của học sinh. Tạo dựng các môi trường lớp học tương tác tận dụng EdTech để tạo ra các trải nghiệm giáo dục biến đổi.",
       },
