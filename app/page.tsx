@@ -191,6 +191,7 @@ const translations: Record<Language, Translation> = {
       },
     ],
     workEntries: [
+      /*
       {
         company: "Center of International English (CIE)",
         position: "English Teacher",
@@ -198,6 +199,7 @@ const translations: Record<Language, Translation> = {
         description:
           "Teaching English using interactive, AI-powered tools in Lam Dong Province. Delivering engaging, technology-enhanced English lessons and utilizing advanced AI feedback tools to provide real-time, personalized guidance on students' writing, pronunciation, and grammar. Implementing innovative digital learning strategies that blend traditional ESL methodologies with modern EdTech to maximize student engagement and learning outcomes.",
       },
+      */
       {
         company: "Bulutfon Telecommunications",
         position: "Customer Relationship Specialist",
@@ -434,6 +436,7 @@ const translations: Record<Language, Translation> = {
       },
     ],
     workEntries: [
+      /*
       {
         company: "Center of International English (CIE)",
         position: "İngilizce Öğretmeni",
@@ -441,6 +444,7 @@ const translations: Record<Language, Translation> = {
         description:
           "Lam Dong eyaletinde yapay zeka destekli interaktif araçlarla İngilizce eğitimi veriyorum. Öğrencilerin yazma, telaffuz ve dil bilgi becerilerini geliştirmek amacıyla, son teknoloji yapay zeka tabanlı geribildirim araçlarını derslerime entegre ediyorum. Geleneksel ESL (İkinci Dil Olarak İngilizce) öğretim metotlarını ileri teknolojiyle harmanlayarak, öğrenci katılımını ve öğrenme çıktılarını en üst düzeye çıkaran yenilikçi dijital öğrenme stratejileri uyguluyorum. Eğitim teknolojilerini (EdTech) kullanarak dersleri daha verimli ve etkileşimli hale getiriyorum.",
       },
+      */
       {
         company: "Bulutfon Telekomünikasyon",
         position: "Müşteri İlişkileri Uzmanı",
@@ -680,6 +684,7 @@ const translations: Record<Language, Translation> = {
       },
     ],
     workEntries: [
+      /*
       {
         company: "Center of International English (CIE)",
         position: "Giáo viên Tiếng Anh",
@@ -687,6 +692,7 @@ const translations: Record<Language, Translation> = {
         description:
           "Giảng dạy tiếng Anh với các Chú thích được Hỗ trợ bởi Trí tuệ Nhân tạo Tương tác tại Tỉnh Lâm Đông. Cung cấp các bài học tiếng Anh hấp dẫn, được hỗ trợ bởi công nghệ, sử dụng các công cụ chú thích AI tiên tiến để cung cấp phản hồi theo thời gian thực, được cá nhân hóa về viết lách, phát âm và ngữ pháp của học sinh. Triển khai các chiến lược học tập kỹ thuật số sáng tạo kết hợp liền mạch các phương pháp giáo dục tiếng Anh truyền thống với công nghệ AI tiên tiến để tối đa hóa sự tham gia, hiểu biết và kết quả học tập của học sinh. Tạo dựng các môi trường lớp học tương tác tận dụng EdTech để tạo ra các trải nghiệm giáo dục biến đổi.",
       },
+      */
       {
         company: "Bulutfon Telecommunications",
         position: "Chuyên viên Quan hệ Khách hàng",
